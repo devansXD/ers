@@ -1,0 +1,71 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+
+  <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+
+  <h1 class="heading-xlarge" style="color: #0072C6;">
+    Hello Mike Smith
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+        
+        <h3 class="heading-medium">Referral to book</h3>    
+        <div style="background:#dee0e2;padding:1rem;">
+
+            <div style="background:#ffffff;padding:0.5rem;">           
+                    <p>Booking reference number<br /> 
+                        <strong>0002 7480 8900</strong></p>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem;margin-top:2px;">           
+                    <p>Referring organisation<br /> 
+                        <strong>Colton Mill Medical Centre</strong></p>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem;margin-top:2px;">           
+                    <p>Referred by<br /> 
+                        <strong>Dr Zubeir Smith</strong></p>
+            </div>
+            
+            
+            
+            <p><a href="/pabs/clinic" class="button" style="margin-top: 1em !important;">Book your appointment</a>
+            </p>  
+            <p><a href="/pabs/clinic" style="margin-top: 2em !important;">View and manage all referrals </a>
+            </p>  
+            
+                	    <div class="form-group" style="padding-top: 2em !important;">
+
+	    </div>
+        
+</div>
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+

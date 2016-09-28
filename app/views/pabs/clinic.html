@@ -1,0 +1,73 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+<a href="/pabs/hello" style="color:#ffffff;">&#9664; Back to start</a>
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge" style="color: #0072C6;">
+    Select your clinic
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+        
+        <!--<h3 class="heading-medium">Referral to book</h3>-->    
+        <div style="padding:1rem;border:3px solid #DCDCDC;">
+
+ <p><a href="">General Respiratory Medicine-Respiratory Medicine-LeedsTH (St James’s Hosp)-RR8</a><br />Beckett St, Leeds, LS9 7TF</p>
+            
+
+            <table style="padding:0rem;" >
+  <tr>
+    <td><p>First appointment approximately</p></td>
+    <td><p><strong>XXX Days</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Distance from LS2 7TF</p></td>
+    <td><p><strong>XXX Miles</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Average wait for treatment</p></td>
+    <td><p><strong>XXX Weeks</strong></p></td>
+  </tr>
+</table>
+            
+            
+            <p><a href="/pabs/appointment" class="button" style="margin-top: 1em !important;">Select clinic</a>
+            </p>    
+            
+                	    <div class="form-group" style="padding-top: 2em !important;">
+
+	    </div>
+        
+</div>
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+

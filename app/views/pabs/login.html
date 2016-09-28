@@ -1,0 +1,61 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+
+        </div>
+
+        
+    </div>
+
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+
+  <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+
+  <h1 class="heading-xlarge" style="color: #0072C6;">
+    Log in
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+
+        
+        <div style="background:#dee0e2;padding:1rem;">
+                <div>           
+    <label class="form-label-bold" for="first-label">Booking reference number</label>
+            <input type="text" id="first-label" class="form-control"> 
+    <label class="form-label-bold" for="first-label" style="padding-top: 1em !important;">Year of birth</label>
+            <input type="text" id="Year of birth" class="form-control"> 
+    <label class="form-label-bold" for="first-label" style="padding-top: 1em !important;">Password</label>
+            <input type="text" id="Password" class="form-control"> 
+</div>
+    <a href="/pabs/hello" class="button" style="margin-top: 2em !important;">Log in</a>
+            
+                	    <div class="form-group" style="padding-top: 2em !important;">
+
+	    </div>
+        
+</div>
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+

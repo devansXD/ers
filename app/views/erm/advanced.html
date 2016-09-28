@@ -1,0 +1,195 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    
+    
+  <h1 class="heading-xlarge">Advanced service search</h1>
+      
+    
+      <div class="grid-row">
+    <div class="column-half">
+        
+        <div>           
+    <label class="form-label" for="first-label"></label>
+            <input type="text" id="first-label" placeholder="Enter your search term..." class="form-control">    
+</div>
+
+      <div class="form-item-wrapper">
+
+
+        <div class="form-group">
+          <input type="radio" id="Routine" name="minor" checked>
+          <label class="form-control-radio minor" for="Routine">
+            Routine
+          </label>
+           <input type="radio" id="Urgent" name="minor">
+          <label class="form-control-radio minor" for="Urgent">
+            Urgent
+          </label>
+           <input type="radio" id="2ww" name="minor">
+          <label class="form-control-radio minor" for="2ww">
+            2 week wait
+          </label>
+        </div>
+      </div>
+                
+        
+<div>           
+    <p> <label class="form-label" for="first-label">Postcode</label>
+            <input type="text" id="first-label" placeholder="" class="form-control" style="width:200px;float: left;">    
+
+        <select class="form-control" id="select-box" style="width:200px;float: left;margin-left:20px;">
+            <option style="font-size: 1.5rem;">Within 100 miles</option>
+            <option>Within 2 miles</option>
+            <option>Within 5 miles</option>
+            <option>Within 10 miles</option>
+            <option>Within 15 miles</option>
+            <option>Within 25 miles</option>
+            <option>Within 50 miles</option>
+            <option>Within 75 miles</option>
+            <option>Within 100 miles</option>
+            <option>Within 150 miles</option>
+            <option>Within 200 miles</option>
+            <option>Within 500 miles</option>
+        </select>
+    
+    </p>
+        </div>
+        
+      <div class="form-item-wrapper">
+        <div class="form-group">
+          <input type="checkbox" id="locally" name="locally" checked>
+          <label class="form-control-checkbox minor" for="locally" style="margin-top: 2rem">
+            Include locally commissioned services
+          </label>
+          <input type="checkbox" id="nationally" name="nationally" checked>
+          <label class="form-control-checkbox minor" for="nationally">
+            Include nationally available services
+          </label>
+        </div>
+      </div>
+        
+        	    <div class="form-group">
+	      <input type="submit" class="button" value="Search Services"> &nbsp;&nbsp;<a href="" style="padding-left:20px;">Save search</a>
+	    </div>
+        
+    </div>
+          
+    <div class="column-quarter">
+          <div>           
+            <label class="form-label" for="first-label"></label>
+                <input type="text" id="first-label" placeholder="Add clinical term" class="form-control">    
+        </div>
+        
+          <div>           
+            <label class="form-label" for="first-label"></label>
+                <input type="text" id="first-label" placeholder="Add organisation or site name" class="form-control">    
+        </div>        
+        
+          <div>           
+            <label class="form-label" for="first-label"></label>
+                <input type="text" id="first-label" placeholder="Add named clinician" class="form-control">    
+        </div>   
+        
+        
+        <div>
+        <select class="form-control" id="select-box" style="float: left;margin-top:1rem;">
+            <option style="font-size: 1.5rem;">Speciality</option>
+            <option>Within 2 miles</option>
+            <option>Within 5 miles</option>
+            <option>Within 10 miles</option>
+            <option>Within 15 miles</option>
+            <option>Within 25 miles</option>
+            <option>Within 50 miles</option>
+            <option>Within 75 miles</option>
+            <option>Within 100 miles</option>
+            <option>Within 150 miles</option>
+            <option>Within 200 miles</option>
+            <option>Within 500 miles</option>
+        </select>
+            </div>
+        <div>
+        <select class="form-control" id="select-box" style="float: left;margin-top:1rem;">
+            <option style="font-size: 1.5rem;">Clinic Type</option>
+            <option>Within 2 miles</option>
+            <option>Within 5 miles</option>
+            <option>Within 10 miles</option>
+            <option>Within 15 miles</option>
+            <option>Within 25 miles</option>
+            <option>Within 50 miles</option>
+            <option>Within 75 miles</option>
+            <option>Within 100 miles</option>
+            <option>Within 150 miles</option>
+            <option>Within 200 miles</option>
+            <option>Within 500 miles</option>
+        </select>
+            </div>
+        
+    </div>
+    <div class="column-quarter">
+        <div>
+        <select class="form-control" id="select-box" style="float: left;margin-top:1rem;">
+            <option style="font-size: 1.5rem;">Indicative wait time</option>
+            <option>Within 2 miles</option>
+            <option>Within 5 miles</option>
+            <option>Within 10 miles</option>
+            <option>Within 15 miles</option>
+            <option>Within 25 miles</option>
+            <option>Within 50 miles</option>
+            <option>Within 75 miles</option>
+            <option>Within 100 miles</option>
+            <option>Within 150 miles</option>
+            <option>Within 200 miles</option>
+            <option>Within 500 miles</option>
+        </select>
+            </div>
+        
+        <div>
+        <select class="form-control" id="select-box" style="float: left;margin-top:1rem;">
+            <option style="font-size: 1.5rem;">Sort results by</option>
+            <option>Within 2 miles</option>
+            <option>Within 5 miles</option>
+            <option>Within 10 miles</option>
+            <option>Within 15 miles</option>
+            <option>Within 25 miles</option>
+            <option>Within 50 miles</option>
+            <option>Within 75 miles</option>
+            <option>Within 100 miles</option>
+            <option>Within 150 miles</option>
+            <option>Within 200 miles</option>
+            <option>Within 500 miles</option>
+        </select>
+            </div>
+        
+      <div class="form-item-wrapper">
+        <div class="form-group">
+          <input type="checkbox" id="age" name="age" >
+          <label class="form-control-checkbox minor" for="age" style="margin-top: 2rem">
+            Only return age and gender appropriate services
+          </label>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+</main>
+
+{% endblock %}
+
+
+

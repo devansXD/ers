@@ -1,0 +1,31 @@
+// Tables
+// ==========================================================================
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 0.9rem;
+}
+
+table th,
+table td {
+  text-align: left;
+  vertical-align: top;
+  //border: 1px solid black;
+    //padding-top:1rem;
+
+}
+
+table th
+{
+    color:azure;
+}
+
+// Right align headings for numeric content
+table th.numeric {
+  text-align: right;
+}
+
+
+table.equalDevide tr td { width:38%; }

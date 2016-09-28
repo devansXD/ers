@@ -1,0 +1,105 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+
+  <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+        
+        <div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:2rem;">
+          <h1 class="heading-xlarge" style="margin-bottom: 0px !important;">
+    &#10004; Booking complete
+  </h1>
+            
+            <h3 class="heading-medium">Please save this information for your records</h3> 
+        
+        </div>
+        
+        
+        <p><a href="">Add to your calendar</a><br />
+            <a href="">View / print referral letter</a></p>
+        
+        
+           
+        <div style="background:#dee0e2;padding:1rem;">
+
+            <div style="background:#ffffff;padding:0.5rem;">           
+                    <p>Booking reference number<br /> 
+                        <strong>0002 7480 8900</strong></p>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem;margin-top:2px;">           
+                    <p>Date and time<br /> 
+                        <strong>Monday 2nd May 2016, 2:00pm</strong></p>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem;margin-top:2px;">           
+                    <p>Clinic<br /> 
+                        <strong>General Respiratory Medicine-Respiratory Medicine-LeedsTH (St James’s Hosp)-RR8</strong></p>
+            </div>            
+            <div style="background:#ffffff;padding:0.5rem;margin-top:2px;">           
+                    <p>Location<br /> 
+                        <strong>Beckett St, Leeds, LS9 7TF</strong></p>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem;margin-top:2px;">           
+                    <p>Referred by <br /> 
+                        <strong>Dr Zubeir Smith</strong></p>
+            </div>
+            <div style="background:#ffffff;padding:0.5rem;margin-top:2px;">           
+                    <p>Information <br /> 
+                        <strong>Please arrive 30 minutes before your appointment is due to start. Wear loose clothing.</strong></p>
+            </div>
+            
+
+            
+                	    <div class="form-group" style="padding-top: 2em !important;">
+            <div>
+            
+            <h3 class="heading-medium">What happens next?</h3>
+                <p>We’ve sent your request to the provider.</p> 
+                <p>They will contact you to either confirm your registration, or to ask for more information. </p>
+                <p>Help us improve our service by completeing the following survey <a href="">What did you think or this service?</a>  </p>
+            
+            
+            </div>
+                            
+        	    <div class="form-group">
+    <a href="/pabs/hello" class="button ">View all referrals</a>
+	    </div>
+                            
+	    </div>
+        
+</div>
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+

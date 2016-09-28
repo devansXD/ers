@@ -1,0 +1,82 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+<a href="/pabs/appointment" style="color:#ffffff;">&#9664; Back to appointments</a>
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge" style="color: #0072C6;">
+    Check your appointment details before booking
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+           
+        <div style="background:#dee0e2;padding:1rem;">
+
+            <div style="background:#ffffff;padding:0rem 1rem 0rem 1rem;margin-top:2px;">          
+                <table style="margin-bottom: 0px !important;">
+                              <tr>
+                                <td style="padding: 0px !important;"><p>Date and time <br />
+                                    <strong>Monday 2nd May 2016, 2:00pm</strong></p>
+                                    </td>
+                                <td style="padding: 0px !important;text-align:right;">
+                                    <p><a href="/pabs/appointment">Change</a></p></td>
+                              </tr>
+                </table>
+                
+            </div>
+            
+            <div style="background:#ffffff;padding:0rem 1rem 0rem 1rem;margin-top:2px;">          
+                <table style="margin-bottom: 0px !important;">
+                              <tr>
+                                <td style="padding: 0px !important;"><p>Clinic <br />
+                                    <strong>General Respiratory Medicine-Respiratory Medicine-LeedsTH (St James’s Hosp)-RR8</strong></p>
+                                    </td>
+                                <td style="padding: 0px !important;text-align:right;">
+                                    <p><a href="/pabs/clinic">Change</a></p></td>
+                              </tr>
+                </table>
+                
+            </div>
+            
+
+            
+            
+            
+            <p><a href="/pabs/complete" class="button" style="margin-top: 1em !important;">Accept and book</a>
+            </p>  
+            
+                	    <div class="form-group" style="padding-top: 2em !important;">
+
+	    </div>
+        
+</div>
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+
