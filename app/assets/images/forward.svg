@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1409.302 864.283 10.084 16.434">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0072c6;
+        stroke: #0072c6;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="back-chevron" transform="translate(1435.189 880.5) rotate(180)">
+    <g id="Navigation-Bar_Back" data-name="Navigation-Bar/Back" transform="translate(16.5 0.5)">
+      <path id="Back-Chevron-2" data-name="Back-Chevron" class="cls-1" d="M8.5,39l7.3-7.5,1.39,1.429L11.28,39l5.908,6.071L15.8,46.5Z" transform="translate(-8.5 -31.5)"/>
+    </g>
+  </g>
+</svg>
