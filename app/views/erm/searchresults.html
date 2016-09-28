@@ -1,0 +1,430 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;color:#ffffff;font-size:12px;"><strong>Patient:</strong> CAESAR, Julius (Mr)  <strong>Gender:</strong> Male  <strong>Date of Birth:</strong> 03/03/1943  <strong>Age:</strong> 74 years  <strong>NHS:</strong> 100 000 0008</div>
+        </div>
+
+        
+    </div>
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+    
+    
+  
+    
+      <div>
+
+        
+    <p> <label class="form-label" for="first-label"></label>
+            <input type="text" id="first-label" placeholder="Enter your search term..." class="form-control" style="width:300px;float: left;">    
+
+        <select class="form-control" id="select-box" style="width:200px;float: left;margin-left:20px;">
+            <option style="font-size: 1.5rem;">Routine</option>
+            <option>Urgent</option>
+            <option>2 week wait</option>
+        </select>
+    	      <input type="submit" class="button" value="Search services" style="margin-left:20px;"> &nbsp;&nbsp;<a href="#popup1" style="padding-left:10px;">Advanced search</a>
+    </p>
+        
+        
+        
+
+
+
+                
+        
+
+
+  </div>
+    
+    <div>
+    
+      <div class="grid-row" style="margin-left: 0px !important; margin-right: 0px !important;">
+  <h1 class="heading-xlarge">Search results</h1>
+          
+          <p>These are the nearest services at which patients are likely to receive treatment within 18 weeks:</p>
+    
+                <table class="good" style="padding:0rem;" >
+                      <tr>
+                        <th>Select</th>
+                        <th>Miles</th>
+                        <th>Appointment type</th>
+                        <th>Service name</th>
+                        <th>Indicative appointment wait</th>
+                        <th>Indicative treatment wait</th>
+                        <th>Directly bookable</th>
+                        <th>Referrer Alert</th>
+                        <th>Speciality</th>
+                        <th>Link to NHS choices</th>
+                        <th>Location</th>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>10</td>
+                        <td>First Outpatient</td>
+                        <td>Gen Adult - ENT - Leeds TH (Wharfedale Gen Hosp) - RR8</td>
+                        <td>35 Days</td>
+                        <td>10 weeks</td>
+                        <td>Yes</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>WHARFEDALE HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>19</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-Selby Hospital-York Hospitals Trust-RCB</td>
+                        <td>49 Days</td>
+                        <td>13 weeks</td>
+                        <td>No</td>
+                        <td>&#9899;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>THE NEW SELBY WAR MEMORIAL HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-ENT Dept_York Hospitals Trust-RCB</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>YORK HOSPITAL</td>
+                      </tr>
+                </table>
+          
+          
+<p>Below are other services that meet your criteria. </p>
+    
+                <table class="service" style="padding:0rem;" >
+                      <tr>
+                        <th>Select</th>
+                        <th>Miles</th>
+                        <th>Appointment type</th>
+                        <th>Service name</th>
+                        <th>Indicative appointment wait</th>
+                        <th>Indicative treatment wait</th>
+                        <th>Directly bookable</th>
+                        <th>Referrer Alert</th>
+                        <th>Speciality</th>
+                        <th>Link to NHS choices</th>
+                        <th>Location</th>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>10</td>
+                        <td>First Outpatient</td>
+                        <td>Gen Adult - ENT - Leeds TH (Wharfedale Gen Hosp) - RR8</td>
+                        <td>35 Days</td>
+                        <td>10 weeks</td>
+                        <td>Yes</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>WHARFEDALE HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>19</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-Selby Hospital-York Hospitals Trust-RCB</td>
+                        <td>49 Days</td>
+                        <td>13 weeks</td>
+                        <td>No</td>
+                        <td>&#9899;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>THE NEW SELBY WAR MEMORIAL HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-ENT Dept_York Hospitals Trust-RCB</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>YORK HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-ENT Dept_York Hospitals Trust-RCB</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>YORK HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-ENT Dept_York Hospitals Trust-RCB</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>YORK HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-ENT Dept_York Hospitals Trust-RCB</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>YORK HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-ENT Dept_York Hospitals Trust-RCB</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>YORK HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-ENT Dept_York Hospitals Trust-RCB</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>YORK HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="locally" name="locally" ><label class="form-control-checkbox minor" for="locally" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>General ENT Clinic-ENT Dept_York Hospitals Trust-RCB</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td>&#9899;</td>
+                        <td>YORK HOSPITAL</td>
+                      </tr>
+                </table>
+          
+          
+          <div style="margin-top:2rem;">
+          
+              	      <a href="/erm/"><input type="submit" class="button" value="Request services" style=""></a> &nbsp;&nbsp;<a href="/erm/" style="padding-left:10px;">Cancel search</a>
+          
+          
+          </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    
+    
+    <div id="popup1" class="overlay">
+	<div class="popup" style="top: 0 !important;">
+		<!--<a class="close" href="#">&times;</a>-->
+		<div class="content">
+            
+              <div class="grid-row" style="margin: 0;">
+    <div class="column-third">
+                    
+
+        <div class="form-group">
+                     <label class="form-label" for="first-label"></label>
+            <input type="text" id="first-label" placeholder="Postcode" class="form-control" style="float: left;">
+            </div>          
+        
+        <div class="form-group">
+        
+            <select class="form-control" id="select-box" style="width:200px;">
+            <option style="font-size: 1.5rem;">Within 100 miles</option>
+            <option>Within 2 miles</option>
+            <option>Within 5 miles</option>
+            <option>Within 10 miles</option>
+            <option>Within 15 miles</option>
+            <option>Within 25 miles</option>
+            <option>Within 50 miles</option>
+            <option>Within 75 miles</option>
+            <option>Within 100 miles</option>
+            <option>Within 150 miles</option>
+            <option>Within 200 miles</option>
+            <option>Within 500 miles</option>
+        </select>
+        </div>
+        
+        
+      <div class="form-item-wrapper">
+        <div class="form-group">
+          <p><input type="checkbox" id="locally" name="locally" checked>
+          <label class="form-control-checkbox minor" for="locally" style="margin-top: 0rem">
+            Include locally commissioned services
+          </label>
+              </p>
+          <p><input type="checkbox" id="nationally" name="nationally" checked>
+          <label class="form-control-checkbox minor" for="nationally">
+            Include nationally available services
+          </label></p>
+          <p><input type="checkbox" id="age" name="age" checked>
+          <label class="form-control-checkbox minor" for="age">
+            Only return age and gender appropriate services
+          </label></p>
+        </div>
+      </div>
+        
+        
+        
+    </div>
+    <div class="column-third">
+
+         <div>           
+            <label class="form-label" for="first-label"></label>
+                <input type="text" id="first-label" placeholder="Add clinical term" class="form-control">    
+        </div>
+        
+          <div>           
+            <label class="form-label" for="first-label"></label>
+                <input type="text" id="first-label" placeholder="Add organisation or site name" class="form-control">    
+        </div>        
+        
+          <div>           
+            <label class="form-label" for="first-label"></label>
+                <input type="text" id="first-label" placeholder="Add named clinician" class="form-control">    
+        </div>   
+                                        
+        <div>
+        <select class="form-control" id="select-box" style="float: left;margin-top:1rem;">
+            <option style="font-size: 1.5rem;">Speciality</option>
+            <option>Speciality 1</option>
+            <option>Speciality 2</option>
+            <option>Speciality 3</option>
+            <option>Speciality 4</option>
+            <option>Speciality 5</option>
+            <option>Speciality 6</option>
+            <option>Speciality 7</option>
+            <option>Speciality 8</option>
+            <option>Speciality 9</option>
+            <option>Speciality 10</option>
+            <option>Speciality 11</option>
+        </select>
+            </div>
+        <div>
+        <select class="form-control" id="select-box" style="float: left;margin-top:1rem;">
+            <option style="font-size: 1.5rem;">Clinic Type</option>
+            <option>Clinic Type 1</option>
+            <option>Clinic Type 2</option>
+            <option>Clinic Type 3</option>
+            <option>Clinic Type 4</option>
+            <option>Clinic Type 5</option>
+            <option>Clinic Type 6</option>
+            <option>Clinic Type 7</option>
+            <option>Clinic Type 8</option>
+            <option>Clinic Type 9</option>
+            <option>Clinic Type 10</option>
+            <option>Clinic Type 11</option>
+        </select>
+            </div>
+        
+        
+        
+        
+        
+    </div>
+    <div class="column-third">
+
+        <div>
+        <select class="form-control" id="select-box" style="margin-top:1rem;">
+            <option style="font-size: 1.5rem;">Indicative wait time</option>
+            <option>Within 2 days</option>
+            <option>Within 5 days</option>
+            <option>Within 10 days</option>
+            <option>Within 15 days</option>
+            <option>Within 25 days</option>
+            <option>Within 50 days</option>
+            <option>Within 75 days</option>
+            <option>Within 100 days</option>
+            <option>Within 150 days</option>
+            <option>Within 200 days</option>
+            <option>Within 500 days</option>
+        </select>
+            </div>
+                                        
+                                        
+ <div>
+        <select class="form-control" id="select-box" style="margin-top:1rem;">
+            <option style="font-size: 1.5rem;">Sort results by</option>
+            <option>Distance (nearest to furthest)</option>
+            <option>Indicative appointment wait (earliest to latest)</option>
+            <option>Indicative treatment wait (earliest to latest)</option>
+            <option>Directly Bookable (yes to no)</option>
+        </select>
+            </div>
+        
+        
+    </div>
+  </div>
+            
+            
+            
+            
+            
+			                    
+            
+
+                	      <a href="#"><input type="submit" class="button " value="Apply advanced search" style=""></a> <a href="#" style="padding-left:10px;">Save search</a>&nbsp;&nbsp;<a href="#" style="padding-left:10px;">Reset search</a>
+            
+		</div>
+	</div>
+</div>
+    
+    
+    
+    
+
+
+    
+    
+</main>
+
+{% endblock %}
+
+
+

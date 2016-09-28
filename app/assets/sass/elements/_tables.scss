@@ -29,3 +29,38 @@ table th.numeric {
 
 
 table.equalDevide tr td { width:38%; }
+
+
+table.service th,
+table.service td {
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid black;
+  padding:0.5rem;
+    font-size: 12px;
+    line-height: 14px;
+    vertical-align: middle;
+
+}
+
+table.service th, {
+  background-color: #0072C6;
+
+}
+
+table.good th,
+table.good td {
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid black;
+  padding:0.5rem;
+    font-size: 12px;
+    line-height: 14px;
+    vertical-align: middle;
+
+}
+
+table.good th, {
+  background-color: green;
+
+}

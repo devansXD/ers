@@ -234,6 +234,20 @@ table {
   }
 }
 
+// Tables.
+table.service {
+
+  font-family: unquote(map-get($bodytype, font-family));
+  font-style: normal;
+  width: 100%;
+    font-size: 12px;
+
+
+  th {
+    font-weight: bold;
+  }
+}
+
 // Link styles
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);

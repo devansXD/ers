@@ -4,6 +4,18 @@
 
 {% block content %}
 
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;color:#ffffff;font-size:12px;"><strong>Patient:</strong> CAESAR, Julius (Mr)  <strong>Gender:</strong> Male  <strong>Date of Birth:</strong> 03/03/1943  <strong>Age:</strong> 74 years  <strong>NHS:</strong> 100 000 0008</div>
+        </div>
+
+        
+    </div>
+    {% include "includes/prototype-warning.html" %}
+
 <main id="content" role="main">
     
     
@@ -74,7 +86,7 @@
       </div>
         
         	    <div class="form-group">
-	      <input type="submit" class="button" value="Search Services"> &nbsp;&nbsp;<a href="/erm/advanced" style="padding-left:20px;">Advanced search</a>
+	      <a href="/erm"><input type="submit" class="button" value="Search services"></a> &nbsp;&nbsp;<a href="/erm/advanced" style="padding-left:20px;">Advanced search</a>
 	    </div>
         
     </div>
