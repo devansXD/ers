@@ -249,9 +249,9 @@
           
             	      
                         
-                            <a href="/erm/servicesearch2" style="padding-left:10px;">Cancel search</a>
-                          	<a href="/erm/verification"><input type="submit" class="button" value="Book / refer later" style="margin-left:1rem;"></a>    
-                            <a href="/erm/verification-now"><input type="submit" class="button" value="Book / refer now" style="margin-left:1rem;"></a> 
+                            <a href="/erm/" style="padding-left:10px;">Cancel search</a>
+                          	<a href="/erm/"><input type="submit" class="button" value="Book / refer later" style="margin-left:1rem;"></a>    
+                            <a href="#popup2"><input type="submit" class="button" value="Book / refer now" style="margin-left:1rem;"></a> 
           
           
           </div>
@@ -263,157 +263,85 @@
     </div>
     
     
-    <div id="popup1" class="overlay">
-	<div class="popup" style="top: 0 !important;">
+    <div id="popup2" class="overlay2">
+	<div class="popup2" style="top: 0 !important;">
 		<!--<a class="close" href="#">&times;</a>-->
 		<div class="content">
+    
             
-              <div class="grid-row" style="margin: 0;">
-    <div class="column-third">
-                    
+            <p>Please check that the following referral criteria meet the requirements of your patient.<br /> If not de-select the service.</p>
+            
+            <table class="service" style="padding:0rem;" >
+                      <tr>
+                        <th>Select</th>
+                        <th>Service name</th>
+                        <th>Referrer alert</th>
+                        <th>Exclusions</th>
+                        <th>Conditions treated</th>
+                        <th>Suggested investigation</th>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="1" name="1" checked ><label class="form-control-checkbox minor" for="1" style="padding:0;"></td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td> </td>
+                        <td>Any person under the age of 18 years old; 
 
-        <div class="form-group">
-                     <label class="form-label" for="first-label"></label>
-            <input type="text" id="first-label" placeholder="Postcode" class="form-control" style="float: left;">
-            </div>          
-        
-        <div class="form-group">
-        
-            <select class="form-control" id="select-box" style="width:200px;">
-            <option style="font-size: 1.5rem;">Within 100 miles</option>
-            <option>Within 2 miles</option>
-            <option>Within 5 miles</option>
-            <option>Within 10 miles</option>
-            <option>Within 15 miles</option>
-            <option>Within 25 miles</option>
-            <option>Within 50 miles</option>
-            <option>Within 75 miles</option>
-            <option>Within 100 miles</option>
-            <option>Within 150 miles</option>
-            <option>Within 200 miles</option>
-            <option>Within 500 miles</option>
-        </select>
-        </div>
-        
-        
-      <div class="form-item-wrapper">
-        <div class="form-group">
-          <p><input type="checkbox" id="locally" name="locally" checked>
-          <label class="form-control-checkbox minor" for="locally" style="margin-top: 0rem">
-            Include locally commissioned services
-          </label>
-              </p>
-          <p><input type="checkbox" id="nationally" name="nationally" checked>
-          <label class="form-control-checkbox minor" for="nationally">
-            Include nationally available services
-          </label></p>
-          <p><input type="checkbox" id="age" name="age" checked>
-          <label class="form-control-checkbox minor" for="age">
-            Only return age and gender appropriate services
-          </label></p>
-        </div>
-      </div>
-        
-        
-        
-    </div>
-    <div class="column-third">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie arcu est, eget maximus dolor vehicula sed. </td>
+                        <td>General ENT problems to include: 
+chronic ear diseases, deafness and childhood deafness, dysphagia, glue ear, habitual snoring ,head and neck lumps, hearing loss and dizziness, hoarseness, nasal, childhood deafness, 
+</td>
+                        <td>Any investigations as appropriate e.g Xrays, MRI and CT scans
+</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="2" name="2" checked><label class="form-control-checkbox minor" for="2" style="padding:0;"></td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>Need prior approval from the CCG</td>
+                        <td>Any person under the age of 18 years old; 
 
-         <div>           
-            <label class="form-label" for="first-label"></label>
-                <input type="text" id="first-label" placeholder="Add clinical term" class="form-control">    
-        </div>
-        
-          <div>           
-            <label class="form-label" for="first-label"></label>
-                <input type="text" id="first-label" placeholder="Add organisation or site name" class="form-control">    
-        </div>        
-        
-          <div>           
-            <label class="form-label" for="first-label"></label>
-                <input type="text" id="first-label" placeholder="Add named clinician" class="form-control">    
-        </div>   
-                                        
-        <div>
-        <select class="form-control" id="select-box" style="float: left;margin-top:1rem;">
-            <option style="font-size: 1.5rem;">Speciality</option>
-            <option>Speciality 1</option>
-            <option>Speciality 2</option>
-            <option>Speciality 3</option>
-            <option>Speciality 4</option>
-            <option>Speciality 5</option>
-            <option>Speciality 6</option>
-            <option>Speciality 7</option>
-            <option>Speciality 8</option>
-            <option>Speciality 9</option>
-            <option>Speciality 10</option>
-            <option>Speciality 11</option>
-        </select>
-            </div>
-        <div>
-        <select class="form-control" id="select-box" style="float: left;margin-top:1rem;">
-            <option style="font-size: 1.5rem;">Clinic Type</option>
-            <option>Clinic Type 1</option>
-            <option>Clinic Type 2</option>
-            <option>Clinic Type 3</option>
-            <option>Clinic Type 4</option>
-            <option>Clinic Type 5</option>
-            <option>Clinic Type 6</option>
-            <option>Clinic Type 7</option>
-            <option>Clinic Type 8</option>
-            <option>Clinic Type 9</option>
-            <option>Clinic Type 10</option>
-            <option>Clinic Type 11</option>
-        </select>
-            </div>
-        
-        
-        
-        
-        
-    </div>
-    <div class="column-third">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie arcu est, eget maximus dolor vehicula sed. </td>
+                        <td>Mastoiditis
+Cholesteatoma
+Protruding ears
+Defects of the ear drum &amp; middle ear
+Tear of ear lobe
+</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="3" name="3" checked><label class="form-control-checkbox minor" for="3" style="padding:0;"></td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>Please do not book vertigo patients</td>
+                        <td>Any person under the age of 18 years old; 
 
-        <div>
-        <select class="form-control" id="select-box" style="margin-top:1rem;">
-            <option style="font-size: 1.5rem;">Indicative wait time</option>
-            <option>Within 2 days</option>
-            <option>Within 5 days</option>
-            <option>Within 10 days</option>
-            <option>Within 15 days</option>
-            <option>Within 25 days</option>
-            <option>Within 50 days</option>
-            <option>Within 75 days</option>
-            <option>Within 100 days</option>
-            <option>Within 150 days</option>
-            <option>Within 200 days</option>
-            <option>Within 500 days</option>
-        </select>
-            </div>
-                                        
-                                        
- <div>
-        <select class="form-control" id="select-box" style="margin-top:1rem;">
-            <option style="font-size: 1.5rem;">Sort results by</option>
-            <option>Distance (nearest to furthest)</option>
-            <option>Indicative appointment wait (earliest to latest)</option>
-            <option>Indicative treatment wait (earliest to latest)</option>
-            <option>Directly Bookable (yes to no)</option>
-        </select>
-            </div>
-        
-        
-    </div>
-  </div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie arcu est, eget maximus dolor vehicula sed. </td>
+                        <td>EAR - discharge, infection, pain, tumour, glue 
+NASAL - dysfunction, infection, blockage, trauma, polyp 
+Sinusitis 
+Tonsillitis ...
+Adenoiditis 
+Dysphasia 
+Facial Nerve Palsy 
+</td>
+                        <td>Blood Pressure
+</td>
+                      </tr>
+                </table>
             
             
             
             
             
-			                    
-            
-
-                	      <a href="#"><input type="submit" class="button " value="Apply advanced search" style=""></a> <a href="#" style="padding-left:10px;">Save search</a>&nbsp;&nbsp;<a href="#" style="padding-left:10px;">Reset search</a>
+          <div style="margin-top:2rem;float:right;">
+          
+            	      
+                        
+                            <a href="/erm/searchresults" style="padding-left:10px;">Cancel</a>
+                          	<a href="/erm/searchresults"><input type="submit" class="button" value="Back with selected services" style="margin-left:1rem;"></a>    
+                            <a href="/erm/appointment-now"><input type="submit" class="button" value="Continue with selected services" style="margin-left:1rem;"></a> 
+          
+          
+          </div>
             
 		</div>
 	</div>

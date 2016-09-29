@@ -1,0 +1,153 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;color:#ffffff;font-size:12px;"><strong>Patient:</strong> CAESAR, Julius (Mr)  <strong>Gender:</strong> Male  <strong>Date of Birth:</strong> 03/03/1943  <strong>Age:</strong> 74 years  <strong>NHS:</strong> 100 000 0008</div>
+        </div>
+
+        
+    </div>
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+    
+    
+  <h1 class="heading-xlarge">Appointment request submitted</h1>
+    
+    <p style="padding-bottom:2rem;">The patient's consent to call back is defined as yes. If the patient wants to change the consent to call back enter the change in update person. </p>
+      
+    
+      <div class="grid-row">
+    <div class="column-half">
+        <table>
+                      <tr>
+                        <td>UBRN</td>
+                        <td><strong>100 000 0008</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Speciality</td>
+                        <td><strong>Ear, Nose &amp; Throat</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Clinic type</td>
+                        <td><strong>Ear</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Clinic term</td>
+                        <td><strong>-</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Priority</td>
+                        <td><strong>Routine</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Content sensitive</td>
+                        <td><strong>No</strong></td>
+                      </tr>
+
+                </table>
+    </div>
+          
+    <div class="column-half">
+          <p style="padding-top: 0px !important;" >
+                          	<a href="#"><input type="submit" class="button button-secondary" value="Update person" style="margin-left:1rem;"></a> 
+        </p>
+        <p style="">        
+                          	<a href="#"><input type="submit" class="button button-secondary" value="Add additional requirements" style="margin-left:1rem;"></a> 
+                
+</p>
+        <p style="">        
+                          	<a href="#"><input type="submit" class="button button-secondary" value="Add referral letter" style="margin-left:1rem;"></a> 
+                
+</p>
+
+
+
+
+        
+        
+    </div>
+
+  </div>
+    
+    <div>
+    
+    <p>Service(s)</p>
+        <div>        
+                    <table class="service" style="padding:0rem;" >
+                      <tr>
+                        <th>Location</th>
+                        <th>Referrer alert</th>
+                        <th>Service name</th>
+                        <th>Organsiation type</th>
+                        <th>Indicative wait time</th>
+
+                      </tr>
+                      <tr>
+                        <td>NHS Trust site 01</td>
+                        <td> </td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust</td>
+                        <td>3 Days</td>
+
+                      </tr>
+                      <tr>
+                        <td>NHS Trust site 01</td>
+                        <td><strong>i</strong></td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+
+                      </tr>
+                      <tr>
+                        <td>NHS Trust site 01</td>
+                        <td> </td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+
+                      </tr>
+                </table>
+    </div>        
+              <div style="margin-top:2rem;float:right;">
+          
+            	      
+                        
+                            <a href="#" style="padding-left:10px;">Print</a>
+                          	<a href="#"><input type="submit" class="button" value="Compare services" style="margin-left:1rem;"></a> 
+                  
+                          	<a href="/erm/"><input type="submit" class="button" value="Close and return to home screen" style="margin-left:1rem;"></a>                   
+          
+          
+          </div>
+
+
+
+        </div>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+</main>
+
+{% endblock %}
+
+
+

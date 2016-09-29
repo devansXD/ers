@@ -1,0 +1,253 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;color:#ffffff;font-size:12px;"><strong>Patient:</strong> CAESAR, Julius (Mr)  <strong>Gender:</strong> Male  <strong>Date of Birth:</strong> 03/03/1943  <strong>Age:</strong> 74 years  <strong>NHS:</strong> 100 000 0008</div>
+        </div>
+
+        
+    </div>
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+    
+    
+  <h1 class="heading-xlarge">Book / refer now</h1>
+      
+    
+      <div class="grid-row">
+    <div class="column-half">
+        <table>
+                      <tr>
+                        <td>Initial referring clinician</td>
+                        <td><strong>SURNAME, Name</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Commissioning organisation</td>
+                        <td><strong>NAME Trust</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Initial referring organisation</td>
+                        <td><strong>GP Practice</strong></td>
+                      </tr>
+
+                </table>
+    </div>
+          
+    <div class="column-half">
+          
+
+                
+
+
+
+
+        
+        
+    </div>
+
+  </div>
+    
+    <div>
+    
+            <h2 class="heading-large" style="padding-top:4rem;">Shortlisted services</h2>
+        <div>        
+                  <table class="service" style="padding:0rem;" >
+                      <tr>
+                        <th>Select</th>
+                        <th>Miles</th>
+                        <th>Appointment type</th>
+                        <th>Service name</th>
+                        <th>Indicative appointment wait</th>
+                        <th>Indicative treatment wait</th>
+                        <th>Directly bookable</th>
+                        <th>Referrer Alert</th>
+                        <th>Speciality</th>
+                        <th style="text-align:center;">Link to NHS choices</th>
+                        <th>Location</th>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="4" name="4" checked><label class="form-control-checkbox minor" for="4" style="padding:0;"></td>
+                        <td>10</td>
+                        <td>First Outpatient</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>35 Days</td>
+                        <td>10 weeks</td>
+                        <td>Yes</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td style="text-align:center;">&#9899;</td>
+                        <td>NAME HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="5" name="5" checked><label class="form-control-checkbox minor" for="5" style="padding:0;"></td>
+                        <td>19</td>
+                        <td>Triage</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>49 Days</td>
+                        <td>13 weeks</td>
+                        <td>No</td>
+                        <td>&#9899;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td style="text-align:center;">&#9899;</td>
+                        <td>NAME HOSPITAL</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="6" name="6" checked><label class="form-control-checkbox minor" for="6" style="padding:0;"></td>
+                        <td>22</td>
+                        <td>First Outpatient</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>56 Days</td>
+                        <td>24 weeks</td>
+                        <td>No</td>
+                        <td>&nbsp;</td>
+                        <td>Ear, Nose &amp; Throat</td>
+                        <td style="text-align:center;">&#9899;</td>
+                        <td>NAME HOSPITAL</td>
+                      </tr>
+                </table>
+            
+            
+            <h2 class="heading-large" style="padding-top:4rem;">Select appointment</h2>
+            <p>Select one of the following slots for the directly bookable services that you have selected. For instructions on how to book the indirectly bookable services, click the service name to open the service specific booking guidance. To continue, click request to create the appointment request.</p>
+            
+                  <table class="service" style="padding:0rem;" >
+                      <tr>
+                        <th>Select</th>
+                        <th>Appointment date / time</th>
+                        <th>Service name</th>
+                        <th>Location</th>
+                          
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="1" name="1" >
+                                <label class="form-control-radio minor" for="1" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="2" name="2" >
+                                <label class="form-control-radio minor" for="2" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="3" name="3" >
+                                <label class="form-control-radio minor" for="3" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="4" name="4" >
+                                <label class="form-control-radio minor" for="4" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="5" name="5" >
+                                <label class="form-control-radio minor" for="5" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="6" name="6" >
+                                <label class="form-control-radio minor" for="6" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="7" name="7" >
+                                <label class="form-control-radio minor" for="7" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="8" name="8" >
+                                <label class="form-control-radio minor" for="8" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                      </tr>
+                </table>
+            
+            
+    </div>        
+
+        <div>
+        
+              <p style="text-align:right;padding-top:2rem;"> 
+                  <a href="#" style="padding-left:10px;">Previous appointments</a>           
+                  <a href="#" style="padding-left:10px;">Next appointments</a>   
+          
+          
+          </p>
+        
+        
+        <p style="text-align:right;padding-top:2rem;">
+          
+            	      
+                        
+                            <a href="/erm/" style="padding-left:10px;">Cancel</a>
+                            <a href="/erm/searchresults" style="padding-left:10px;">Back to service selection</a>
+                          	<a href="#"><input type="submit" class="button" value="Defer to provider" style="margin-left:1rem;"></a>   
+                          	<a href="#"><input type="submit" class="button" value="Request" style="margin-left:1rem;"></a>
+                          	<a href="/erm/check-now"><input type="submit" class="button" value="Book appointment" style="margin-left:1rem;"></a>
+          
+          
+          </p>
+            
+</div>
+
+
+
+        </div>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+</main>
+
+{% endblock %}
+
+
+
