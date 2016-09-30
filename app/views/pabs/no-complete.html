@@ -1,0 +1,88 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+
+  <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+        
+        <div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:2rem;">
+          <h1 class="heading-xlarge" style="margin-bottom: 0px !important;color:#ffffff;">
+    &#10004; Appointment request submitted
+  </h1>
+            
+            <h3 class="heading-medium">We have sent your request to the provider</h3> 
+        
+        </div>
+        
+
+        
+        
+           
+        <div style="background:#dee0e2;padding:1rem;">
+
+            <div style="background:#ffffff;padding:1.4rem;">           
+                    <p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+                        <strong>Clinic Name</strong></p>
+            </div>
+            <div style="background:#ffffff;padding:1.4rem;margin-top:2px;">           
+                    <p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+                        Comments<br />
+                        <strong>I cannot be contacted Monday to Wednesday, 9am to 12 noon.  </strong></p>
+            </div>
+           
+            
+        </div>
+                	    <div class="form-group" style="padding-top: 2em !important;">
+            <div>
+            
+            <h3 class="heading-medium">What happens next?</h3>
+                <p>Your chosen clinic will need to contact you by XX Month Year to book your future appointment.</p> 
+                <p>If you want to book, change or cancel another referral click “View all referrals”. </p>
+                <p>Help us improve our service by completeing the following survey <a href="">What did you think or this service?</a>  </p>
+            
+            
+            </div>
+                            
+        	    <div class="form-group" style="padding-top:2rem;">
+    <a href="/pabs" class="button ">View all referrals</a>
+	    </div>
+                            
+	    </div>
+        
+
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+

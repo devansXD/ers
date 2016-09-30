@@ -1,0 +1,88 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+<a href="/pabs/clinic" style="color:#ffffff;">&#9664; Back to clinics</a>
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+
+
+  <h1 class="heading-xlarge" style="color: #0072C6;">
+    Select your appointment
+  </h1>
+
+      
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+         <p>At General Respiratory Medicine-Respiratory Medicine-CityTH (Name Hosp)-CODE</p>
+        
+        
+        
+        <div style="padding:1.4rem;border:5px solid #B10E1E;margin-top:2rem;">
+        
+        <h3 class="heading-medium" style="color:#B10E1E;padding-top: 0px !important;">There are no available appointments at your chosen clinic</h3>    
+              <!--<p>There are currently no appointments available for your chosen clinic.</p>-->
+            <div class="text">
+          
+
+<h4 class="heading-small">What happens now?</h4>
+        
+          
+          <ul class="list-bullet">
+          <li>Choose an alternative clinics by clicking <a href="/pabs/clinic">‘back’</a>.</li>
+          <li>Request that your chosen clinic contacts you to arrange an appointment by clicking the 'request clinic contact' button below.</li>
+        </ul>
+                
+                
+<div class="form-item-wrapper">
+        <div class="form-group">
+            <label class="form-label" for="first-label">
+              <strong>Need to tell us something?</strong>
+            </label>
+            <p class="form-hint">Let us know in the box below if there are any days or times when you cannot be contacted. </p>
+          <textarea class="form-control" rows="6"></textarea>
+            <p class="form-hint">1,000 characters maximum</p>
+        </div>
+      </div>
+
+    </div>
+            
+            <p><a href="/pabs/no-complete" class="button" style="margin-top: 1em !important;">Request clinic contact</a>
+            </p> 
+
+                  </div>
+
+        
+
+        
+        
+   
+        
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+
+    </div>
+    
+    
+</main>
+
+{% endblock %}
+
