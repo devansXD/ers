@@ -1,0 +1,115 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;color:#ffffff;font-size:12px;"><strong>Patient:</strong> CAESAR, Julius (Mr)  <strong>Gender:</strong> Male  <strong>Date of Birth:</strong> 03/03/1943  <strong>Age:</strong> 74 years  <strong>NHS:</strong> 100 000 0008</div>
+        </div>
+
+        
+    </div>
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+    
+    
+  <h1 class="heading-xlarge">Check triage request details</h1>
+      
+    
+      <div class="grid-row">
+    <div class="column-half">
+        <table>
+                      <tr>
+                        <td>UBRN</td>
+                        <td><strong>100 000 0008</strong></td>
+                      </tr>
+
+
+                 <tr>
+                        <td>Clinic term</td>
+                        <td><strong>-</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Speciality</td>
+                        <td><strong>Ear, Nose &amp; Throat</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Clinic type</td>
+                        <td><strong>Ear</strong></td>
+                      </tr>
+                      <tr>
+                      <tr>
+                        <td>Service name</td>
+                        <td><strong>NHS Service Name</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Organisation Type</td>
+                        <td><strong>NHS Trust</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Priority</td>
+                        <td><strong>Routine</strong></td>
+                      </tr>
+
+                </table>
+    </div>
+          
+    <div class="column-half">
+          
+
+                
+
+          <input type="checkbox" id="locally" name="locally" checked>
+          <label class="form-control-checkbox minor" for="locally" style="margin-top: 0rem">
+            Referral letter outstanding, will add at a later time
+          </label>
+
+
+
+        
+    </div>
+
+  </div>
+    
+    <div>
+    
+      
+              <div style="margin-top:2rem;float:right;">
+          
+            	      
+                        
+                            <a href="/erm/appointment-now" style="padding-left:10px;">Cancel</a>
+                          	<a href="/erm/triage-confirmation"><input type="submit" class="button" value="Confirm and submit triage request" style="margin-left:1rem;"></a>    
+          
+          
+          </div>
+
+
+
+        </div>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+</main>
+
+{% endblock %}
+
+
+

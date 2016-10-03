@@ -1,0 +1,235 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;color:#ffffff;font-size:12px;"><strong>Patient:</strong> CAESAR, Julius (Mr)  <strong>Gender:</strong> Male  <strong>Date of Birth:</strong> 03/03/1943  <strong>Age:</strong> 74 years  <strong>NHS:</strong> 100 000 0008</div>
+        </div>
+
+        
+    </div>
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+    
+    
+  <h1 class="heading-xlarge">Deferral option details</h1>
+      
+    
+      <div class="grid-row">
+    <div class="column-half">
+        <table>
+                      <tr>
+                        <td>UBRN</td>
+                        <td><strong>100 000 0008</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Speciality</td>
+                        <td><strong>Ear, Nose &amp; Throat</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Clinic type</td>
+                        <td><strong>Ear</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Clinical term</td>
+                        <td><strong>-</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Priority</td>
+                        <td><strong>Routine</strong></td>
+                      </tr>
+
+                </table>
+        
+
+        
+    </div>
+    
+    <div class="column-half">
+          
+
+                
+
+
+
+
+        
+        
+    </div>
+
+  </div>
+    
+    <div>
+        
+               <p style="padding-top:2rem;color:red;">Please select the service the patient wishes to attend.</p>
+       <p>For indirectly bookable services and services with slots available, select "don't submit" to retyurn to the appointment search screen and follow the relevant booking process for these services. </p>      
+    
+            <h2 class="heading-large" style="padding-top:2rem;">Service(s)</h2>
+        <div>        
+
+            
+            
+     
+                  <table class="service" style="padding:0rem;" >
+                      <tr>
+                        <th>Select</th>
+                        <th>Appointment slot status</th>
+                        <th>Service name</th>
+                        <th>Location</th>
+                        <th>Referrer alert</th>
+                        <th>Organisation type</th>
+                        <th>Indicative wait time</th>
+                          
+                      </tr>
+                      <tr>
+                        <td>          
+                            <input type="radio" id="1" name="1" >
+                                <label class="form-control-radio minor" for="1" style="padding-right: 0px !important;"> </label>
+                          </td>
+                        <td>No Slots</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                        <td></td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+                      </tr>
+                      <tr>
+                        <td>N/A</td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                        <td></td>
+                        <td>NHS Trust</td>
+                        <td>3 days</td>
+                      </tr>
+                      <tr>
+                        <td>N/A</td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                        <td></td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+                      </tr>
+                      <tr>
+                        <td>N/A</td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                         <td>NHS Trust site 01</td>
+                        <td></td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+                      </tr>
+                      <tr>
+                        <td>N/A</td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                        <td style="text-align:center;">&#9899;</td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+                      </tr>
+                      <tr>
+                        <td>N/A</td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                        <td></td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+                      </tr>
+                      <tr>
+                        <td>N/A</td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                        <td></td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+                      </tr>
+                      <tr>
+                        <td>N/A</td>
+                        <td>03:30 Sat 01-Oct-2016</td>
+                        <td>Gen Adult - ENT - CITY TH (NAME Hosp) - CODE</td>
+                        <td>NHS Trust site 01</td>
+                        <td style="text-align:center;">&#9899;</td>
+                        <td>NHS Trust</td>
+                        <td>Limited availability</td>
+                      </tr>
+                </table>
+            
+            <div style="width:100%;">
+                 <input type="checkbox" id="locally" name="locally" checked>
+          <label class="form-control-checkbox minor" for="locally" style="margin-top: 0rem">
+            Referral letter outstanding, will add at a later time
+          </label>
+                </div>
+            
+
+            
+            
+            
+            
+            
+    </div> 
+        
+        <div class="grid-row">            
+            
+            <div style="margin-top:4rem;">            <h2 class="heading-large" style="padding-top:2rem;">Appointment specific comments</h2>
+            <p>e.g days or times the patient cannot be contacted</p>
+                
+                
+                          <textarea class="form-control" rows="6" style="width:60%;"></textarea>
+
+                </div>
+</div>
+        
+        
+
+        <div>
+        
+
+        
+        
+        <p style="text-align:right;padding-top:2rem;">
+          
+            	      
+                        
+                            <a href="/erm/" style="padding-left:10px;">Cancel</a>
+                          	<a href="/erm/defer-confirmation"><input type="submit" class="button" value="Submit deferral" style="margin-left:1rem;"></a>
+          
+          
+          </p>
+            
+</div>
+
+
+
+        </div>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+</main>
+
+{% endblock %}
+
+
+

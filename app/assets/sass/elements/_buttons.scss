@@ -13,7 +13,7 @@
   background-color: $nhs-websafe-green;
   cursor: pointer;
   border-bottom: 3px solid $nhs-websafe-dark-green;
-
+  font-weight: bold;
   @include border-radius(0);
   -webkit-appearance: none;
 

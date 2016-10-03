@@ -84,9 +84,9 @@ fieldset {
   padding: 0 1rem;
   background-color: $white;
   border: 1px solid $nhs-black;
-  -webkit-box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
-  -moz-box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
-  box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
+  //-webkit-box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
+  //-moz-box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
+  //box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
 
   // Disable webkit appearance and remove rounded corners
   -webkit-appearance: none;
