@@ -24,13 +24,21 @@
         <a href="#content" class="skiplink">Skip to main content</a>
       </div>
     </div>
+      
+      
 
-    <header role="banner" id="global-header">
+<header role="banner" id="global-header">
       <div class="header-container">
-          
+
         <a href="{% block logotypeLink %}/{% endblock %}" class="header-logo" title="{% block logotypeTitle %}Go to the NHS.UK homepage{% endblock %}">
           <img src="{{assetPath}}images/nhs-rev-logotype.svg" alt="">
         </a>
+
+   <div class="blurb" style="float: left;clear: none;padding: 24px 0 0 12px;">
+          <h2 style="color:#fff;">e-Referral Service</h2>
+        </div>
+
+
 
         {% block header-controls %}{% endblock %}
 
