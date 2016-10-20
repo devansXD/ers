@@ -102,18 +102,18 @@ body {
 
 html,
 #footer {
-  background-color: $nhs-black;
+  background-color: #DEE0E2;
 }
 
 #footer {
-  color: #d9dbdd;
+  color: #231F20;
   padding: 2rem 0;
-  border-top: 6px solid $nhs-grey-1;
+  //border-top: 6px solid $nhs-grey-1;
 
   @extend %contain-floats;
 
   a {
-    color: #d9dbdd;
+    color: #231F20;
   }
 
   .footer-wrapper {
