@@ -80,16 +80,16 @@
 
 // Secondary buttons
 .button-secondary {
-  background-color: $nhs-grey-3;
-  border-color: $nhs-grey-3;
+  background-color: #DCDCDC;
+  border-color: $nhs-black;
   color: $nhs-black;
-
+  font-weight:500;
   &:link,
   &:hover,
   &:focus,
   &:visited{
     color: $nhs-black;
-    background-color: $nhs-grey-3;
+    background-color: #DCDCDC;
   }
 }
 
