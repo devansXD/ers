@@ -16,7 +16,9 @@
         
     </div>
 
-<main id="content" role="main" style="padding-top:3rem;">
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
 
   <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
 
@@ -27,15 +29,15 @@
         
         <div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:2rem;">
           <h1 class="heading-xlarge" style="margin-bottom: 0px !important;color:#ffffff;">
-    &#10004; Booking complete
+    &#10004; You have cancelled your appointment
   </h1>
             
-            <h3 class="heading-medium">Please keep this information for your records</h3> 
+            <h3 class="heading-medium">Please save this information for your records</h3> 
         
         </div>
         
         
-        <p><a href="">Add to your calendar</a><br />
+        <p>
             <a href="">View / print referral letter</a></p>
         
         
@@ -46,41 +48,29 @@
                     <p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Booking reference number<br /> 
                         <strong>0002 7480 8900</strong></p>
             </div>
-            <div style="background:#ffffff;padding:1.4rem;margin-top:2px;">           
-                    <p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Date and time<br /> 
-                        <strong>Monday 2nd May 2016, 2:00pm</strong></p>
-            </div>
-            <div style="background:#ffffff;padding:1.4rem;margin-top:2px;">           
-                    <p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Clinic<br /> 
-                        <strong>General Respiratory Medicine-Respiratory Medicine-CityTH (NAME Hosp)-CODE</strong></p>
-            </div>            
-            <div style="background:#ffffff;padding:1.4rem;margin-top:2px;">           
-                    <p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Location<br /> 
-                        <strong>Beckett St, Leeds, LS9 7TF</strong></p>
-            </div>
+
+           
+
             <div style="background:#ffffff;padding:1.4rem;margin-top:2px;">           
                     <p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by <br /> 
                         <strong>Dr Zubeir Smith</strong></p>
             </div>
-            <div style="background:#ffffff;padding:1.4rem;margin-top:2px;">           
-                    <p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Information <br /> 
-                        <strong>Please arrive 30 minutes before your appointment is due to start. Wear loose clothing.</strong></p>
-            </div>
+
             
             </div>
                 	    <div class="form-group" style="padding-top: 2em !important;">
             <div>
             
             <h3 class="heading-medium">What happens next?</h3>
-                <p>We’ve sent your request to the provider. They will contact you to either confirm your registration, or to ask for more information. </p>
-              
+                <p>We’ve cancelled your appointment.</p>
+                <p>You will be able to book a different appointment later using this referral.</p>
             
             
             </div>
                             
         	    <div class="form-group" style="padding-top:2rem;">
-    <a href="/pabs/">Log out</a>
-                            </div>
+    <a href="/pabs/allreferrals" class="button ">View all referrals</a>
+	    </div>
                             
 	    </div>
         

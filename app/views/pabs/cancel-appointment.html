@@ -1,0 +1,106 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+<a href="/pabs/allreferrals" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" />  Back to all referrals</a>
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+    {% include "includes/prototype-warning.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+  <h1 class="heading-xlarge" style="color: #0072C6;">
+    Cancel your appointment
+  </h1>
+    
+
+
+      
+
+         <p>If you want to cancel your appointment please select a reason from the options below.</p>
+        
+        <!--<h3 class="heading-medium">Referral to book</h3>-->    
+        <div>
+            
+              <div class="form-item-wrapper" style="padding-top: 2rem !important;">
+                <div class="form-group button-radio" style="border:1px solid #000;padding:1rem;">
+                    <input type="radio" id="1" name="minor">
+                        <label class="form-control-radio minor" for="1">
+                            I intend to go private
+                        </label>
+                </div>
+                <div class="form-group button-radio" style="border:1px solid #000;padding:1rem;">
+                    <input type="radio" id="2" name="minor">
+                        <label class="form-control-radio minor" for="2">
+                            I am on holiday
+                        </label>
+                </div>
+
+                <div class="form-group button-radio" style="border:1px solid #000;padding:1rem;">
+                    <input type="radio" id="3" name="minor">
+                        <label class="form-control-radio minor" for="3">
+                            I am ill
+                        </label>
+                </div>
+
+                <div class="form-group button-radio" style="border:1px solid #000;padding:1rem;">
+                    <input type="radio" id="4" name="minor">
+                        <label class="form-control-radio minor" for="4">
+                            I am busy
+                        </label>
+                </div>
+
+                <div class="form-group button-radio" style="border:1px solid #000;padding:1rem;">
+                    <input type="radio" id="5" name="minor">
+                        <label class="form-control-radio minor" for="5">
+                            I no longer require an appointment
+                        </label>
+                </div>
+                  
+                <div class="form-group button-radio" style="border:1px solid #000;padding:1rem;">
+                    <input type="radio" id="6" name="minor">
+                        <label class="form-control-radio minor" for="6">
+                            Other
+                        </label>
+                </div>
+            </div>
+            
+  <div class="form-item-wrapper" style="padding-top: 2rem !important;">
+        <div class="form-group">
+          <input type="checkbox" id="checkbox-minor" name="minor">
+          <label class="form-control-checkbox minor" for="checkbox-minor">
+            I confirm my appointment cancellation.
+          </label>
+        </div>
+      </div>
+
+<p><a href="/pabs/cancel-complete" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Cancel appointment</a></p>
+                    <p style="padding-top: 0rem !important;"><a href="/pabs/allreferrals" style="margin-top: 2em !important;">I no longer want to cancel my appointment.</a>
+            </p>  
+            
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+

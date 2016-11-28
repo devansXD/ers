@@ -93,6 +93,24 @@
   }
 }
 
+// Secondary buttons
+.button-radio {
+      @include inline-block;
+  width: 100%;
+  padding: 0 1.5rem 0 1.5rem;
+  background-color: #fff;
+  border-color: $nhs-black;
+  color: $nhs-black;
+  font-weight:500;
+  &:link,
+  &:hover,
+  &:focus,
+  &:visited{
+    color: $nhs-black;
+    background-color: #DCDCDC;
+  }
+}
+
 // Secondary CTA buttons (NHS blue)
 .button-secondary-cta {
   background-color: $nhs-blue;

@@ -1,3 +1,9 @@
+<style>
+ul {
+    list-style-image: url('/public/images/icon-important.png')
+</style>
+
+
 {% extends 'templates/nhs_transaction_layout.html' %}
 
 {% block pageTitle %}Blank page{% endblock %}
@@ -14,18 +20,29 @@
         
     </div>
 
+
 <main id="content" role="main" style="padding-top:3rem;">
 
   <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
 
   <h1 class="heading-xlarge" style="color: #0072C6;">
-    Hello Mike Smith
+    Hello Panic-y Pants Smith
   </h1>
 
   <div class="grid-row">
     <div class="column-two-thirds" >
         
-        <!--<h3 class="heading-medium">Book your appointment</h3>    -->
+        <div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:4rem;">
+                    
+ 
+           <h3 class="heading-medium"><img src="/public/images/icon-important.png" /> Your recent booking has been cancelled, you need to choose your appointment again.</h3>    
+            
+            
+            <p>If you would like to know why this has happened, speak to your GP Practice why referred you or Telephone Appointments Line XXXXX</p>
+          
+        </div>    
+        
+        
         <div style="background:#dee0e2;padding:1rem;">
           
                     
@@ -45,8 +62,7 @@
             
             
             
-            <p style="margin-bottom: 0px !important;"><a href="/pabs/clinic" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Choose your appointment</a>
-                <!--<a href="/pabs/allreferrals" style="padding-top: 2em !important;">View and manage all referrals </a>-->
+            <p style="margin-bottom: 0px !important;"><a href="/pabs/clinic" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Choose your appointment</a><a href="/pabs/allreferrals" style="padding-top: 2em !important;">View and manage all referrals </a>
             </p>  
             
                 	    <div class="form-group" style="padding-top: 2em !important;">
