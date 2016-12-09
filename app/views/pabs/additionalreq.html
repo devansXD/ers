@@ -7,6 +7,8 @@
       <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
           
 &nbsp;
+          
+          <a href="/pabs/hello" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" /> Back to start</a>
 
                   <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
         </div>
@@ -14,15 +16,16 @@
         
     </div>
 
-    {% include "includes/prototype-warning.html" %}
 
-<main id="content" role="main">
+<main id="content" role="main" style="padding-top:2rem;">
 
   <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
 
-  <h1 class="heading-xlarge" style="color: #0072C6;">
-    Change the support booked for your appointment
-  </h1>
+
+    
+  <h1 class="heading-xlarge" style="color: #0072C6;">Change appointment support</h1>        
+
+
     
 
 
@@ -30,78 +33,48 @@
     <div class="column-two-thirds" >
 
         
-            <p>Your GP practice has requested the following support at your upcoming appointment. If you no longer need this help, please select the 'remove' link. If you would like to add anything, please contact your GP practice.</p>
-        
-              
-        <table style="margin-bottom: 0px !important;margin-top: 4rem !important;">
-                              
-            <tr style="border-bottom:1px solid #000;padding-bottom: 2rem;">
-                                <td style="padding: 0px !important;text-align:left;">
-                                      <h1 class="heading-xlarge" style="padding-top: 0px;color:#231f20;">1.</h1>
-                                </td>                
-                
-                                <td style="padding: 0rem 3rem 2rem 3rem;">
-                                    <p style="margin-bottom: 0px !important;padding-top:0px;"><strong>Advocacy</strong></p> 
-                                        
-                                        <p>An independent person who can offer support at your appointment.</p> 
-                                            
-                                            <p><a href="http://www.nhs.uk/Conditions/social-care-and-support-guide/Pages/advocacy-services.aspx" target="_blank">Find out more about advocacy services on the NHS choices website.</a></p>
-                                </td>
-                
-                                <td style="padding: 0px !important;text-align:right;">
-                                    <p style="margin: 0px !important;padding-top:0px;"><strong><a href="#">Remove</a></strong></p>
-                                </td>
-                </tr>
-            
-            <tr style="border-bottom:1px solid #000;">
-                                <td style="padding: 2rem 0 0 0 !important;text-align:left;">
-                                      <h1 class="heading-xlarge" style="padding-top: 0px;color:#231f20;">2.</h1>
-                                </td>                
-                
-                                <td style="padding: 2rem 3rem 2rem 3rem;">
-                                    <p style="margin-bottom: 0px !important;padding-top:0px;"><strong>Interpreter</strong></p>
-                                        
-                                        <p>This could be either Telephone interpreting, Face-to-face interpreting or Sign language interpreting at your appointment.</p>
-                                </td>
-                
-                                <td style="padding: 2rem 0 0 0 !important;text-align:right;">
-                                    <p style="margin: 0px !important;padding-top:0px;"><strong><a href="#">Remove</a></strong></p>
-                                </td>
-                </tr>
-            
-            <tr style="border-bottom:1px solid #000;">
-                                <td style="padding: 2rem 0 0 0 !important;text-align:left;">
-                                      <h1 class="heading-xlarge" style="padding-top: 0px;color:#231f20;">3.</h1>
-                                </td>                
-                
-                                <td style="padding: 2rem 3rem 2rem 3rem;">
-                                    <p style="margin-bottom: 0px !important;padding-top:0px;"><strong>Transport</strong></p> <p>Free transport to and from your appointment.</p>
-                                </td>
-                
-                                <td style="padding: 2rem 0 0 0 !important;text-align:right;">
-                                    <p style="margin: 0px !important;padding-top:0px;"><strong><a href="#">Remove</a></strong></p>
-                                </td>
-                </tr>
-            
-        
-        
-        
-        
-        </table>
 
-        
-        
-              <div class="form-item-wrapper" style="padding-top: 2rem !important;">
+    
+
+            <p>Your GP practice has requested the following support at your upcoming appointment. If you no longer need this help select the corresponding box. </p> 
+            <p style="padding-bottom:2rem;">If you would like to add any additional support which isn't listed below, please contact your GP practice.</p>
+    
+    
+    
+    
+    <p style=""><strong>Remove</strong></p>
+    
+      <div class="form-item-wrapper" style="border-top:1px solid black;">
         <div class="form-group">
-          <input type="checkbox" id="checkbox-minor" name="minor">
-          <label class="form-control-checkbox minor" for="checkbox-minor">
-            I accept that all support that I've removed is no longer available at my appointment.
+          <input type="checkbox" id="Advocacy" name="Advocacy">
+          <label class="form-control-checkbox minor" for="Advocacy"style="padding-left: 10rem; padding-top: 0px !important;">
+            <p><strong>Advocacy</strong><br />An independent person who can offer support at your appointment.</p> 
+          </label>
+        </div>
+      </div>
+    
+      <div class="form-item-wrapper">
+        <div class="form-group">
+          <input type="checkbox" id="Interpreter" name="Interpreter" style="padding-top:2rem;">
+          <label class="form-control-checkbox minor" for="Interpreter" style="padding-left: 10rem; padding-top: 0px !important;">
+            <p><strong>Interpreter</strong><br />This could be either Telephone interpreting, Face-to-face interpreting or Sign language interpreting at your appointment.</p> 
           </label>
         </div>
       </div>
 
-<p><a href="/pabs/allreferrals" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Apply changes to your support</a></p>
-                    <p style="padding-top: 0rem !important;"><a href="/pabs/allreferrals" style="margin-top: 2em !important;">Cancel changes and return your referral details</a>
+      <div class="form-item-wrapper">
+        <div class="form-group">
+          <input type="checkbox" id="Transport" name="Transport">
+          <label class="form-control-checkbox minor" for="Transport" style="padding-left: 10rem; padding-top: 0px !important;">
+            <p><strong>Transport</strong><br />Free transport to and from your appointment.</p> 
+          </label>
+        </div>
+      </div>
+        
+
+
+<p><a href="/pabs/additionalreq-confirmation" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Remove selected support</a></p>
+                    <p style="padding-top: 0rem !important;"><a href="/pabs/viewreferral" style="margin-top: 1em !important;">Return to start</a>
             </p>  
         
         

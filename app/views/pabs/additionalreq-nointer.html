@@ -1,0 +1,116 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+          
+          <a href="/pabs/hello" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" /> Back to start</a>
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+
+<main id="content" role="main" style="padding-top:2rem;">
+
+  <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+
+  <h1 class="heading-xlarge" style="color: #0072C6;">Change appointment support</h1>
+    
+
+            <p>Your GP practice has requested the following support at your upcoming appointment. If you no longer need this help, please select the 'remove' link. If you would like to add anything, please contact your GP practice.</p>
+        
+              
+        <table style="margin-bottom: 4rem !important;margin-top: 4rem !important;">
+                              
+            <tr style="border-top:1px solid #6F777B;border-bottom:1px solid #000;padding-bottom: 2rem;">
+                                 <td style="padding: 2rem 0 0 0 !important;text-align:left;;">
+                                    <h1 class="heading-xlarge" style="padding-top: 0px;color:#231f20;padding: 0px 0px 0px 10px;">&#10004;</h1>
+                                </td>                
+                
+                                <td style="padding: 2rem 3rem 2rem 3rem;">
+                                    <p style="margin-bottom: 0px !important;padding-top:0px;"><strong>Advocacy</strong></p> 
+                                        
+                                        <p>An independent person who can offer support at your appointment.</p> 
+                                            
+                                            <p><a href="http://www.nhs.uk/Conditions/social-care-and-support-guide/Pages/advocacy-services.aspx" target="_blank">Find out more about advocacy services on the NHS choices website.</a></p>
+                                </td>
+                
+                                <td style="padding: 0px !important;text-align:right;margin-right:2rem;padding: 2rem 0px 0px 10px !important;">
+                                    <p style="margin: 0px !important;padding-top:0px;"><strong><a href="#">Remove</a></strong></p>
+                                </td>
+                </tr>
+            
+            <tr style="border-bottom:1px solid #6F777B;background-color:#DEE0E2">
+                                <td style="padding: 2rem 0 0 0 !important;text-align:left;;">
+                                    <h1 class="heading-xlarge" style="padding-top: 0px;color:#231f20;padding: 0px 0px 0px 10px;">X</h1>
+                                </td>                
+                
+                                <td style="padding: 2rem 3rem 2rem 3rem;">
+                                    <p style="margin-bottom: 0px !important;padding-top:0px;"><strong>Interpreter</strong></p>
+                                        
+                                        <p>This could be either Telephone interpreting, Face-to-face interpreting or Sign language interpreting at your appointment.</p>
+                                </td>
+                
+                                <td style="padding: 2rem 0 0 0 !important;text-align:right;">
+                                    <p style="margin: 0px !important;padding-top:0px;padding: 0px 10px 0px 0px;"><strong><a href="additionalreq">Add</a></strong></p>
+                                </td>
+                </tr>
+            
+            <tr style="border-bottom:1px solid #6F777B;">
+                                <td style="padding: 2rem 0 0 0 !important;text-align:left;">
+                                    <h1 class="heading-xlarge" style="padding-top: 0px;color:#231f20;padding: 0px 0px 0px 10px;">&#10004;</h1>
+                                </td>                
+                
+                                <td style="padding: 2rem 3rem 2rem 3rem;">
+                                    <p style="margin-bottom: 0px !important;padding-top:0px;"><strong>Transport</strong></p> <p>Free transport to and from your appointment.</p>
+                                </td>
+                
+                                <td style="padding: 2rem 0 0 0 !important;text-align:right;">
+                                    <p style="margin: 0px !important;padding-top:0px;"><strong><a href="#">Remove</a></strong></p>
+                                </td>
+                </tr>
+            
+        
+        
+        
+        
+        </table>
+
+    
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+
+        
+        
+        
+
+
+<p><a href="/pabs/additionalreq-confirmation" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">I accept all changes just made </a></p>
+                    <p style="padding-top: 0rem !important;"><a href="/pabs/viewreferral" style="margin-top: 1em !important;">Don't apply changes and return to start</a>
+            </p>  
+        
+        
+        
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+

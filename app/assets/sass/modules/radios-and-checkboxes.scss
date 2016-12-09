@@ -36,6 +36,7 @@ input[type='radio']{
   &.minor {
     padding-left: 3rem;
     background-color: transparent;
+      
 
     &:hover {
       outline: none;
@@ -50,24 +51,20 @@ input[type='radio']{
 .form-control-radio:before {
   content: "";
   position: absolute;
-  left: 1rem;
-  top: 0.9rem;
+  left: 0rem;
+  top: 0.5rem;
   @include box-sizing(border-box);
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: #fff;
-  border: 1px solid $nhs-black;
-  -webkit-box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
-  -moz-box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
-  box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid $nhs-black;
+
 }
 
 // Make radios circles not boxes
 .form-control-radio:before{
   border-radius: 100%;
   outline: 0;
-  border: 1px solid $nhs-black;
-  box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
+  border: 2px solid $nhs-black;
 }
 
 // "Minor" styles
@@ -78,18 +75,20 @@ input[type='radio']{
 
 // Checked style
 input[type='checkbox']:checked + .form-control-checkbox:before{
-  content: "";
-  background: $white url(/public/images/tick.png) no-repeat 1px 1px;
-  background-size: 91%;
+  content: "X";
+  font-size: 3rem;
+  text-indent:1px;
+  line-height: 3rem;
+
 }
 
 input[type='radio']:checked + .form-control-radio:before{
   content: "●";
   line-height: 2rem;
-  font-size: 30px;
-  text-indent:2px;
+  font-size: 4rem;
+  text-indent:1px;
   @include breakpoint(break-1) {
-    font-size: 32px;
-    text-indent: 3px;
+  font-size: 4rem;
+    text-indent: 1px;
   }
 }
