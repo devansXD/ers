@@ -1,0 +1,142 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+&nbsp;
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;text-decoration:none;">&nbsp;</a></div>
+        </div>
+
+        
+    </div>
+
+<main id="content" role="main" style="padding-top:3rem;">
+
+  <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+
+  <h1 class="heading-xlarge" style="color: #0072C6;">
+    Page Directory
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-third" >
+        
+        
+            <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;">    
+                <h3 class="heading-medium" >Booking Journey</h3>  
+                    <ul>
+                        <li>1. <a href="/pabs/login" target="_blank" >Login</a></li>
+                        <li>2. <a href="/pabs/hello" target="_blank">Hello (Welcome)</a></li>
+                        <li>3. <a href="/pabs/clinic" target="_blank">Select a clinic</a></li>
+                        <li>4. <a href="/pabs/appointment" target="_blank">Select an appointment</a></li>
+                        <li>5. <a href="/pabs/check" target="_blank">Check details and book appointment</a></li>
+                        <li>6. <a href="/pabs/complete" target="_blank">Booking complete</a></li>
+                    </ul>
+            </div> 
+        
+            <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;">    
+                <h3 class="heading-medium" >Deferred Journey</h3>  
+                    <ul>
+                        <li>1. <a href="/pabs/no-appointment" target="_blank" >No appointment (Request clinic contact) </a></li>
+                        <li>2. <a href="/pabs/no-complete" target="_blank">Deferral Complete</a></li>
+                    </ul>
+            </div> 
+        
+
+
+        
+        
+        
+            <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;">   
+                <h3 class="heading-medium" >Error Messages</h3>
+                    <ul>
+                        <li><a href="/pabs/404" target="_blank">404</a></li>
+                        <li><a href="/pabs/cancel-appointment-error-tech" target="_blank">Cancel appointment Technical Error</a></li>
+                        <li><a href="/pabs/cancel-appointment-error" target="_blank">Cancel appointment Appointment Error</a></li>
+                    </ul>
+            </div>
+        
+        
+        
+    </div>
+    <div class="column-third">
+
+            <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;">  
+                <h3 class="heading-medium" >Change Journey</h3>
+                    <ul>
+                        <li>1. <a href="/pabs/login" target="_blank">Login</a></li>
+                        <li>2. <a href="/pabs/viewreferral" target="_blank">Hello (Welcome)</a></li>
+                        <li>3. <a href="/pabs/change-appointment" target="_blank">Select a clinic (Change)</a></li>
+                        <li>4. <a href="/pabs/change-clinic" target="_blank">Select an appointment (Change)</a></li>
+                        <li>5. <a href="/pabs/check" target="_blank">Check details and book appointment</a></li>
+                        <li>6. <a href="/pabs/complete" target="_blank">Booking complete</a></li>
+                    </ul>
+            </div>  
+        
+            <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;">   
+                <h3 class="heading-medium" >CARL RARL</h3>
+                    <ul>
+                        <li><a href="/pabs/hello-cancelled" target="_blank">CARL RARL</a></li>
+                    </ul>
+            </div>
+        
+        
+        
+        <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;">   
+                <h3 class="heading-medium" >MPV Extras</h3>
+                    <ul>
+                        <li><a href="/pabs/clinic-distance" target="_blank">Clinic plus distance</a></li>
+                        <li><a href="/pabs/no-appointment-amended" target="_blank">Clinic deferral (suggested amends)</a></li>
+                    </ul>
+            </div>
+        
+        
+
+    </div>
+    <div class="column-third">
+
+
+            <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;"> 
+                <h3 class="heading-medium" >Cancel Journey</h3>
+                    <ul>
+                        <li>1. <a href="/pabs/allreferrals" target="_blank">View Booked Referral</a></li>
+                        <li>2. <a href="/pabs/cancel-appointment" target="_blank">Select Cancel Reason</a></li>
+                        <li>3. <a href="/pabs/cancel-complete" target="_blank">Cancelation Confirmation</a></li>
+                    </ul>
+            </div> 
+        
+
+            <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;"> 
+                <h3 class="heading-medium" >Different Referral States</h3>
+                    <ul>
+                        <li><a href="/pabs/viewreferral-dbs-withinfo" target="_blank">Directly bookable (DBS) appointment with information</a></li>
+                        <li><a href="/pabs/viewreferral-deferred" target="_blank">Deferred appointment</a></li>
+                        <li><a href="/pabs/viewreferral-ibs-tel" target="_blank">In-directly bookable (IBS) telephone appointment</a></li>
+                        <li><a href="/pabs/viewreferral-tel" target="_blank">Telephone appointment</a></li>
+                        <li><a href="/pabs/viewreferral-tel" target="_blank">Directly bookable (DBS) appointment</a></li>
+                    </ul>
+            </div> 
+        
+        
+        
+        
+        
+        <div style="border:solid 2px grey;padding:2rem;margin-bottom:4rem;"> 
+                <h3 class="heading-medium" >Out of PABS Scope</h3>
+                    <ul>
+                        <li><a href="/pabs/index" target="_blank">Start Page</a></li>
+                    </ul>
+            </div> 
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+
