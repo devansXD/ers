@@ -75,7 +75,7 @@ input[type='radio']{
 
 // Checked style
 input[type='checkbox']:checked + .form-control-checkbox:before{
-  content: "X";
+  content: "✔";
   font-size: 3rem;
   text-indent:1px;
   line-height: 3rem;
