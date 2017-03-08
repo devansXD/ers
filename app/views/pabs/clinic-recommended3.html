@@ -1,0 +1,171 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}Blank page{% endblock %}
+
+{% block content %}
+
+
+    <div role="banner" id="global-header" style="background-color:#004D86;">
+      <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+          
+<a href="/pabs/hello" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" /> Back to start</a>
+
+                  <div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+        </div>
+
+        
+    </div>
+
+<main id="content" role="main" style="padding-top:3rem;">
+
+  <h1 class="heading-xlarge" style="color: #0072C6;">
+    Select a clinic 
+  </h1>
+    
+    <!--<h3 class="heading-medium">Sort clinics</h3>-->
+    
+    
+    <!--<div style="margin-bottom: 3rem !important;">
+    <a href="#" class="button button-secondary">Earliest appointment</a>&nbsp;
+    <a href="#" class="button button-secondary">Nearest to your home</a>&nbsp;
+    <a href="#" class="button button-secondary">Treatment wait</a>
+        
+    
+    </div>-->
+
+  <div class="grid-row">
+    <div class="column-two-thirds" >
+        
+
+        
+        <div style="padding:1rem;border:8px solid #009933;">
+
+            <p><strong>General Respiratory Medicine-Respiratory Medicine-Town (Name Hosp)-CODE</strong><br />Hospital St, City, PO5 7CO</p>
+            
+                <div style="background-color:#FAE100;padding:1rem;margin:2rem 0rem 2rem 0rem;color:#000;">
+                     
+					
+					Most patients start treatment sooner here
+					
+					
+					
+                </div>
+
+                <table style="padding:0rem;" >
+                      <tr>
+                        <td style="width:70%;"><p>First appointment approximately</p></td>
+                        <td style="width:30%;"><p><strong>XX Days </strong></p></td>
+                      </tr>
+                      <tr>
+                        <td style="width:70%;"><p>Distance from LS2 7TF</p></td>
+                        <td style="width:30%;"><p><strong>XX Miles </strong></p></td>
+                      </tr>
+                      <!--<tr>
+                        <td style="width:70%;padding-right: 2rem;"><p>9 out of 10 patients start treatment within approximately</p></td>
+                        <td style="width:30%;"><p><strong>XX Weeks </strong></p></td>
+                      </tr>-->
+                </table>
+        
+            <p><a href="/pabs/appointment" class="button" style="margin-top: 1em !important;">Select this clinic</a></p>   
+        </div>
+ 
+
+        
+        
+<!--CLINIC 4--> 
+        
+        
+        <div style="padding:1rem;border:3px solid #DCDCDC;margin-top:3rem;">
+
+             <p><strong>Respiratory Medicine-Respiratory Medicine-Town (Name Hosp)-CODE</strong><br />Hospital St, City, PO5 7CO</p>
+
+                    <table style="padding:0rem;" >
+                        <tr>
+                            <td style="width:70%;"><p>First appointment approximately</p></td>
+                            <td style="width:30%;"><p><strong>XXX Days</strong></p></td>
+                        </tr>
+                        <tr>
+                             <td style="width:70%;"><p>Distance from LS2 7TF</p></td>
+                             <td style="width:30%;"><p><strong>XXX Miles</strong></p></td>
+                        </tr>
+                        <tr>
+                        <td style="width:70%;padding-right: 2rem;"><p>9 out of 10 patients start treatment within approximately</p></td>
+                            <td style="width:30%;"><p><strong>XXX Weeks</strong></p></td>
+                        </tr>
+                    </table>
+            
+            
+            <p><a href="/pabs/no-appointment" class="button" style="margin-top: 1em !important;">Select this clinic</a>
+            </p>    
+            
+                	    <div class="form-group" style="padding-top: 2em !important;">
+
+	    </div>
+        
+</div>
+        
+        
+<!--CLinic 4 end-->     
+        
+        
+        
+<!--CLINIC Poor capacity-->    
+
+        <div style="padding:1rem;border:3px solid #DCDCDC;margin-top:3rem;">
+
+            <p><strong>General Respiratory Medicine-Respiratory Medicine-Town (Name Hosp)-CODE</strong><br />Hospital St, City, PO5 7CO</p>
+            
+                <div style="background-color:#DCDCDC;padding:1rem;margin:2rem 0rem 2rem 0rem;">
+					<table>
+  						<tr>
+					
+					
+					<td style="width:30px;"><img src="/public/images/icon-important.png" style="width:30px;" /> </td>
+					<td style="padding-top: 0px;padding-bottom: 5px;padding-left: 10px;"><p style="margin-bottom:0px;margin-top:0px;padding-top: 5px;">Patients wait longer for treatment here</p></td>
+					
+						</tr>
+					</table>	
+					
+					
+					
+					 
+					 
+                    
+                </div>
+            
+                    <table style="padding:0rem;" >
+                        <tr>
+                            <td style="width:70%;"><p>First appointment approximately</p></td>
+                            <td style="width:30%;"><p><strong>XXX Days</strong></p></td>
+                        </tr>
+                                              <tr>
+                        <td style="width:70%;"><p>Distance from LS2 7TF</p></td>
+                        <td style="width:30%;"><p><strong>XX Miles </strong></p></td>
+                      </tr>
+
+                        <tr>
+                        <!--<td style="width:70%;padding-right: 2rem;"><p>9 out of 10 patients start treatment within approximately</p></td>
+                            <td style="width:30%;"><p><strong>XXX Weeks</strong></p></td>-->
+                        </tr>
+                    </table>
+            
+            
+                        <p style="margin-top:2rem;"><a href="/pabs/appointment" class="button" style="margin-top: 2em !;">Select this clinic</a></p>    
+            
+        </div>
+        
+        
+    </div>
+    <div class="column-third">
+
+
+
+
+    </div>
+  </div>
+    
+    
+</main>
+
+{% endblock %}
+

@@ -21,12 +21,13 @@
   <div class="grid-row">
     <div class="column-two-thirds" >
   <h1 class="heading-xlarge" style="color: #0072C6;">
-    Cancel this referral
+    Cancel this appointment
   </h1>
-                    <div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:4rem;">
+    
+                <div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:4rem;">
                     
  
-           <h3 class="heading-medium"><img src="/public/images/icon-important.png" /> Before you cancel this referral it is advised that you discuss this with the person who referred you.</h3>    
+           <h3 class="heading-medium"><img src="/public/images/icon-important.png" /> You are cancelling an important appointment and you may not be able to rebook in sufficient time.</h3>    
             
             
           
@@ -55,11 +56,26 @@
                             I intend to go private
                         </label>
                 </div>
-                
+                <div class="form-group" >
+                    <input type="radio" id="2" name="minor" >
+                        <label class="form-control-radio minor" for="2" style="padding-left:4rem;">
+                            I am on holiday
+                        </label>
+                </div>
 
-         
+                <div class="form-group" >
+                    <input type="radio" id="3" name="minor" >
+                        <label class="form-control-radio minor" for="3" style="padding-left:4rem;">
+                            I am ill
+                        </label>
+                </div>
 
-               
+                <div class="form-group" >
+                    <input type="radio" id="4" name="minor" >
+                        <label class="form-control-radio minor" for="4" style="padding-left:4rem;">
+                            I am busy
+                        </label>
+                </div>
 
                 <div class="form-group" >
                     <input type="radio" id="5" name="minor" >
@@ -68,12 +84,17 @@
                         </label>
                 </div>
                   
-               
+                <div class="form-group" >
+                    <input type="radio" id="6" name="minor" >
+                        <label class="form-control-radio minor" for="6" style="padding-left:4rem;">
+                            Other
+                        </label>
+                </div>
             </div>
             
 
-<p><a href="/pabs/cancel-referral-complete" class="button " style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Cancel referral</a></p>
-                    <p style="padding-top: 0rem !important;"><a href="/pabs/viewreferral" style="margin-top: 2em !important;">Do not cancel referral</a>
+<p><a href="/pabs/cancel-complete" class="button " style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Cancel appointment</a></p>
+                    <p style="padding-top: 0rem !important;"><a href="/pabs/viewreferral" style="margin-top: 2em !important;">Do not cancel appointment</a>
             </p>  
             
     </div>

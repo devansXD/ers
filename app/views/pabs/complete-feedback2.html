@@ -4,6 +4,7 @@
 
 {% block content %}
 
+    <div style="opacity:    0.4; background: #000; width:      100%; height:     100%; z-index:    10; top:        0;  left:0 ;  position:   fixed; " >           </div>
 
     <div role="banner" id="global-header" style="background-color:#004D86;">
       <div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
@@ -16,7 +17,9 @@
         
     </div>
 
+
 <main id="content" role="main" style="padding-top:3rem;">
+
 
   <!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
 
@@ -25,7 +28,7 @@
   <div class="grid-row">
     <div class="column-two-thirds" >
         
-        <div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:2rem;">
+        <div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:4rem;">
           <h1 class="heading-xlarge" style="margin-bottom: 0px !important;color:#ffffff;">
     &#10004; Booking complete
   </h1>
@@ -35,8 +38,8 @@
         </div>
         
         
-        <p><a href="">Add to your calendar</a><br />
-            <a href="">View / print referral letter</a></p>
+        <!--<p><a href="">Add to your calendar</a><br />
+            <a href="">View / print referral letter</a></p>-->
         
         
            
@@ -92,9 +95,7 @@
                 <p>We’ve sent your request to the provider. They will contact you to either confirm your registration, or to ask for more information. </p>
                 
                 
-                
-            <h3 class="heading-medium" style="padding-top:4rem;">Help us improve our service</h3>
-                <p>Please click the following link to <a href="#">complete a quick survey</a>.</p>
+
             
 
               
@@ -125,29 +126,32 @@
   </div>
     
     
-    <div id="popup1" class="overlay">
-    <div class="popup" style="top: 0px !important; left: 0px !important;">
-        <!--<a class="close" href="#">&times;</a>-->
-        <div class="content">
-            <h3 class="heading-medium">Help us improve our service</h3>
-                <p>Please click the button below to complete a quick survey.</p>
-            
-            <p style="margin-bottom: 0px !important;">
-                <a href="#popup1" class="button" style="margin-right: 0px !important; margin-bottom: 2rem; margin-top: 1em !important; ">Take survey</a>
-                <a href="#" >No thanks</a>
-            </p>
 
 
-        </div>    
-            
 
-
-    </div>
-</div>
-    
-    
-    
 </main>
+
+    <div style="position:fixed;bottom:0;background-color:#ffca55;width:100%;z-index:    11;-webkit-box-shadow: 0px -5px 27px 7px rgba(0,0,0,0.4);-moz-box-shadow: 0px -5px 27px 7px rgba(0,0,0,0.4);box-shadow: 0px -5px 27px 7px rgba(0,0,0,0.4);">
+    
+        <div id="content" class="grid-row" style="padding-top: 1rem!important;padding-bottom: 2rem !important;">
+        
+        
+        
+            <div class="" style="top: 1rem !important; left: 0px !important;">
+            <!--<a class="close" href="#">&times;</a>-->
+                <div class="content">
+                    <!--<h3 class="heading-medium">Help us improve our service</h3>-->
+                        <p style="margin-bottom: 0px !important;"><strong>Help us improve our service by completing a quick survey</strong></p>
+
+                        <p style="margin-bottom: 0px !important;">
+                            <a href="#popup1" class="button button-secondary-cta" style="margin-right: 1rem !important; margin-bottom: 2rem; margin-top: 1em !important; ">Take our survey</a>
+                            <a href="/pabs/complete" >No thanks</a>
+                        </p>
+                </div>    
+            </div>
+            </div>
+            
+    </div>
 
 {% endblock %}
 
