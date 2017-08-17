@@ -1,0 +1,75 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}eRS acronyms{% endblock %}
+{% import 'includes/ui_element_macros.html' as ui_element_macros %}
+{% block content %}
+
+{{ ui_element_macros.breadcrumbs({
+  items: {
+    1: {
+      text: "Assets",
+      href: "/assets"
+    },
+    2: {
+      text: "Acronyms"
+    }
+  }
+})}}
+
+
+
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">Acronyms</h1>
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <h3>ASI</h3>
+        <p>Appointment slot issues</p>
+        <h3>BCT</h3>
+        <p>Business change team</p>
+        <h3>BIT</h3>
+        <p>Behavioural insights team</p>
+        <h3>CAS</h3>
+        <p>Clinical assessment service</p>
+        <h3>CCG</h3>
+        <p>Clinical commissioning groups</p>
+        <h3>CQUIN</h3>
+        <p>Commissioning for quality and innovation</p>
+        <h3>DOS</h3>
+        <p>Directory of services</p>
+        <h3>EBS</h3>
+        <p>Electronic booking service (choose and book)</p>
+        <h3>EBSX01, EBSX02</h3>
+        <p>EBS extract version XX (a report on EBS)</p>
+        <h3>ERM</h3>
+        <p>Enhanced referral management</p>
+        <h3>IaaS</h3>
+        <p>Infrastructure as a service</p>
+        <h3>IBC</h3>
+        <p>Implementation and business change</p>
+        <h3>MYR</
+        <p>Manage your referral</p>
+        <h3>ODS</h3>
+        <p>Organisation data service</p>
+        <h3>PABs</h3>
+        <p>Patient appointment booking service</p>
+        <h3>PAS</h3>
+        <p>Patient administration system</p>
+        <h3>PWA</h3>
+        <p>Patient web app (old system prior to MYR) Timeline PWA > PABS > MYR</p>
+        <h3>PWI</h3>
+        <p>Patient web interface</p>
+        <h3>RA</h3>
+        <p>Registration authority</p>
+        <h3>RAS</h3>
+        <p>Referral assessment service</p>
+        <h3>SSD</h3>
+        <p>System and service delivery (Division of NHS Digital, based in Exeter)</p>
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

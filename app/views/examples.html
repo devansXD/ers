@@ -1,0 +1,38 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}eRS prototypes{% endblock %}
+{% import 'includes/ui_element_macros.html' as ui_element_macros %}
+{% block content %}
+
+{{ ui_element_macros.breadcrumbs({
+  items: {
+    1: {
+      text: "Example NHS.UK pages",
+
+    }
+  }
+})}}
+
+
+<main id="content" role="main">
+  <h1 class="heading-xlarge">Example NHS.UK pages</h1>
+    <p></p>
+
+    <div class="grid-row">
+      <div class="column-half">
+
+        <ul>
+          <li><a href="/alpha-conditions/fungal-nail-infection">Fungal nail infection</a></li>
+          <li><a href="/pabs/start">Personas</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+
+  <!--<ul>
+    <li><a href="/examples">Example pages</a></li>
+  </ul>-->
+</main>
+
+{% endblock %}

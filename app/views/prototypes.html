@@ -1,0 +1,48 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+
+{% block pageTitle %}eRS prototypes{% endblock %}
+{% import 'includes/ui_element_macros.html' as ui_element_macros %}
+{% block content %}
+
+{{ ui_element_macros.breadcrumbs({
+  items: {
+    1: {
+      text: "Prototypes",
+
+    }
+
+  }
+})}}
+
+
+<main id="content" role="main">
+  <h1 class="heading-xlarge">Prototypes</h1>
+
+        <div class="grid-row">
+          <div class="column-half">
+
+            <h2 class="heading-large">Citizens</h2>
+
+            <ul>
+              <li><a href="/erm/">Enhanced Referral Management</a></li>
+              <li><a href="/pabs/start">Patient Appointment Booking Service</a></li>
+            </ul>
+
+      </div>
+
+      <div class="column-half">
+
+            <h2 class="heading-large">Health professionals</h2>
+
+            <ul>
+              <li><a href="/erm/">Enhanced Referral Management</a></li>
+
+            </ul>
+
+      </div>
+
+    </div>
+
+</main>
+
+{% endblock %}
