@@ -1,11 +1,21 @@
 {% extends 'templates/nhs_transaction_layout.html' %}
-
+{% import 'includes/ui_element_macros.html' as ui_element_macros %}
 {% block pageTitle %}NHS.UK prototyping kit{% endblock %}
 
 {% block content %}
-
+{{ ui_element_macros.breadcrumbs({
+  items: {
+    1: {
+      text: "Prototypes",
+      href: "/prototypes"
+    },
+    2: {
+      text: "ERM"
+    }
+  }
+})}}
 <main id="content" role="main">
-    <a href="/">&#9664; All e-RS prototypes</a>
+<!--     <a href="/prototypes">&#9664; All e-RS prototypes</a> -->
   <h1 class="heading-xlarge">ERM Prototypes</h1>
 
   <!--<h2 class="heading-large">Enhanced Referral Management (ERM)<br /> Prototypes</h2>-->
