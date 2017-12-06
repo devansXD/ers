@@ -2,6 +2,9 @@
   "name": "express-prototype",
   "description": "NHS prototyping app in Express",
   "version": "0.1.0",
+    "engines": {
+    "node": "6.11.1"
+  },
   "private": true,
   "dependencies": {
     "bluebird": "2.10.2",
