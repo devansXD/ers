@@ -1,0 +1,60 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+
+			&nbsp;
+
+			<a href="/accessibility/hello" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" /> Back to start</a>
+			<div style="float:right;"><a href="/accessibility/" style="color:#ffffff;">Log out</a></div>
+		</div>
+
+	</div>
+	<main id="content" role="main" style="padding-top:2rem;">
+		<h1 class="heading-xlarge" style="color: #0072C6;">Cancel support services</h1>
+
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<p>The following support services have been requested for this appointment.  </p>
+				<p>To cancel any of these support services select them from the list below.</p>
+				<p style="padding-bottom:2rem;">If an additional support service is needed  which isn't listed below, please contact your GP practice.</p>
+				<p style=""><strong>Select to remove</strong></p>
+
+				<div class="form-item-wrapper" style="border-top:1px solid black;">
+					<div class="form-group">
+						<input type="checkbox" id="Advocacy" name="Advocacy">
+						<label class="form-control-checkbox minor" for="Advocacy" style="padding-left: 6rem; padding-top: 0px !important;">
+							<p style="padding-top: 0px !important;"><strong>Advocacy</strong><br />Additional support for this appointment.</p>
+						</label>
+					</div>
+				</div>
+
+				<div class="form-item-wrapper">
+					<div class="form-group">
+						<input type="checkbox" id="Interpreter" name="Interpreter" >
+						<label class="form-control-checkbox minor" for="Interpreter" style="padding-left: 6rem; padding-top: 0px !important;">
+							<p style="padding-top: 0px !important;"><strong>Interpreter</strong><br />This could be either telephone interpreting, face-to-face interpreting or sign language interpreting at this appointment.</p>
+						</label>
+					</div>
+				</div>
+				<div class="form-item-wrapper">
+					<div class="form-group">
+						<input type="checkbox" id="Transport" name="Transport">
+						<label class="form-control-checkbox minor" for="Transport" style="padding-left: 6rem; padding-top: 0px !important;">
+							<p style="padding-top: 0px !important;"><strong>Transport</strong><br />Free transport to and from this appointment.</p>
+						</label>
+					</div>
+				</div>
+
+				<p><a href="/accessibility/additionalreq-confirmation" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Cancel selected support services</a></p>
+				<p style="padding-top: 0rem !important;"><a href="/accessibility/viewreferral" style="margin-top: 1em !important;">Do not cancel support services</a>
+			</p>
+		</div>
+		<div class="column-third">
+		</div>
+	</div>
+
+
+</main>
+{% endblock %}
