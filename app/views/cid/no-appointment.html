@@ -1,0 +1,44 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			<a href="/cid/clinic" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" />  Back to clinics</a>
+			<div style="float:right;"><a href="/pabs/" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<h1 class="heading-xlarge" style="color: #0072C6;">
+		Select an appointment
+		</h1>
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<p>General Respiratory Medicine-Respiratory Medicine-CityTH (Name Hosp)-CODE</p>
+				<div style="padding:1.4rem;border:5px solid #B10E1E;margin-top:2rem;">
+					<h3 class="heading-medium" style="color:#B10E1E;padding-top: 0px !important;">There are currently no appointments available for you to select at this clinic</h3>
+					<!--<p>There are currently no appointments available for your chosen clinic.</p>-->
+					<div class="text">
+						<h4 class="heading-small">What should you do now?</h4>
+						<ul class="list-bullet">
+							<li><a href="/cid/clinic">Select a different clinic</a></li>
+							<p>or</p>
+							<li>Ask this clinic to contact you to arrange an appointment. Use the box below to let the clinic know the best days and times to contact you.</li>
+						</ul>
+						<div class="form-item-wrapper">
+							<div class="form-group">
+								<label class="form-label" for="first-label">
+								</label>
+								<textarea class="form-control" rows="6"></textarea>
+								<p class="form-hint">1,000 characters maximum</p>
+							</div>
+						</div>
+					</div>
+					<p><a href="/cid/no-complete" class="button" style="margin-top: 1em !important;">Request clinic contact</a>
+				</p>
+			</div>
+			<div class="column-third">
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

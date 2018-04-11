@@ -1,0 +1,73 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/complete-screen/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:4rem;">
+					<h1 class="heading-xlarge" style="margin-bottom: 0px !important;color:#ffffff;">
+					&#10004; Appointment request submitted
+					</h1>
+					<h3 class="heading-medium">Please keep this information for your records</h3>
+				</div>
+				<div>
+						<h3 class="heading-medium">What happens next?</h3>
+						<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:4rem;margin-top:1rem;">
+							<h3 class="heading-small"><img src="/public/images/icon-important.png" /> The clinic will contact you to book an appointment</h3>
+							<p>If the clinic does not contact you by Friday 15 December 2017, you can contact them on 0113 123 1234 (Monday to Friday, 9am to 5pm).</p>
+						</div>
+						<!-- <div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:2rem;margin-top:1rem;padding-bottom:1.5rem;padding-top:1rem;"><strong>Your selected clinic will contact you to book your appointment.</strong></div>
+						<p>If you do not hear from the clinic by Friday 15 December 2017, you can contact them on 0113 123 1234. This line is open Monday to Friday 9am to 5pm.</p> -->
+					</div>
+				<div style="background:#dee0e2;padding:1rem;">
+					<div style="background:#ffffff;padding:1.4rem;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							<strong>Booking reference number</strong><br />
+						XXXX XXXX XXXX</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+						<strong>Clinic</strong><br />General Respiratory Medicine-Respiratory Medicine-Town (Name Hosp)-CODE</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							<strong>Location</strong><br />
+						Hospital St, City, PO5 7CO</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> <strong>Referred by</strong><br />
+						Dr Zubeir Smith at Colton Mill Medical Centre</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							<strong>Your comments</strong><br />
+						I cannot be contacted Monday to Wednesday, 9am to 12 noon.  </p>
+					</div>
+				</div>
+				<div class="form-group" style="padding-top: 2em !important;">
+					<!-- <div>
+						<h3 class="heading-medium">What happens next?</h3>
+						<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:4rem;margin-top:1rem;">
+							<h3 class="heading-small"><img src="/public/images/icon-important.png" /> The clinic will contact you to book an appointment</h3>
+							<p>If the clinic does not contact you by Friday 15 December 2017, you can contact them on 0113 123 1234 (Monday to Friday, 9am to 5pm).</p>
+						</div>
+						<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:2rem;margin-top:1rem;padding-bottom:1.5rem;padding-top:1rem;"><strong>Your selected clinic will contact you to book your appointment.</strong></div>
+						<p>If you do not hear from the clinic by Friday 15 December 2017, you can contact them on 0113 123 1234. This line is open Monday to Friday 9am to 5pm.</p>
+					</div> -->
+					<div class="form-group" style="padding-top:2rem;">
+						<a href="/complete-screen/login-deferred" class="button ">View referral</a>
+					</div>
+				</div>
+			</div>
+			<div class="column-third">
+			</div>
+		</div>
+	</main>
+{% endblock %}

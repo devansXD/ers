@@ -1,0 +1,79 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/complete-screen/" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:4rem;">
+					<h1 class="heading-xlarge" style="margin-bottom: 0px !important;color:#ffffff;">
+					&#10004; Booking complete
+					</h1>
+					<h3 class="heading-medium">Please keep this information for your records</h3>
+				</div>
+				<!--<p><a href="">Add to your calendar</a><br />
+				<a href="">View / print referral letter</a></p>-->
+				<div style="background:#dee0e2;padding:1rem;">
+					<h3 class="heading-medium">Your appointment details</h3>
+					<div style="background:#ffffff;padding:1.4rem;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Booking reference number<br />
+						<strong>0002 7480 8900</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Date and time<br />
+						<strong>Monday 2nd May 2016, 2:00pm</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Clinic<br />
+						<strong>General Respiratory Medicine-Respiratory Medicine-CityTH (NAME Hosp)-CODE</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Location<br />
+						<strong>Beckett St, Leeds, LS9 7TF</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by<br />
+						<strong>Dr Zubeir Smith at Colton Mill Medical Centre</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Information <br />
+						<strong>Please arrive 30 minutes before your appointment is due to start. Wear loose clothing.</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<a href="/complete-screen/additionalreq">
+							<table style="margin-bottom: 0px !important;">
+								<tr>
+									<td style="padding: 0px !important;"><p style="color:#231f20;margin: 0px !important;padding-top:0px;">Support services requested for this appointment <br />
+									<strong>Advocacy, interpreter, transport</strong></p>
+								</td>
+								<td style="padding: 0px !important;text-align:right;">
+									<p style="margin: 0px !important;padding-top:0px;"><a href="/complete-screen/additionalreq">Cancel</a></p></td>
+								</tr>
+							</table>
+						</a>
+					</div>
+				</div>
+				<div class="form-group" style="padding-top: 2em !important;">
+					<div>
+						<h3 class="heading-medium">What happens next?</h3>
+						<p>We’ve sent your request to the provider. The provider will contact you if there are any issues with this booking. </p>
+						<p>You can <a href="/complete-screen/viewreferral">change or cancel your appointment</a> by returning to this manage your referral service, using the same log in process you were provided.</p>
+					</div>
+					<!-- <p style="margin-bottom: 0px !important;"><a href="/complete-screen/viewreferral" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">View  referrals</a> -->
+				</p>
+				<!--<div class="form-group" style="padding-top:2rem;">
+					<a href="/complete-screen/index">Log out</a>
+				</div>-->
+			</div>
+		</div>
+		<div class="column-third">
+		</div>
+	</div>
+</main>
+{% endblock %}

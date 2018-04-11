@@ -1,0 +1,41 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/cid/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<h1 class="heading-xlarge" style="color: #0072C6;">
+		Hello Mary Smith
+		</h1>
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<!--<h3 class="heading-medium">Book your appointment</h3>    -->
+				<div style="background:#dee0e2;padding:1rem;">
+					<div style="background:#ffffff;padding:1rem;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							Booking reference number<br />
+						<strong>0002 7480 8900</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by<br />
+						<strong>Dr Zubeir Smith at Colton Mill Medical Centre</strong></p>
+					</div>
+					<p style="margin-bottom: 0px !important;"><a href="/cid/clinic" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Choose an appointment</a>
+					<!--<a href="/pabs/allreferrals" style="padding-top: 2em !important;">View and manage all referrals </a>-->
+				</p>
+				<p style="padding-top: 1rem !important;"><a href="/cid/cancel-referral" style="margin-top: 2em !important;">Cancel referral</a>
+			</p>
+			<div class="form-group" style="padding-top: 2em !important;">
+			</div>
+		</div>
+	</div>
+	<div class="column-third">
+	</div>
+</div>
+</main>
+{% endblock %}

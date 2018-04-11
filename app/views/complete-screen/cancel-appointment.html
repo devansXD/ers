@@ -1,0 +1,75 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+
+			<a href="/complete-screen/viewreferral" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" />  Back to start</a>
+			<div style="float:right;"><a href="/complete-screen/" style="color:#ffffff;">Log out</a></div>
+		</div>
+
+	</div>
+	<main id="content" role="main" style="padding-top:2rem;">
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<h1 class="heading-xlarge" style="color: #0072C6;">
+				Cancel this appointment
+				</h1>
+
+				<p><strong>Select a reason from the options below:</strong></p>
+
+				<div>
+
+					<div class="form-item-wrapper" style="padding-top: 2rem !important;">
+
+						<div class="form-group" >
+							<input type="radio" id="1" name="minor">
+							<label class="form-control-radio minor" for="1" style="padding-left:4rem;">
+								I intend to go private
+							</label>
+						</div>
+						<div class="form-group" >
+							<input type="radio" id="2" name="minor" >
+							<label class="form-control-radio minor" for="2" style="padding-left:4rem;">
+								I am on holiday
+							</label>
+						</div>
+						<div class="form-group" >
+							<input type="radio" id="3" name="minor" >
+							<label class="form-control-radio minor" for="3" style="padding-left:4rem;">
+								I am ill
+							</label>
+						</div>
+						<div class="form-group" >
+							<input type="radio" id="4" name="minor" >
+							<label class="form-control-radio minor" for="4" style="padding-left:4rem;">
+								I am busy
+							</label>
+						</div>
+						<div class="form-group" >
+							<input type="radio" id="5" name="minor" >
+							<label class="form-control-radio minor" for="5" style="padding-left:4rem;">
+								I no longer require an appointment
+							</label>
+						</div>
+
+						<div class="form-group" >
+							<input type="radio" id="6" name="minor" >
+							<label class="form-control-radio minor" for="6" style="padding-left:4rem;">
+								Other
+							</label>
+						</div>
+					</div>
+
+					<p><a href="/complete-screen/cancel-complete" class="button " style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Cancel appointment</a></p>
+					<p style="padding-top: 0rem !important;"><a href="/complete-screen/viewreferral" style="margin-top: 2em !important;">Do not cancel appointment</a>
+				</p>
+
+			</div>
+		</div>
+
+	</div>
+
+
+</main>
+{% endblock %}
