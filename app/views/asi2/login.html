@@ -1,0 +1,48 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+		</div>
+	</div>
+	<main id="content" role="main">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<h1 class="heading-xlarge" style="color: #0072C6;">
+		Log in
+		</h1>
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<div style="background:#dee0e2;padding:1.5rem;">
+					<div>
+						<label class="form-label" for="first-label" style="padding-top:0;padding-bottom:0rem;"><strong>Booking reference number</strong></label>
+						<p style="padding-top:0px;">For example, '000286522495'.</p>
+						<input type="text" id="first-label" class="form-control" style="width:60%;">
+						<label class="form-label" for="first-label" style="padding-top:3rem;padding-bottom:0rem;"><strong>Year of birth</strong></label>
+						<p style="padding-top:0px;">For example, '1965'.</p>
+						<input type="text" id="Year of birth" class="form-control" style="width:60%;">
+						<label class="form-label" for="first-label" style="padding-top:3rem;padding-bottom:0rem;"><strong>Password</strong></label>
+						<p style="padding-top:0px;">This is case sensitive and may require a space.<br /> For example, 'Word pass'.</p>
+						<input type="text" id="Password" class="form-control" style="width:60%;">
+					</div>
+					<a href="/asi2/asi-landing" class="button" style="margin-top: 2em !important;">Log in</a>
+					<div class="form-group" style="padding-top: 2em !important;">
+					</div>
+				</div>
+				<details>
+				<summary><span class="summary">Need help logging in?  </span></summary>
+				<div class="panel panel-border-narrow">
+					<p>If you do not have your booking letter or password please contact your referring organisation.</p>
+					<p><a href="http://www.nhs.uk/service-search">Find your referring organisation’s details on NHS Choices.</a></p>
+					<p>If you do have your booking letter and password, but need assistance in choosing, booking, changing or cancelling your appointment, please call the e-Referral Service Appointments Line.</p>
+					<p><strong>Phone:</strong> 0345 60 88 88 8<br />
+					<strong>Textphone:</strong> 0345 8 50 22 50</p>
+					<p>Appointments Line opening hours are: weekdays 8am to 8pm; weekends and bank holidays 8am to 4pm (closed on Christmas Day).</p>
+				</div>
+				</details>
+						</div>
+						<div class="column-third">
+						</div>
+					</div>
+				</main>
+			{% endblock %}

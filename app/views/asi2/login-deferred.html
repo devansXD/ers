@@ -1,0 +1,55 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			<!-- <a href="/pabs/clinic" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" />  Back to clinics</a> -->
+			<div style="float:right;"><a href="/asi2/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<h1 class="heading-large" style="color: #0072C6;">Hello Mary Smith</h1>
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:4rem;margin-top:1rem;">
+					<h3 class="heading-medium"><img src="/public/images/icon-important.png" /> The clinic will contact you to book an appointment</h3>
+					<p>If the clinic does not contact you by Friday 15 December 2017, you can contact them on 0113 123 12340 (Monday to Friday, 9am to 5pm).</p>
+				</div>
+				<div style="background:#dee0e2;padding:1rem;">
+					<div style="background:#ffffff;padding:1.4rem;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							<strong>Booking reference number</strong><br />
+						XXXX XXXX XXXX</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+						<strong>Clinic</strong><br />General Respiratory Medicine-Respiratory Medicine-Town (Name Hosp)-CODE</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							<strong>Location</strong><br />
+						Hospital St, City, PO5 7CO</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> <strong>Referred by</strong><br />
+						Dr Zubeir Smith at Colton Mill Medical Centre</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							<strong>Your comments</strong><br />
+						I cannot be contacted Monday to Wednesday, 9am to 12 noon.  </p>
+					</div>
+					<div style="background:#dee0e2;padding-top:2rem;padding-left:0;padding-bottom:0;margin-bottom: 0;>
+						<div style=" margin-bottom: 0px !important;">
+							<a href="/asi2/cancel-referral">Cancel referral</a></div>
+						</div>
+					</div>
+					<!-- RED WARNING BOX-->
+					<!--<div style="padding:1.4rem;border:5px solid #B10E1E;margin-top:2rem;">
+					</div>-->
+					<div class="column-third">
+					</div>
+				</div>
+			</div>
+		</main>
+	{% endblock %}

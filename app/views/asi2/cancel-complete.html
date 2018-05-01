@@ -1,0 +1,45 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/asi2/" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:4rem;">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:4rem;">
+					<h1 class="heading-xlarge" style="margin-bottom: 0px !important;color:#ffffff;">
+					&#10004; The appointment has been cancelled
+					</h1>
+					<h3 class="heading-medium">The provider has been contacted.</h3>
+				</div>
+				<div style="background:#dee0e2;padding:1rem;">
+					<div style="background:#ffffff;padding:1.4rem;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Booking reference number<br />
+						<strong>0002 7480 8900</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by <br />
+						<strong>Dr Zubeir Smith at Colton Medical Centre</strong></p>
+					</div>
+				</div>
+				<div class="form-group" style="padding-top: 2em !important;">
+					<div>
+						<h3 class="heading-medium">What happens next?</h3>
+						<p>You now need to book a new appointment from your choice of clinics.</p>
+						<div class="form-group" style="padding-top:2rem;">
+							<a href="/asi2/clinic" class="button ">Choose appointment</a>
+						</div>
+						<div class="form-group" style="padding-top:2rem;"><p>If you no longer want an appointment you can <a href="cancel-referral">cancel this referral</a>.</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="column-third">
+			</div>
+		</div>
+	</main>
+{% endblock %}
