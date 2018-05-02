@@ -1,0 +1,36 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/asi3/" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<h1 class="heading-xlarge" style="color: #0072C6;">
+				Confirm your choice
+				</h1>
+				<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:2rem;margin-top:4rem;">
+					<h3 class="heading-medium"><img src="/public/images/icon-important.png" /> There are currently no appointments available at this clinic.</h3>
+				</div>
+				<div style="background:#dee0e2;padding:1rem;margin-bottom: 3rem" class="appointment">
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+						<strong>Clinic</strong><br />General Respiratory Medicine-Respiratory Medicine-Town (Name Hosp)-CODE</p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							<strong>Location</strong><br />
+						Hospital St, City, PO5 7CO</p>
+					</div>
+				</div>
+				<p>This clinic is already processing your request for an appointment.</p><p> They will contact you to arrange your appointment.</p>
+				<p><a href="/asi3/no-complete" class="button" style="margin-top: 1em !important;">Continue</a></p>
+				<p><a href="/asi3/clinic">Choose a different clinic</a></p>
+			</div>
+		</div>
+	</main>
+{% endblock %}

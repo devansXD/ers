@@ -1,0 +1,79 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/asi3/" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<h1 class="heading-xlarge" style="color: #0072C6;">
+				Referral for Mike Smith
+				</h1>
+				<div style="background:#dee0e2;padding:1rem;margin-top:5rem;">
+					<h3 class="heading-medium">Your appointment details</h3>
+					<div style="background:#ffffff;padding:1.4rem;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							Booking reference number<br />
+						<strong>0002 7480 8900</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<table style="margin-bottom: 0px !important;">
+							<tr>
+								<td style="padding: 0px !important;"><p style="margin-bottom: 0px !important;padding-top:0px;">Date and time <br />
+								<strong>Monday 2nd May 2016, 2:00pm</strong></p>
+							</td>
+							<td style="padding: 0px !important;text-align:right;">
+								<p style="margin: 0px !important;padding-top:0px;"><a href="/asi3/change-appointment">Change</a></p></td>
+							</tr>
+						</table>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<table style="margin-bottom: 0px !important;">
+							<tr>
+								<td style="padding: 0px !important;"><p style="margin-bottom: 0px !important;padding-top:0px;">Clinic <br />
+								<strong>General Respiratory Medicine-Respiratory Medicine-CityTH (NAME Hosp)-CODE</strong></p>
+							</td>
+							<td style="padding: 0px !important;text-align:right;">
+								<p style="margin: 0px !important;padding-top:0px;"><a href="/asi3/change-clinic">Change</a></p></td>
+							</tr>
+						</table>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Location<br />
+						<strong>Beckett St, Leeds, LS9 7TF</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by <br />
+						<strong>Dr Zubeir Smith at Colton Mill Medical</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Information <br />
+						<strong>Please arrive 30 minutes before your appointment is due to start. Wear loose clothing.</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+							<table style="margin-bottom: 0px !important;">
+								<tr>
+									<td style="padding: 0px !important;"><p style="color:#231f20;margin: 0px !important;padding-top:0px;">Support services requested for this appointment <br />
+									<strong>Advocacy, interpreter, transport</strong></p>
+								</td>
+								<td style="padding: 0px !important;text-align:right;">
+									<p style="margin: 0px !important;padding-top:0px;"><a href="/asi3/additionalreq">Cancel</a></p></td>
+								</tr>
+							</table>
+					</div>
+					<p><a href="/asi3/cancel-appointment" class="button button-secondary-cta" style="margin-top: 1em !important;">Cancel appointment</a>
+				</p>
+				<div class="form-group" style="padding-top: 2em !important;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}
