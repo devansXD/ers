@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.sidenav {
+    position: fixed;
+    width: 210px;
+    height: 100%;
+    top: 186px;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-y: hidden;
+    padding-top: 20px;
+}
+
+.main {
+    position: fixed;
+    padding-top: 20px;
+    margin-left: 237px; /* Same as the width of the sidenav */
+    font-size: 14px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    height: calc(100% - 186px);
+    overflow: scroll;
+    background-color: #fff;
+}
+
+.button {
+    padding: 10px 20px 10px 12px;
+    text-decoration: none;
+    background-color: #F5F5F5;
+    margin: 20px;
+    border-radius: 3px;
+    border: 1px;
+    border-style: solid;
+    border-color: #C3C3C3;
+    box-shadow: 1px 1px 3px #C3C3C3;
+    font-size: 14px;
+    color: #005EB8;
+    font-weight: bold;
+    display: block;
+}
+.button:hover {
+    color: #005EB8;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.active {
+    color: #282828;
+    text-decoration: none;
+    background-color: #fff;
+    display:block; 
+    background-image: url(../public/images/referral-screen/chevron.png); 
+    background-repeat: no-repeat; 
+    background-position: right;
+}
+
+
+.section {
+    padding-top: 50px; 
+    margin-top: 0; 
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div class="sidenav" id="menu">
+  <a href="#summary" class="button active">Summary</a>
+  <a href="#referral-information" class="button">Referral information</a>
+  <a href="#comments" class="button">Comments</a>
+</div>
+
+<div class="main">
+  <div><img class="section" id="summary" src="../public/images/referral-screen/content-summary.png"></div>
+  <img class="section" id="referral-information" src="../public/images/referral-screen/content-referral.png">
+  <img class="section" id="comments" src="../public/images/referral-screen/content-comments.png">
+  <div style="height:300px;"> </div>
+</div>
+
+<script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("menu");
+        var btns = header.getElementsByClassName("button");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+</body>
+</html> 
+

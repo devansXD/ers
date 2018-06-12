@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body, html {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 186px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 0, 0);
+    margin: 0;
+    padding: 0;
+    background-image: url("../public/images/referral-screen/header-bg.png");
+}
+
+.page {
+    top: 186px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+}
+h2 {
+    padding-top: 60px;
+}
+</style>
+    
+</head>
+<body>
+
+<header><a href="/referral-screen/index"><img src="../public/images/referral-screen/header.png" border=0></a></header>
+
+<div class="page">
+<!-- 
+    <iframe src="/referral-screen/content" height="100%" width="100%" frameborder="0"></iframe> -->
+{% block %}
+    {% include "referral-screen/version03-content.html" %}
+{% endblock %}
+
+</div>
+     
+</body>
+</html> 
+
