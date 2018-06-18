@@ -1,0 +1,94 @@
+{% extends 'templates/nhs_transaction_layout.html' %} {% block pageTitle %}eRS prototypes{% endblock %} {% import 'includes/ui_element_macros.html'
+as ui_element_macros %} {% block content %}
+<style>
+
+		.option {
+			padding:1.5rem 1rem;
+			border-bottom:solid 1px #95989A;
+
+		}
+
+		.option:hover {
+			color: #005EB8;
+			text-decoration: none;
+			background-color: #eeeded;
+		}
+		
+		</style>
+<main id="content" role="main">
+	<div class="grid-row">
+
+		<div class="column-two-thirds">
+
+			<h1 class="heading-xlarge">
+				Training environment
+			</h1>
+
+			<h2 class="heading-large">Select a role</h2>
+
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option"	style="border-top:solid 1px #95989A;">
+					<table class="equalDevide" style="border:0px;">
+						<tr>
+							<td style="width: 150px !important;">
+								<strong>Clinician</strong>, Example service provider name
+							</td>
+							<td style="text-align:right;">
+								<a href="/complete-screen/check"></a>&nbsp;
+								<img src="/public/images/forward.svg" style="width:8px;" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</a>
+
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<table class="equalDevide" style="border:0px;">
+						<tr>
+							<td style="width: 150px !important;">
+									<strong>Clinician</strong>, Second example service provider name
+							</td>
+
+							<td style="text-align:right;">
+								<a href="/complete-screen/check"></a>&nbsp;
+								<img src="/public/images/forward.svg" style="width:8px;" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</a>
+
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<table class="equalDevide" style="border:0px;">
+						<tr>
+							<td style="width: 150px !important;">
+									<strong>Admin</strong>, Example service provider name
+							</td>
+
+							<td style="text-align:right;">
+								<a href="/complete-screen/check"></a>&nbsp;
+								<img src="/public/images/forward.svg" style="width:8px;" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</a>
+
+
+
+			<p style="padding-top:50px;">
+				<a href="/training-environment/login"><img src="/public/images/back-arrow.png" style="width:5px;" /> Back</a>
+			</p>
+
+		</div>
+
+		<div class="column-third"></div>
+
+
+	</div>
+
+
+</main>
+{% endblock %}

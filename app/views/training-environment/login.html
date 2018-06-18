@@ -1,0 +1,45 @@
+{% extends 'templates/nhs_transaction_layout.html' %} {% block pageTitle %}eRS prototypes{% endblock %} {% import 'includes/ui_element_macros.html'
+as ui_element_macros %} {% block content %}
+
+<main id="content" role="main">
+	
+	<div class="grid-row">
+		<div class="column-two-thirds"><h1 class="heading-xlarge">
+				Training environment
+			</h1>
+			<div style="background:#dee0e2;padding:1.5rem;">
+				<h2 class="heading-large">Login</h2>
+				<div>
+					<label class="form-label" for="first-label" style="padding-top:0;padding-bottom:0rem;">
+						<strong>Email address</strong>
+					</label>
+					<input type="text" id="first-label" class="form-control" style="width:60%;">
+					
+					<label class="form-label" for="first-label" style="padding-top:3rem;padding-bottom:0rem;">
+						<strong>Password</strong>
+					</label>
+					<input type="text" id="Password" class="form-control" style="width:60%;">
+				</div>
+				<p><a href="">Forgot password</a></p>
+				<a href="/training-environment/role" class="button" style="margin-top: 2em !important;">Log in</a>
+				<div class="form-group" style="padding-top: 2em !important;">
+				</div>
+			</div>
+			<details>
+				<summary>
+					<span class="summary">Need help logging in? </span>
+				</summary>
+				<div class="panel panel-border-narrow">
+
+					<p>To access the training environment you need to contact eRS support.</p>
+					<p>This is not the live service.</p>
+					<p>If you are here trying to log on to the live service, then you will be disappointed. Move along please, move along.</p>
+				</div>
+			</details>
+			
+		</div>
+		<div class="column-third">
+		</div>
+	</div>
+</main>
+{% endblock %}
