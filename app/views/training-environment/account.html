@@ -1,0 +1,283 @@
+{% extends 'templates/nhs_transaction_layout.html' %} {% block pageTitle %}eRS prototypes{% endblock %} {% import 'includes/ui_element_macros.html'
+as ui_element_macros %} {% block content %}
+<style>
+	.option {
+		padding: 1.5rem 1rem;
+		border-bottom: solid 1px #95989A;
+
+	}
+
+	.option:hover {
+		color: #005EB8;
+		text-decoration: none;
+		background-color: #eeeded;
+	}
+</style>
+<div role="banner" id="global-header" style="background-color:#ffffff;border-bottom: 1px solid #979797;height:48px;">
+	<div class="header-container" style="padding:1rem 0rem 2rem 0rem;">
+		<div style="float:left;">
+			<strong>Training environment</strong>
+		</div>
+		<div style="float:right;">
+			<a href="/training-environment/login">Log out</a>
+		</div>
+	</div>
+</div>
+<main id="content" role="main">
+	<div class="grid-row">
+
+		<div class="column-two-thirds">
+
+			<h1 class="heading-large">
+				Select a user
+			</h1>
+
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option" style="border-top:solid 1px #95989A;">
+					<strong>Mr Amit Patel</strong>, National appointments line
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mrs Seema Khan</strong>, NHS England
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Mark Shawshank</strong>, HMP Wakefield
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Miss Claire Yorke</strong>, Yorkshire area team
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Sam Leedham</strong>, Leeds CCG
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Dr Sarah Ellery</strong>, Elland Road Practice
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Dr Mike Headey</strong>, Headingley Practice
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Russel Harrington</strong>, Harrogate CCG
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Dr Simon Ruddy</strong>, Rudding PArk Practice
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Dr Deborah Pannel</strong>, Pannal Ash Practice
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Fred Walker</strong>, Wakefield Trust
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Ms Asma Wakeel</strong>, Wakefield Trust
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Ms Kim Hullar</strong>, Hull Trust
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Peter Hulme</strong>, Hull Trust
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Ms Anna Green</strong>, Greens Private Healthcare
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Paul Greening</strong>, Greens Private Healthcare
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Max Blind</strong>, Seebetter optometrist
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mrs Sandeep Kaur</strong>, Yorkshire commissioning hub
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr John Barber</strong>, Clough Lane dental surgery
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Miss Suzanne Middleton</strong>, Midlands area team
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Edward Nott</strong>, Nottingham CCG
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Dr Nicholas Wotton</strong>, Wollaton Road Practice
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Dr Matthew Holmes</strong>, Holme Lane Practice
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mrs Caroline Denby</strong>, Derby Trust
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Miss Farah Zaheen</strong>, Lancashire area team
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mr Alex Booth</strong>, Salford CCG
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Dr Mansoor Akhtar</strong>, Kings Road Practice
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Dr Tim Quacker</strong>, Queens Lane Practice
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
+				<div class="option">
+					<strong>Mrs Lauren Harker</strong>, Trafford Trust
+					<div style="float:right;">
+						<img src="/public/images/forward.svg" style="width:8px;" />
+					</div>
+				</div>
+			</a>
+
+
+<!-- 
+			<p style="padding-top:50px;"><a href="/training-environment/login"><img src="/public/images/back-arrow.png" style="width:5px;" /> Back</a>
+			</p> -->
+
+		</div>
+
+		<div class="column-third"></div>
+
+
+	</div>
+
+
+</main>
+{% endblock %}

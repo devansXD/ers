@@ -1,20 +1,24 @@
 {% extends 'templates/nhs_transaction_layout.html' %} {% block pageTitle %}eRS prototypes{% endblock %} {% import 'includes/ui_element_macros.html'
 as ui_element_macros %} {% block content %}
 <style>
+	.option {
+		padding: 1.5rem 1rem;
+		border-bottom: solid 1px #95989A;
 
-		.option {
-			padding:1.5rem 1rem;
-			border-bottom:solid 1px #95989A;
+	}
 
-		}
-
-		.option:hover {
-			color: #005EB8;
-			text-decoration: none;
-			background-color: #eeeded;
-		}
-		
-		</style>
+	.option:hover {
+		color: #005EB8;
+		text-decoration: none;
+		background-color: #eeeded;
+	}
+</style>
+<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/training-environment/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
 <main id="content" role="main">
 	<div class="grid-row">
 
@@ -27,11 +31,14 @@ as ui_element_macros %} {% block content %}
 			<h2 class="heading-large">Select a role</h2>
 
 			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
-				<div class="option"	style="border-top:solid 1px #95989A;">
+				<div class="option" style="border-top:solid 1px #95989A;">
 					<table class="equalDevide" style="border:0px;">
 						<tr>
+							<td colspan="2">Mr Amit patel</td>
+						</tr>
+						<tr>
 							<td style="width: 150px !important;">
-								<strong>Clinician</strong>, Example service provider name
+								<strong>Call handler</strong>, National appointments line
 							</td>
 							<td style="text-align:right;">
 								<a href="/complete-screen/check"></a>&nbsp;
@@ -46,8 +53,11 @@ as ui_element_macros %} {% block content %}
 				<div class="option">
 					<table class="equalDevide" style="border:0px;">
 						<tr>
+							<td colspan="2">Mrs Seema Khan</td>
+						</tr>
+						<tr>
 							<td style="width: 150px !important;">
-									<strong>Clinician</strong>, Second example service provider name
+								<strong>Administrator</strong>, NHS England
 							</td>
 
 							<td style="text-align:right;">
@@ -62,16 +72,19 @@ as ui_element_macros %} {% block content %}
 			<a href="/training-environment/yourin" style="text-decoration:none;color:#231F20;">
 				<div class="option">
 					<table class="equalDevide" style="border:0px;">
-						<tr>
-							<td style="width: 150px !important;">
-									<strong>Admin</strong>, Example service provider name
-							</td>
-
-							<td style="text-align:right;">
-								<a href="/complete-screen/check"></a>&nbsp;
-								<img src="/public/images/forward.svg" style="width:8px;" />
-							</td>
-						</tr>
+							<tr>
+								<td colspan="2">Mr Mark Shawshank</td>
+							</tr>
+							<tr>
+								<td style="width: 150px !important;">
+										<strong>Prison warden</strong>, HMP Wakefield
+								</td>
+	
+								<td style="text-align:right;">
+									<a href="/complete-screen/check"></a>&nbsp;
+									<img src="/public/images/forward.svg" style="width:8px;" />
+								</td>
+							</tr>
 					</table>
 				</div>
 			</a>
@@ -79,7 +92,8 @@ as ui_element_macros %} {% block content %}
 
 
 			<p style="padding-top:50px;">
-				<a href="/training-environment/login"><img src="/public/images/back-arrow.png" style="width:5px;" /> Back</a>
+				<a href="/training-environment/login">
+					<img src="/public/images/back-arrow.png" style="width:5px;" /> Back</a>
 			</p>
 
 		</div>
