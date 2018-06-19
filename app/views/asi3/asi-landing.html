@@ -1,40 +1,47 @@
-{% extends 'templates/myr_transaction_layout.html' %}
-{% block pageTitle %}Blank page{% endblock %}
-{% block content %}
-	<div role="banner" id="global-header" style="background-color:#004D86;">
-		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
-			&nbsp;
-			<div style="float:right;"><a href="/asi3/" style="color:#ffffff;">Log out</a></div>
+{% extends 'templates/myr_transaction_layout.html' %} {% block pageTitle %}Blank page{% endblock %} {% block content %}
+<div role="banner" id="global-header" style="background-color:#004D86;">
+	<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+		&nbsp;
+		<div style="float:right;">
+			<a href="/asi3/" style="color:#ffffff;">Log out</a>
 		</div>
 	</div>
-	<main id="content" role="main" style="padding-top:3rem;">
-		<div class="grid-row">
-			<div class="column-two-thirds" >
-				<h1 class="heading-xlarge" style="color: #0072C6;">
+</div>
+<main id="content" role="main" style="padding-top:3rem;">
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-xlarge" style="color: #0072C6;margin-bottom: 0px;">
 				Referral for Mike Smith
-				</h1>
-				<div>
-					<h3 class="heading-medium"> Please contact the referring organisation about your referral.</h3></div>
-					<p>Your referral was reviewed by a specialist who has provided advice back to the referrer.</p><p>You have not been given an appointment.</p>
-				
-				<div style="background:#dee0e2;padding:1rem;margin-top:3rem;">
-					<h3 class="heading-medium">Your referral details</h3>
-					<div style="background:#ffffff;padding:1.4rem;">
-						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
-							Booking reference number<br />
-						<strong>0002 7480 8900</strong></p>
-					</div>
-					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
-						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by <br />
-						<strong>Dr Zubeir Smith at Colton Mill Medical</strong></p>
-					</div>
-					<!-- <p><a href="/asi3/cancel-appointment">Cancel referral</a>
+			</h1>
+			<div>to Chesterfield Royal Hospital, Speech and Language Therapy.</div>
+			<div>
+				<h3 class="heading-medium" style="padding-top:2rem;"> An appointment has not been arranged</h3>
+			</div>
+			<p>A specialist has reviewed your referral and given new advice to Dr Zubeir Smith.</p>
+			<p>Please contact
+				<strong>Colton Mill Medical</strong> to discuss your next step.</p>
+			<div style="background:#dee0e2;padding:1rem;margin-top:3rem;">
+				<h3 class="heading-medium">Your referral details</h3>
+				<div style="background:#ffffff;padding:1.4rem;">
+					<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+						Booking reference number
+						<br />
+						<strong>0002 7480 8900</strong>
+					</p>
+				</div>
+				<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by
+						<br />
+						<strong>Dr Zubeir Smith at Colton Mill Medical</strong>
+					</p>
+				</div>
+				<!-- <p><a href="/asi3/cancel-appointment">Cancel referral</a>
 				</p> -->
 				<div class="form-group" style="padding-top: 2em !important;">
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	</div>
 </main>
 {% endblock %}
