@@ -2,7 +2,7 @@
   "name": "express-prototype",
   "description": "NHS prototyping app in Express",
   "version": "0.1.0",
-    "engines": {
+  "engines": {
     "node": "6.12.1",
     "npm": "3.10.10"
   },
