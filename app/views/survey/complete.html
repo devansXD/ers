@@ -1,0 +1,111 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<style>
+		.item {
+		background: #ffffff;
+		padding: 1.4rem;
+		margin-top: 2px;
+		}
+		@media print {
+	/* print styles go here */
+	body {
+		font: 13pt sans-serif;
+		line-height: 1;
+		padding:0;
+		}
+		body {visibility: hidden;}
+		body #global-header {display: none;}
+		body #confirm {display: none;}
+		body #footer {display: none;}
+		body #skiplink-container {display: none;}
+		.appointment {visibility:visible;  margin: 0cm;}
+		.appointment a {visibility: hidden;}
+		.item {padding:0cm; margin: 0px;}
+		#printmessage {display: block;}
+	}
+	.nhsuk-action-link {
+		display: inline-block;
+	}
+	.nhsuk-action-link:before {
+		content: '';
+		width: 28px;
+		height: 28px;
+		margin: 0 8px -7px 0;
+		display: inline-block;
+		background: url(../public/images/nhsuk-icon-arrow1-right-alt-circle__green.svg) top left no-repeat;
+		background-size: 28px 28px;
+	}
+	</style>
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/complete-screen/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:4rem;" id="confirm">
+					<h1 class="heading-xlarge" style="margin-bottom: 0px !important;color:#ffffff;">
+					&#10004; Booking complete
+					</h1>
+					<h3 class="heading-medium">Please keep this information for your records</h3>
+				</div>
+				<div style="background:#dee0e2;padding:1rem;" class="appointment">
+					<h3 class="heading-medium">Your appointment details</h3>
+					<div class="item">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Booking reference number<br />
+						<strong>0002 7480 8900</strong></p>
+					</div>
+					<div class="item">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Date and time<br />
+						<strong>Monday 18th May 2018, 1:30pm</strong></p>
+					</div>
+					<div class="item">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Clinic<br />
+						<strong>General Respiratory Medicine-Respiratory Medicine-Leeds (Seacroft Hospital)-40671</strong></p>
+					</div>
+					<div class="item">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Location<br />
+						<strong>This will be a DBS</strong></p>
+					</div>
+					<div class="item">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by<br />
+						<strong>Dr Zubeir Smith at New Street Medical Practice</strong></p>
+					</div> 
+					<div class="item">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Information <br />
+						<strong>Please arrive 30 minutes before your appointment is due to start. Wear loose clothing.</strong></p>
+					</div>
+					<div class="item">
+						<p style="color:#231f20;margin: 0px !important;padding-top:0px;"><p>Support services requested for this appointment
+						<strong>Advocacy, interpreter, transport</strong></p>
+					</div>
+					<div class="item" style="background: none; padding: 1.4rem 0;">
+						<p style="margin-bottom:0;"><a href="/complete-screen/viewreferral">Change or cancel this appointment</a></p>
+					</div>
+				</div>
+				<div class="form-group" style="padding-top: 2em !important;">
+					<div>
+						<h3 class="heading-medium">What happens next?</h3>
+						<p>You do not need to do anything else.</p><p> We’ve sent your request to the provider. The provider will contact you if there are any issues with this booking.</p>
+						<div style="display:block; padding:0 0 0 3em; background-image: url(../public/images/icon-printer.png); background-repeat: no-repeat; background-position: left; background-size: 2.4em;">
+							<p class="heading-small"><a href="">Print a paper copy of your appointment details</a></p>
+						</div>
+						<div style="display:block; padding:0 0 0 3em; background-image: url(../public/images/icon-calendar.png); background-repeat: no-repeat; background-position: left; background-size: 2em;">
+							<p class="heading-small"><a href="">Add this appointment to your calendar (ICS, 10KB)</a></p>
+						</div>
+						<p>You can return here at any point up to your appointment date by logging in to <strong>nhs.uk/referrals</strong>.</p>
+						<h3 class="heading-medium">Help us improve this service</h3>
+						<p>Take a quick survey to provide us with feedback which we'll use to make this service better.</p>
+						<p><a href="https://survey.efmfeedback.com/se/705E3EF560F45639?h1=330764247" target="_blank" class="nhsuk-action-link">Start the survey</a></p>
+					</div>
+				</p>
+			</div>
+		</div>
+		<div class="column-third">
+		</div>
+	</div>
+</main>
+{% endblock %}
