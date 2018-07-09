@@ -1,15 +1,4 @@
-$nhsuk-black: #212b32;
-$nhsuk-blue: #005EB8;
-$nhsuk-light-blue-1: #80AEDB;
-$nhsuk-light-blue-2: #4D8ECD;
-$nhsuk-dark-blue-1: #003970;
-$nhsuk-white: #fff;
-$nhsuk-yellow: #FFBF33;
-$nhsuk-grey-1: #425563;
-$nhsuk-grey-2: #768692;
-$nhsuk-grey-3: #aeb7bd;
-$nhsuk-grey-4: #d8dde0;
-$nhsuk-grey-5: #f0f4f5;
+@import "colours";
 
 * {
     padding: 0;
@@ -23,8 +12,8 @@ $nhsuk-grey-5: #f0f4f5;
 }
 
 a:hover {
-    background:$nhsuk-yellow;
-    box-shadow: $nhsuk-yellow 0 0 0 2px;
+    background:$nhsuk-link-hover-background-colour;
+    box-shadow: $nhsuk-link-hover-background-colour 0 0 0 2px;
     color: $nhsuk-black;
     text-decoration: none;
 }
@@ -47,14 +36,19 @@ header{
             display: table-cell;
             vertical-align: middle;
 
+            a{
+                display: inline-block;
+            }
+
             img {
                 width: 80px;
-                margin-right:16px;
                 display: inline-block;
                 vertical-align: middle;
+                background: $nhsuk-blue;
             }
 
             h1{
+                margin-left:16px;
                 font-size: 18px;
                 color: $nhsuk-white;
                 display: inline-block;
@@ -129,8 +123,8 @@ header{
                                 font-size: 14px;
 
                                 &:hover{
-                                    background:$nhsuk-yellow;
-                                    box-shadow: $nhsuk-yellow 0 0 0 2px;
+                                    background:$nhsuk-link-hover-background-colour;
+                                    box-shadow: $nhsuk-link-hover-background-colour 0 0 0 2px;
                                     color: $nhsuk-black;
                                     text-decoration: none;
                                 }
@@ -214,7 +208,7 @@ nav{
     color:$nhsuk-black;
 
     .nhsers-c-patient-info-item {
-        padding: 24px 0 24px 24px;
+        padding: 24px 0 24px 16px;
         display: inline-block;
         position: relative;
 
@@ -258,11 +252,11 @@ nav{
     .nhsers-c-patient-info-dropdown{
         max-width: 550px;
         background: $nhsuk-white;
-        border:$nhsuk-grey-1 1px solid;
+        border:$nhsuk-grey-3 1px solid;
         position: absolute;
         padding: 32px;
         top: 60px;
-        left: 20px;
+        left: 12px;
         box-shadow: $nhsuk-grey-3 1px 1px 5px;
         z-index:999;
 
@@ -287,7 +281,7 @@ nav{
 
         &:before {
             top: -22px;
-            border-color: transparent transparent $nhsuk-grey-1 transparent;
+            border-color: transparent transparent $nhsuk-grey-3 transparent;
             border-width: 11px;
         }
         
