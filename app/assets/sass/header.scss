@@ -1,0 +1,309 @@
+$nhsuk-black: #212b32;
+$nhsuk-blue: #005EB8;
+$nhsuk-light-blue-1: #80AEDB;
+$nhsuk-light-blue-2: #4D8ECD;
+$nhsuk-dark-blue-1: #003970;
+$nhsuk-white: #fff;
+$nhsuk-yellow: #FFBF33;
+$nhsuk-grey-1: #425563;
+$nhsuk-grey-2: #768692;
+$nhsuk-grey-3: #aeb7bd;
+$nhsuk-grey-4: #d8dde0;
+$nhsuk-grey-5: #f0f4f5;
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix{
+    clear: both;
+}
+
+a:hover {
+    background:$nhsuk-yellow;
+    box-shadow: $nhsuk-yellow 0 0 0 2px;
+    color: $nhsuk-black;
+    text-decoration: none;
+}
+
+header{
+    background: $nhsuk-blue;
+    padding: 0 24px;
+    box-sizing: border-box;
+    border-bottom: $nhsuk-light-blue-1 1px solid;
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .nhsers-c-header-logo{
+        float: left;
+
+        .nhsers-c-header-logo-inner{
+            height: 80px;
+            display: table-cell;
+            vertical-align: middle;
+
+            img {
+                width: 80px;
+                margin-right:16px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            h1{
+                font-size: 18px;
+                color: $nhsuk-white;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .nhsers-c-header-links{
+        float: right;
+
+        .nhsers-c-header-links-inner{
+            height: 80px;
+            display: table-cell;
+            vertical-align: middle;
+            
+            ul{
+                list-style: none;
+
+                li{
+                    height: 100%;
+                    display: block;
+                    float: left;
+                    color: $nhsuk-white;
+                    font-size: 16px;
+                    border-left: $nhsuk-light-blue-2 1px solid;
+
+                    &.nhsers-c-header-links-profile-loggedout{
+                        padding: 30px 0 30px 24px;
+
+                        &:before{
+                            content: '';
+                            display: inline-block;
+                            width: 13px;
+                            height: 17px;
+                            margin-right:8px;
+                            background: url(/public/images/icon-profile.svg) 0 0 no-repeat;
+                        }
+                    }
+
+                    &.nhsers-c-header-links-profile-loggedin{
+                        height: 80px;
+                        padding: 16px 0 0 24px;
+                        line-height: 22px;
+
+                        .nhsers-c-header-links-profile-loggedin-left{
+                            float: left;
+                            text-align: right;
+                            padding-right: 24px;
+
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+
+                        .nhsers-c-header-links-profile-loggedin-right{
+                            float: right;
+                            
+                            p:before{
+                                content: '';
+                                display: inline-block;
+                                width: 13px;
+                                height: 17px;
+                                margin-right:8px;
+                                background: url(/public/images/icon-profile.svg) 0 0 no-repeat;
+                            }
+
+                            a{
+                                padding: 0;
+                                text-decoration: underline;
+                                display: inline-block;
+                                font-size: 14px;
+
+                                &:hover{
+                                    background:$nhsuk-yellow;
+                                    box-shadow: $nhsuk-yellow 0 0 0 2px;
+                                    color: $nhsuk-black;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    &.nhsers-c-header-links-alerts{
+                        position: relative;
+
+                        &:before{
+                            content: '1';
+                            width: 14px;
+                            height: 14px;
+                            display: block;
+                            background: red;
+                            border-radius: 20px;
+                            color:$nhsuk-white;
+                            font-size: 11px;
+                            text-align: center;
+                            position: absolute;
+                            top: 25px;
+                            right: 14px;
+                        }
+                    }
+                    
+                    a{
+                        padding: 30px 24px;
+                        display: block;
+                        color: $nhsuk-white;
+                        text-decoration: none;
+
+                        &:hover{
+                            background: $nhsuk-dark-blue-1;
+                            text-decoration: underline;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+nav{
+    background: $nhsuk-blue;
+
+    ul{
+        list-style: none;
+
+        li{
+            float: left;
+
+            a{
+                padding: 24px 32px;
+                font-size: 18px;
+                color:$nhsuk-white;
+                display: block;
+                text-decoration: none;
+
+                &:hover{
+                    background: $nhsuk-dark-blue-1;
+                    color:$nhsuk-white;
+                    text-decoration: underline;
+                    box-shadow: none;
+                }
+            }
+
+            &.current a{
+                background:$nhsuk-white;
+                color:$nhsuk-black;
+            }
+        }
+    }
+}
+
+.nhsers-c-patient-info{
+    background:$nhsuk-grey-5;
+    border-bottom:$nhsuk-grey-3 1px solid;
+    font-size: 18px;
+    color:$nhsuk-black;
+
+    .nhsers-c-patient-info-item {
+        padding: 24px 0 24px 24px;
+        display: inline-block;
+        position: relative;
+
+        &:last-child{
+            margin-left: 16px;
+        }
+
+        a.nhsers-c-patient-info-link{
+            padding-right: 16px;
+            display: inline-block;
+            position: relative;
+            color: $nhsuk-blue;
+
+            &:hover{
+                color: $nhsuk-black;
+            }
+
+            &:after{
+                content: '';
+                width: 12px;
+                height: 7px;
+                display: block;
+                background: url(/public/images/icon-triangle-open-blue.svg) 0 0 no-repeat;
+                position: absolute;
+                top:8px;
+                right:0px;
+            }
+
+            &.open:after{
+                background-image: url(/public/images/icon-triangle-close-blue.svg);
+            }
+        }
+
+        &.ubrn{
+            padding:24px;
+            background: $nhsuk-grey-1;
+            color: $nhsuk-white;
+        }
+    }
+
+    .nhsers-c-patient-info-dropdown{
+        max-width: 550px;
+        background: $nhsuk-white;
+        border:$nhsuk-grey-1 1px solid;
+        position: absolute;
+        padding: 32px;
+        top: 60px;
+        left: 20px;
+        box-shadow: $nhsuk-grey-3 1px 1px 5px;
+        z-index:999;
+
+        display: none;
+
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 227px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        &:after {
+            top: -21px;
+            border-color: transparent transparent $nhsuk-white transparent;
+            border-width: 11px;
+        }
+
+        &:before {
+            top: -22px;
+            border-color: transparent transparent $nhsuk-grey-1 transparent;
+            border-width: 11px;
+        }
+        
+        ul{
+            list-style: none;
+            column-count: 2;
+            column-width: 49%;
+            -webkit-column-count: 2;
+            -webkit-column-width: 49%;
+
+            li{
+                line-height: 22px;
+                margin-bottom:16px;
+                font-size: 16px;
+                color: $nhsuk-black;
+            }
+        }
+    }
+}
