@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link href="/public/stylesheets/header-v2.css" media="screen" rel="stylesheet" type="text/css" />
+        <title>e-Referral Service</title>
+    </head>
+    <body>
+        <header>
+            <div class="nhsers-c-header-logo">
+                <div class="nhsers-c-header-logo-inner">
+                    <a href="/prototypes"><img src="/public/images/nhs-rev-logotype.svg"></a>
+                    <h1>e-Referral Service</h1>
+                </div>
+            </div>
+            <div class="nhsers-c-header-links">
+                <div class="nhsers-c-header-links-inner">
+                    <div class="nhsers-c-header-links-menu">
+                        Menu
+                        <div class="nhsers-c-header-links-menu-dropdown">
+                            <ul>
+                                <li><a href="/header-v2/002-patient-search">Patient</a></li>
+                                <li><a href="/header-v2/005-worklists">Worklists</a></li>
+                                <li><a href="">Directory of Services</a></li>
+                                <li class="current"><a href="/header-v2/006-enquiries">Enquiries</a></li>
+                                <li><a href="">Reports</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsers-c-header-links-profile">
+                        <span></span>COLBECK, Alex (Mr)
+                        <div class="nhsers-c-header-links-profile-dropdown">
+                            <div class="nhsers-c-header-links-profile-info">
+                                <p>Service Provider Clinician Admin</p>
+                                <p>XX DO NOT USE XXX EBS GP PRACTICE 01</p>
+                                <p><br /><strong>On behalf of:</strong></p>
+                                <p>BLOGGS, Joe (Mr)</p>
+                                <p><a href="">Change</a></p>
+                            </div>
+                            <ul>
+                                <li><a href="">Alerts</a></li>
+                                <li><a href="">Preferences</a></li>
+                                <li><a href="">Help</a></li>
+                                <li><a href="">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+
+        <h1>Enquiries</h1>
+
+        <img src="/public/images/enquiries.png" class="screenshot"/>
+
+    </body>
+
+    <script src="/public/javascripts/jquery-3.3.1.min.js"></script>
+    <script>
+        $( ".nhsers-c-header-links-menu" ).click(function() {
+            $( ".nhsers-c-header-links-menu-dropdown" ).toggle();
+            $(this).toggleClass("open");
+            
+        });
+        $( ".nhsers-c-header-links-profile" ).click(function() {
+            $( ".nhsers-c-header-links-profile-dropdown" ).toggle();
+            $(this).toggleClass("open");
+            
+        });
+    </script>
+
+</html>
