@@ -168,6 +168,21 @@ header{
                     position: absolute;
                     top: 7px;
                     left: 16px;
+
+                    &.alert:after{
+                        content: '1';
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        background: red;
+                        border-radius: 20px;
+                        color:$nhsuk-white;
+                        font-size: 11px;
+                        text-align: center;
+                        position: absolute;
+                        top: -4px;
+                        left: -10px;
+                    }
                 }
 
                 &:after{
@@ -269,6 +284,25 @@ header{
                             &.current a{
                                 background: $nhsuk-dark-blue-1;
                                 color: $nhsuk-white;
+                            }
+
+                            &.alert{
+                                position: relative;
+                                
+                                &:after{
+                                    content: '1';
+                                    width: 14px;
+                                    height: 14px;
+                                    display: block;
+                                    background: red;
+                                    border-radius: 20px;
+                                    color:$nhsuk-white;
+                                    font-size: 11px;
+                                    text-align: center;
+                                    position: absolute;
+                                    top: 12px;
+                                    left: 54px;
+                                }
                             }
                         }
                     }
@@ -374,6 +408,7 @@ header{
                 margin-bottom:16px;
                 font-size: 16px;
                 color: $nhsuk-black;
+                display: inline-block;
             }
         }
     }
