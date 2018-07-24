@@ -379,7 +379,7 @@ header{
     }
 
     .nhsers-c-patient-info-dropdown{
-        max-width: 550px;
+        width: 550px;
         background: $nhsuk-white;
         border:$nhsuk-grey-3 1px solid;
         position: absolute;
@@ -413,20 +413,27 @@ header{
             border-color: transparent transparent $nhsuk-grey-3 transparent;
             border-width: 11px;
         }
+
+        .nhsers-c-patient-info-container{
+            margin-bottom:16px;
+            border-bottom: $nhsuk-grey-3 1px solid;
+        }
         
         ul{
             list-style: none;
-            column-count: 2;
-            column-width: 49%;
-            -webkit-column-count: 2;
-            -webkit-column-width: 49%;
 
             li{
+                width: 48%;
+                float: left;
                 line-height: 22px;
                 margin-bottom:16px;
                 font-size: 16px;
                 color: $nhsuk-black;
-                display: inline-block;
+                display: block;
+
+                &:nth-of-type(odd){
+                    margin-right: 2%;
+                }
             }
         }
     }
