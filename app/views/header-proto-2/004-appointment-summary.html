@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <link href="/public/stylesheets/header-proto-2.css" media="screen" rel="stylesheet" type="text/css" />
+        <title>e-Referral Service</title>
+    </head>
+    <body>
+        <header>
+            <div class="nhsers-c-header-logo">
+                <div class="nhsers-c-header-logo-inner">
+                    <a href="/prototypes"><img src="/public/images/nhs-rev-logotype.svg"></a>
+                    <p>e-Referral Service</p>
+                </div>
+            </div>
+            <div class="nhsers-c-header-links">
+                <div class="nhsers-c-header-links-inner">
+                    <div class="nhsers-c-header-links-profile">
+                        <span class="alert"></span>COLBECK, Alex (Mr)
+                        <div class="nhsers-c-header-links-profile-dropdown">
+                            <div class="nhsers-c-header-links-profile-info">
+                                <p>Service Provider Clinician Admin</p>
+                                <p>XX DO NOT USE XXX EBS GP PRACTICE 01</p>
+                                <!--<p><br /><strong>On behalf of:</strong></p>
+                                <p>BLOGGS, Joe (Mr)</p>
+                                <p><a href="">Change</a></p>-->
+                            </div>
+                            <ul>
+                                <li class="alert"><a href="">Alerts</a></li>
+                                <li><a href="">Preferences</a></li>
+                                <li><a href="">Help</a></li>
+                                <li><a href="/header-proto-2/001-role-selection">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+
+        <section class="nhsers-c-patient-info">
+            <div class="nhsers-c-patient-info-item ubrn">
+                <strong>UBRN:</strong> 3452 1007 0056
+            </div>
+            <div class="nhsers-c-patient-info-item">
+                <strong>Patient:</strong>  
+                <a href="#" class="nhsers-c-patient-info-link">BLOGGS, Joe (Mr)</a>
+                <div class="nhsers-c-patient-info-dropdown">
+                    
+                    <div class="nhsers-c-patient-info-container">
+                        <ul>
+                            <li><strong>Access code</strong><br />
+                            sausages mash</li>
+
+                            <li><strong>Consent to call back</strong><br />
+                            Express consent</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <ul>
+                        <li><strong>Home address</strong><br />
+                        Solution Assurance, 1 Trevelyan Sq.<br />
+                        Boar Lane<br />
+                        Leeds<br />
+                        West Yorkshire<br />
+                        LS1 6AE</li>
+                            
+                        <li><strong>Primary home email</strong><br />
+                        joe.bloggs@gmail.com</li>
+
+                        <li><strong>Primary work email</strong><br />
+                        joe.bloggs24@mywork.com</li>
+
+                        <li><strong>Primary home phone</strong><br />
+                        01133 454 454</li>
+                        
+                        <li><strong>Secondary home phone</strong><br />
+                        01133 454 454</li>
+
+                        <li><strong>Mobile phone</strong><br />
+                        07635 473 821</li>
+
+                        <li><strong>Mobile work phone</strong><br />
+                        07635 473 821</li>
+
+                        <li><strong>Primary home fax</strong><br />
+                        01134 567 658</li>
+
+                        <li><strong>Secondary home fax</strong><br />
+                        01134 567 658</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="nhsers-c-patient-info-item">
+                Male
+            </div>
+            <div class="nhsers-c-patient-info-item">
+                56yrs (6 Jun 1962)
+            </div>
+            <div class="nhsers-c-patient-info-item">
+                <strong>NHS No:</strong> 999 007 4563
+            </div> 
+        </section>
+
+        <h1>Appointment Summary</h1>
+
+        <a href="/header-proto-2/005-worklists"><img src="/public/images/appointment_summary.png" class="screenshot"/></a>
+
+    </body>
+
+    <script src="/public/javascripts/jquery-3.3.1.min.js"></script>
+    <script>
+        $( ".nhsers-c-header-links-menu" ).click(function() {
+            $( ".nhsers-c-header-links-menu-dropdown" ).toggle();
+            $(this).toggleClass("open");
+            
+        });
+        $( ".nhsers-c-header-links-profile" ).click(function() {
+            $( ".nhsers-c-header-links-profile-dropdown" ).toggle();
+            $(this).toggleClass("open");
+            
+        });
+        $( ".nhsers-c-patient-info-link" ).click(function() {
+            $( ".nhsers-c-patient-info-dropdown" ).toggle();
+            $(this).toggleClass("open");
+            return false;
+        });
+    </script>
+
+</html>

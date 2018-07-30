@@ -1,0 +1,454 @@
+@import "new-colours";
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+a:hover {
+    background:$nhsuk-link-hover-background-colour;
+    box-shadow: $nhsuk-link-hover-background-colour 0 0 0 2px;
+    color: $nhsuk-black;
+    text-decoration: none;
+}
+
+header{
+    background: $nhsuk-blue;
+    padding: 0 24px;
+    box-sizing: border-box;
+    border-bottom: $nhsuk-light-blue-1 1px solid;
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .nhsers-c-header-logo{
+        float: left;
+
+        .nhsers-c-header-logo-inner{
+            height: 64px;
+            display: table-cell;
+            vertical-align: middle;
+
+            a{
+                display: inline-block;
+            }
+
+            img {
+                width: 80px;
+                display: inline-block;
+                vertical-align: middle;
+                background: $nhsuk-blue;
+            }
+
+            p{
+                margin-left:16px;
+                font-size: 18px;
+                color: $nhsuk-white;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .nhsers-c-header-links{
+        float: right;
+
+        .nhsers-c-header-links-inner{
+            height: 64px;
+            display: table-cell;
+            vertical-align: middle;
+
+            .nhsers-c-header-links-menu{
+                padding: 8px 38px 8px 16px;
+                display: inline-block;
+                border:$nhsuk-white 1px solid;
+                border-radius: 4px;
+                font-size: 16px;
+                color: $nhsuk-white;
+                position: relative;
+                cursor: pointer;
+
+                &:after{
+                    content:'';
+                    width: 12px;
+                    height: 7px;
+                    background: url(/public/images/icon-triangle-open-white.svg) 0 0 no-repeat;
+                    display: block;
+                    position: absolute;
+                    top: 15px;
+                    right: 16px;
+                }
+
+                &:hover {
+                    background: $nhsuk-dark-blue-1;
+                }
+
+                &.open{
+                    border-top:$nhsuk-grey-3 1px solid;
+                    border-left:$nhsuk-grey-3 1px solid;
+                    border-right:$nhsuk-grey-3 1px solid;
+                    border-bottom:none;
+                    border-radius: 4px 4px 0 0;
+                    background: $nhsuk-white;
+                    color: $nhsuk-blue;
+
+                    &:after{
+                        background: url(/public/images/icon-triangle-close-blue.svg) 0 0 no-repeat;
+                    }
+                }
+
+                .nhsers-c-header-links-menu-dropdown{
+                    min-width: 200px;
+                    max-width: 300px;
+                    position: absolute;
+                    top: 35px;
+                    right: -1px;
+                    background: $nhsuk-white;
+                    border: $nhsuk-grey-3 1px solid;
+                    box-shadow: $nhsuk-grey-3 -1px 1px 3px 0px;
+                    z-index: 999;
+                    display: none;
+
+                    ul{
+                        list-style: none;
+
+                        li{
+                            a{
+                                display: block;
+                                padding: 16px;
+                                font-size: 16px;
+                                color: $nhsuk-blue;
+                                text-decoration: none;
+
+                                &:hover{
+                                    background: $nhsuk-blue;
+                                    color: $nhsuk-white;
+                                    text-decoration: underline;
+                                    box-shadow: none;
+                                }
+                            }
+                            
+                            &.current a{
+                                background: $nhsuk-dark-blue-1;
+                                color: $nhsuk-white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nhsers-c-header-links-profile{
+                padding: 8px 38px;
+                margin-left: 16px;
+                display: inline-block;
+                border:$nhsuk-white 1px solid;
+                border-radius: 4px;
+                font-size: 16px;
+                color: $nhsuk-white;
+                position: relative;
+                cursor: pointer;
+
+                span{
+                    display: block;
+                    width: 13px;
+                    height: 17px;
+                    background: url(/public/images/icon-profile.svg) 0 0 no-repeat;
+                    position: absolute;
+                    top: 8px;
+                    left: 16px;
+
+                    &.alert:after{
+                        content: '1';
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        background: red;
+                        border-radius: 20px;
+                        color:$nhsuk-white;
+                        font-size: 11px;
+                        text-align: center;
+                        position: absolute;
+                        top: -4px;
+                        left: -10px;
+                        //animation: blinker 2.5s ease-out infinite;
+
+                        //@keyframes blinker {  
+                        //    20% { opacity: 0; }
+                        //}
+                    }
+                }
+
+                &:after{
+                    content:'';
+                    width: 12px;
+                    height: 7px;
+                    background: url(/public/images/icon-triangle-open-white.svg) 0 0 no-repeat;
+                    display: block;
+                    position: absolute;
+                    top: 15px;
+                    right: 16px;
+                }
+
+                &:hover {
+                    background: $nhsuk-dark-blue-1;
+                }
+
+                &.open{
+                    border-top:$nhsuk-grey-3 1px solid;
+                    border-left:$nhsuk-grey-3 1px solid;
+                    border-right:$nhsuk-grey-3 1px solid;
+                    border-bottom:none;
+                    border-radius: 4px 4px 0 0;
+                    background: $nhsuk-white;
+                    color: $nhsuk-blue;
+
+                    span{
+                        background-image: url(/public/images/icon-profile-black.svg);
+                    }
+
+                    &:after{
+                        background-image: url(/public/images/icon-triangle-close-blue.svg);
+                    }
+                }
+
+                &.loggedout{
+                    padding-right: 0;
+                    border: none;
+
+                    &:after{
+                        display: none;
+                    }
+
+                    &:hover{
+                        background: none;
+                        cursor: inherit;
+                    }
+
+                    a{
+                        margin-left: 24px;
+                        color: $nhsuk-white;
+
+                        &:hover{
+                            color: $nhsuk-black;
+                        }
+                    }
+                }
+
+                .nhsers-c-header-links-profile-dropdown{
+                    min-width: 300px;
+                    position: absolute;
+                    top: 35px;
+                    right: -1px;
+                    background: $nhsuk-white;
+                    border: $nhsuk-grey-3 1px solid;
+                    box-shadow: $nhsuk-grey-3 -1px 1px 3px 0px;
+                    z-index: 999;
+                    display: none;
+
+                    .nhsers-c-header-links-profile-info{
+                        padding: 24px 16px;
+                        background: $nhsuk-grey-5;
+
+                        p{
+                            margin-bottom:8px;
+                            font-size: 16px;
+                            color: $nhsuk-black;
+
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    ul{
+                        list-style: none;
+
+                        li{
+                            a{
+                                display: block;
+                                padding: 16px;
+                                color: $nhsuk-blue;
+                                text-decoration: none;
+
+                                &:hover{
+                                    background: $nhsuk-blue;
+                                    color: $nhsuk-white;
+                                    text-decoration: underline;
+                                    box-shadow: none;
+                                }
+                            }
+                            
+                            &.current a{
+                                background: $nhsuk-dark-blue-1;
+                                color: $nhsuk-white;
+                            }
+
+                            &.alert{
+                                position: relative;
+                                
+                                &:after{
+                                    content: '1';
+                                    width: 14px;
+                                    height: 14px;
+                                    display: block;
+                                    background: red;
+                                    border-radius: 20px;
+                                    color:$nhsuk-white;
+                                    font-size: 11px;
+                                    text-align: center;
+                                    position: absolute;
+                                    top: 12px;
+                                    left: 54px;
+                                }
+
+                                a{
+                                    border-left: red 8px solid;
+                                    text-indent: -8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nhsers-c-patient-info{
+    background:$nhsuk-grey-5;
+    border-bottom:$nhsuk-grey-3 1px solid;
+    font-size: 16px;
+    color:$nhsuk-black;
+
+    &.noubrn{
+        padding-left: 16px;
+    }
+
+    .nhsers-c-patient-info-item {
+        padding: 12px 0 12px 8px;
+        display: inline-block;
+        position: relative;
+
+        &:last-child{
+            margin-left: 16px;
+        }
+
+        a.nhsers-c-patient-info-link{
+            padding-right: 16px;
+            display: inline-block;
+            position: relative;
+            color: $nhsuk-blue;
+
+            &:hover{
+                color: $nhsuk-black;
+            }
+
+            &:after{
+                content: '';
+                width: 12px;
+                height: 7px;
+                display: block;
+                background: url(/public/images/icon-triangle-open-blue.svg) 0 0 no-repeat;
+                position: absolute;
+                top:8px;
+                right:0px;
+            }
+
+            &.open:after{
+                background-image: url(/public/images/icon-triangle-close-blue.svg);
+            }
+        }
+
+        &.ubrn{
+            padding:12px 24px;
+            background: $nhsuk-grey-1;
+            color: $nhsuk-white;
+        }
+    }
+
+    .nhsers-c-patient-info-dropdown{
+        width: 550px;
+        background: $nhsuk-white;
+        border:$nhsuk-grey-3 1px solid;
+        position: absolute;
+        padding: 32px;
+        top: 43px;
+        left:70px;
+        box-shadow: $nhsuk-grey-3 1px 1px 5px;
+        z-index:999;
+
+        display: none;
+
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        &:after {
+            top: -21px;
+            border-color: transparent transparent $nhsuk-white transparent;
+            border-width: 11px;
+        }
+
+        &:before {
+            top: -22px;
+            border-color: transparent transparent $nhsuk-grey-3 transparent;
+            border-width: 11px;
+        }
+
+        .nhsers-c-patient-info-container{
+            margin-bottom:16px;
+            border-bottom: $nhsuk-grey-3 1px solid;
+        }
+        
+        ul{
+            list-style: none;
+
+            li{
+                width: 48%;
+                float: left;
+                line-height: 22px;
+                margin-bottom:16px;
+                font-size: 16px;
+                color: $nhsuk-black;
+                display: block;
+
+                &:nth-of-type(odd){
+                    margin-right: 2%;
+                }
+            }
+        }
+    }
+}
+
+h1{
+    font-size: 24px;
+    font-weight: normal;
+    color: $nhsuk-black;
+    margin: 16px 0 16px 24px;
+    display: inline-block;
+}
+
+img.screenshot{
+    width: 100%;
+    height: auto;
+    display: block;
+}
