@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link href="/public/stylesheets/header-proto-3.css" media="screen" rel="stylesheet" type="text/css" />
+        <title>e-Referral Service</title>
+    </head>
+    <body>
+
+        <a href="/header-proto-3/002-worklist-for-review"><img src="/public/images/header-proto-3-001.png" class="screenshot"/></a>
+
+    </body>
+
+    <script src="/public/javascripts/jquery-3.3.1.min.js"></script>
+    <script>
+        $( ".nhsers-c-header-links-menu" ).click(function() {
+            $( ".nhsers-c-header-links-menu-dropdown" ).toggle();
+            $(this).toggleClass("open");
+        });
+        $( ".nhsers-c-header-links-profile" ).click(function() {
+            $( ".nhsers-c-header-links-profile-dropdown" ).toggle();
+            $(this).toggleClass("open");
+        });
+    </script>
+
+</html>
