@@ -5,15 +5,21 @@
     </head>
     <body style="position: relative;">
 
-        <img src="/public/images/header-proto-3-002.png" class="screenshot screenshot-1" style="position: absolute; top: 0; left: 0;"/>
-        <a href="/header-proto-3/002-worklist-for-review"><img src="/public/images/header-proto-3-001.png" class="screenshot"/></a>
-
+        <img src="/public/images/header-proto-3-002.png" class="screenshot nopopup"/>
+        <img src="/public/images/popup1.png" class="screenshot popup1" style="display: none; cursor: pointer;"/>
+        <a href="/header-proto-3/002-worklist-for-review"><img src="/public/images/popup2.png" class="screenshot popup2" style="display: none;"/></a>
+        
     </body>
 
     <script src="/public/javascripts/jquery-3.3.1.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(".screenshot-1").show(0).delay(2000).fadeOut(500)
+            $(".popup1").hide(0).delay(2000).fadeIn(500);
+            $(".nopopup").show(0).delay(2000).fadeOut(500);
+        });
+        $( ".popup1" ).click(function() {
+            $(".popup2").fadeIn(500);
+            $(".popup1").fadeOut(500);
         });
         $( ".nhsers-c-header-links-menu" ).click(function() {
             $( ".nhsers-c-header-links-menu-dropdown" ).toggle();
