@@ -1,0 +1,87 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<style>
+
+
+	body {
+		background-color: #f0f4f5
+	}
+
+	.referral {
+		border-left: #990000;
+		border-left-style: solid;
+		border-left-width: 4px;
+		padding:16px;
+		margin-bottom: 2rem;
+		background-color: #ffffff;
+
+	}
+
+
+	</style>
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/email-login-2/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<h1 class="heading-large" style="color: #0072C6;">
+		3 referrals for Mike Smith
+		</h1>
+		<div class="grid-row">
+			<div class="column-three-quarters" >
+				
+				<h2 class="heading-medium">You need to book 2 appointments</h2>
+				
+				<div class="referral">
+					<div style="display: table;width:100%">
+						<div style="display: table-cell;vertical-align: top;width:60%">
+								<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> <strong>Booking reference number 0002 7480 8900</strong><br>
+									Referred by Dr Zubeir Smith at New Street Medical Practice on 13 August 2018</p>
+						</div>	
+						<div style="display: table-cell;vertical-align: top;text-align: right;">
+							<a href="/email-login-2/clinic" class="button">Choose an appointment</a>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="referral">
+					<div style="display: table;width:100%">
+						<div style="display: table-cell;vertical-align: top;width:60%">
+							<p style="padding-top: 0px !important; margin-bottom: 0px !important;"><strong>Booking reference number 8854 3394 5939</strong><br>
+							Referred by Dr Zubeir Smith at New Street Medical Practice on 3 September 2018</p>
+						</div>	
+						<div style="display: table-cell;vertical-align: top;text-align: right;">
+							<a href="/email-login-2/clinic" class="button">Choose an appointment</a>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="heading-medium" style="margin-top: 2rem;">You have 1 appointment</h2>
+
+				<div class="referral" style="border-color: #696969">
+					<div style="display: table;width:100%">
+						<div style="display: table-cell;vertical-align: top;width:70%;">
+							<p style="padding-top: 0px !important; margin-bottom: 0px !important;"><strong>Monday 12 November 2018, 1:30pm</strong>
+							<br>at General Respiratory Medicine-Respiratory Medicine-Leeds (Seacroft Hospital)-40671<br>
+							<!-- Booking reference number 7843 8844 3340 --></p>
+						</div>	
+						<div style="display: table-cell;vertical-align: top;text-align: right;width:30%;">
+								<a href="/email-login-2/clinic" class="button">View details</a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			
+
+			<div class="column-quarter">
+			</div>
+		</div>
+</main>
+{% endblock %}

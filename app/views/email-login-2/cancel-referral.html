@@ -1,0 +1,52 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			<!-- <a href="/asi/hello" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" />  Back to start</a> -->
+			<div style="float:right;"><a href="/email-login-2/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:2rem;">
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<h1 class="heading-xlarge" style="color: #0072C6;">
+				Cancel this referral
+				</h1>
+				<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:4rem;">
+					<h3 class="heading-medium"><img src="/public/images/icon-important.png" /> Before you cancel this referral it is advised that you discuss this with the person who referred you.</h3>
+				</div>
+				<p><strong>Select a reason from the options below:</strong></p>
+				<!--<h3 class="heading-medium">Referral to book</h3>-->
+				<div>
+					<div class="form-item-wrapper" style="padding-top: 2rem !important;">
+						<div class="form-group" >
+							<input type="radio" id="1" name="minor">
+							<label class="form-control-radio minor" for="1" style="padding-left:4rem;">
+								I intend to go private
+							</label>
+						</div>
+						<div class="form-group" >
+							<input type="radio" id="5" name="minor" >
+							<label class="form-control-radio minor" for="5" style="padding-left:4rem;">
+								I no longer require an appointment
+							</label>
+						</div>
+					</div>
+					<p><a href="#" class="button " style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Cancel referral</a></p>
+					<p style="padding-top: 0rem !important;"><a href="/email-login-2/hello" style="margin-top: 2em !important;">Do not cancel referral</a>
+				</p>
+			</div>
+		</div>
+		<div class="column-third">
+			<!--<div style="border-top:solid 1rem #004D86;margin-bottom:4rem;margin-top:2rem;">
+				<h3 class="heading-medium" style="line-height: 30px;">Appointment Details</h3>
+				<p style="">Clinic name<br />
+				<strong>General Respiratory Medicine-Respiratory Medicine-CityTH (NAME Hosp)-CODE</strong></p>
+				<p style=""> Date and time<br />
+				<strong>Monday 2nd May 2016, 2:00pm</strong></p>
+			</div>-->
+		</div>
+	</div>
+</main>
+{% endblock %}

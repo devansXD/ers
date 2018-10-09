@@ -1,0 +1,49 @@
+{% extends 'templates/nhs_transaction_layout.html' %}
+{% block pageTitle %}eRS prototypes{% endblock %}
+{% import 'includes/ui_element_macros.html' as ui_element_macros %}
+{% block content %}
+
+	{{ ui_element_macros.breadcrumbs({
+		items: {
+		  1: {
+			text: "Prototypes",
+			href: "/prototypes"
+		  },
+		  2: {
+			text: "Paperless"
+		  }
+		}
+	  })}}
+	<main id="content" role="main">
+		<h1 class="heading-large">Prototypes for paperless patient communication</h1>
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<h3>Initital designs</h3>
+				<ul>
+					<li><a href="https://marvelapp.com/4i688ig" target="_blank">Paperless login from email - marvel</a></li>
+				</ul>
+					
+					
+				<h3>Patient has one referral</h3>
+				<ul>
+					<li><a href="/email-login/start">NHS start page.</a></span></li>		
+					<li><a href="/email-login/confirm-id">Link from email 1</a></li>
+					<li><a href="/email-login/login-ubrn-link">Link from email 2</a></li>
+				</ul>
+				
+				<h3>Patient has multiple referrals</h3>
+				<ul>
+					<li><a href="/email-login-2/start">NHS start page.</a></span></li>		
+					<li><a href="/email-login-2/confirm-id">Link from email 1</a></li>
+					<li><a href="/email-login-2/login-ubrn-link">Link from email 2</a></li>
+				</ul>
+				
+	
+	
+			</div>
+			<div class="column--one-third">
+				guff
+			</div>
+		</div>
+	</main>
+{% endblock %}
