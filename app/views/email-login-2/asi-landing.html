@@ -1,0 +1,51 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;" style="color:#ffffff;"><a href="/email-login-2/all-referrals" style="color:#ffffff;">View all referrals (3)</a> | <a href="/email-login-2/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<h1 class="heading-large" style="color: #0072C6;">
+				Referral for Sam Taylor
+				</h1>
+				<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:1rem;margin-top:1rem;">
+					<h3 class="heading-medium"><img src="/public/images/icon-important.png" /> The clinic will contact you to book an appointment.</h3>
+					<p>When the clinic contacts you, they will need your Booking Reference Number and Access Code.</p>
+					<p>If the clinic does not contact you by Monday 5 November 2018, you can phone them on: 0113 123 1234 (Monday to Friday, 9am to 5pm)</p>
+				</div>
+				<div style="background:#dee0e2;padding:1rem;margin-top:5rem;">
+					<h3 class="heading-medium">Your appointment request details</h3>
+					<div style="background:#ffffff;padding:1.4rem;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							Booking reference number<br />
+						<strong>0002 2400 7090</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+							<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Clinic <br />
+								<strong>General Cardiology MMH-Cardiology-Doncaster & Bassetlaw NHS FT-RP5MM</strong></p>
+							
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Location<br />
+						<strong>Beckett St, Leeds, LS9 7TF</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by <br />
+						<strong>Dr Zubeir Smith at Colton Mill Medical</strong></p>
+					</div>
+					<p><a href="/email-login-2/cancel-appointment">Cancel referral</a>
+				</p>
+				<div class="form-group" style="padding-top: 2em !important;">
+				</div>
+			</div>
+			<p class="heading-medium" style="padding-top: 2rem !important;"">You have <a href="/email-login-2/all-referrals">3 referrals</a></p>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}
