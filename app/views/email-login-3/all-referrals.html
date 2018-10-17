@@ -1,0 +1,92 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<style>
+
+
+	body {
+		background-color: #f0f4f5
+	}
+
+	.referral {
+		border-left: #009933;
+		border-left-style: solid;
+		border-left-width: 4px;
+		padding: 20px;
+		margin-bottom: 2rem;
+		background-color: #ffffff;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.choose-button {
+
+
+	}
+
+	</style>
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/email-login-3/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<h1 class="heading-large" style="color: #0072C6;">
+		3 referrals for Sam Taylor
+		</h1>
+		<div class="grid-row">
+			<div class="column-three-quarters" >
+				
+				<h2 class="heading-medium">1 appointment to book</h2>
+
+					<div class="referral">
+						<div style="width:399px;">
+								<p style="padding-top: 0px ; margin-bottom: 0px;"> <strong>Booking reference number 0002 7480 8900</strong><br>
+									Referred to <strong>Rheumatology</strong> by Dr Zubeir Smith at New Street Medical Practice on 13 August 2018</p>
+						</div>	
+						<div class="choose-button" style="text-align: center;">
+								<a href="/email-login-3/clinic" class="button" style="min-width: 230px">Choose an appointment</a>
+						</div>
+					</div>
+
+
+				<h2 class="heading-medium" style="margin-top: 2rem;">1 appointment</h2>
+
+				<div class="referral" style="border-color: #696969">
+					<div style="display: table;width:100%">
+						<div style="display: table-cell;vertical-align: top;width:70%;">
+							<p style="padding-top: 0px !important; margin-bottom: 0px !important;"><strong>Wednesday 5 December 2018, 2:30pm</strong>
+							<br>Diabetic Medicine - St James's Hospital - Leeds TH - RR8<br>
+							<!-- Booking reference number 7843 8844 3340 --></p>
+						</div>	
+						<div style="display: table-cell;text-align: right;width:30%;">
+								<a href="/email-login-3/booked-appointment">View details</a>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="heading-medium" style="margin-top: 2rem;">1 referral is being reviewed</h2>
+
+				<div class="referral" style="border-color: #696969">
+					<div style="display: table;width:100%">
+						<div style="display: table-cell;vertical-align: top;width:70%;">
+							<p style="padding-top: 0px !important; margin-bottom: 0px !important;"><strong>General Cardiology MMH-Cardiology-Doncaster & Bassetlaw NHS FT-RP5MM</strong> will review your referral to <strong>Cardiology</strong> by 5 November 2018<br>
+							<!-- Booking reference number 7843 8844 3340 --></p>
+						</div>	
+						<div style="display: table-cell;text-align: right;width:30%;">
+								<a href="/email-login-3/asi-landing">View details</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			
+
+			<div class="column-quarter">
+			</div>
+		</div>
+</main>
+{% endblock %}

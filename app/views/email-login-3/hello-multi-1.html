@@ -1,0 +1,57 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/email-login-3/login" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<h1 class="heading-large" style="color: #0072C6;">
+		3 referrals for Mike Smith
+		</h1>
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<h2 class="heading-medium">You need to book 2 appointments</h2>
+				
+				<div style="background:#dee0e2;padding:1rem;">
+					<h3 style="padding-bottom:1rem;">Booking reference number 0002 7480 8900</h3>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by
+						Dr Zubeir Smith at New Street Medical Practice<br> on 13 August 2018</p>
+					</div>
+					<p style="margin-bottom: 0px !important;"><a href="/email-login-3/clinic" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:1rem;">Choose an appointment</a><a href="/email-login-3/cancel-referral" style="margin-top: 2em !important;">Cancel this referral</a>
+					</p>
+				</div>
+				<br>
+				<div style="background:#dee0e2;padding:1rem;">
+						<h3 style="padding-bottom:1rem;">Booking reference number 4452 7440 7243</h3>
+						<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+							<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by
+							Dr Gillian Hall at New Street Medical Practice<br> on 3 September 2018</p>
+						</div>
+						<p style="margin-bottom: 0px !important;"><a href="/email-login-3/clinic" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:1rem;">Choose an appointment</a><a href="/email-login-3/cancel-referral" style="margin-top: 2em !important;">Cancel this referral</a>
+						</p>
+				</div>
+				<h2 class="heading-medium">You have 1 appointment booked</h2>
+				<div style="background:#dee0e2;padding:1rem;">
+						<h3 style="padding-bottom:1rem;">Booking reference number 7843 8844 3340</h3>
+						<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">Appointment: <strong>Monday 12 November 2018, 1:30pm</strong>
+						<br>at General Respiratory Medicine-Respiratory Medicine-Leeds (Seacroft Hospital)-40671</p>
+					</div>
+						<p style="margin-bottom: 0px !important;"><a href="/email-login-3/clinic" class="button" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:1rem;">View details</a><a href="/email-login-3/cancel-referral" style="margin-top: 2em !important;">Cancel this appointment</a>
+						</p>
+				</div>
+
+			</div>
+
+			
+
+			<div class="column-third">
+			</div>
+		</div>
+</main>
+{% endblock %}

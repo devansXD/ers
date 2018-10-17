@@ -1,0 +1,45 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<!-- DARK BLUE HEADER STRIP -->
+		<!-- 
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+		</div> 
+		-->
+	</div>
+	<main id="content" role="main">
+		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		<h1 class="heading-large" style="color: #0072C6;padding-bottom: 2rem;">
+		We need to confirm your identity
+		</h1>
+		<div class="grid-row">
+			<div class="column-two-thirds">
+					<div>
+						<label class="heading-medium" for="first-label" style="padding-top:0;padding-bottom:0rem;"><strong>Enter your postcode</strong></label>
+						<p style="padding-top:0px;">For example, 'NE5 6HU'.<br></p>
+						<input type="text" id="first-label" class="form-control" style="width:60%">
+					</div>
+					<a href="/email-login-3/login-access-code-message" class="button" style="margin-top: 2em !important;">Continue</a>
+					<div class="form-group" style="padding-top: 2em !important;">
+					</div>
+
+				<details>
+				<summary><span class="summary">Need help logging in?  </span></summary>
+					<div class="panel panel-border-narrow">
+						<p>When you opted for email referrals, you should have been asked to confirm the postdcode you will use to identify youreself here. This will usually be the postcode of the address registered with your GP.</p>
+						<p>If you are having difficulty, contact your referrer to confirm the address and postcode they have for you.</p>
+						<p>Alternatively call the e-Referral Service Appointments Line and provide your booking reference number.</p>
+						<p><strong>Phone:</strong> 0345 60 88 88 8<br />
+						<strong>Textphone:</strong> 0345 8 50 22 50</p>
+						<p>Appointments Line opening hours are: weekdays 8am to 8pm; weekends and bank holidays 8am to 4pm (closed on Christmas Day).</p>
+					</div>
+				</details>
+
+			</div>
+			<div class="column-third">
+			</div>
+		</div>
+	</main>
+{% endblock %}
