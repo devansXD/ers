@@ -15,14 +15,43 @@
 		padding: 20px;
 		margin-bottom: 2rem;
 		background-color: #ffffff;
-		display: flex;
-		flex-wrap: wrap;
+		width: 100%;
+		overflow: hidden;
+	}
+	.referral-detail {
+	width:60%;
+	margin: 0px 0px;
+	padding-bottom: 1rem;
+	padding-right: 1rem;
+	box-sizing: border-box;
+	float:left;
+	/*  word-wrap: break-word; */
+	}
+	.referral-action {
+	width:40%;
+	float:right; 
+	text-align: right;
 	}
 
-	.choose-button {
-
-
+	.referral-action .button {
+	width: 230px;
 	}
+	@media only screen and (max-width: 960px)
+	{
+		.referral-detail, .referral-action
+		{
+			display: block; 
+			float: none; 
+			width: 100%;
+			text-align: left;
+		}
+			.referral {
+		width: 90%;
+		}
+		
+	}	
+
+
 
 	</style>
 	<div role="banner" id="global-header" style="background-color:#004D86;">
@@ -32,7 +61,7 @@
 		</div>
 	</div>
 	<main id="content" role="main" style="padding-top:3rem;">
-		<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+		
 		<h1 class="heading-large" style="color: #0072C6;">
 		3 referrals for Sam Taylor
 		</h1>
@@ -42,12 +71,12 @@
 				<h2 class="heading-medium">1 appointment to book</h2>
 
 					<div class="referral">
-						<div style="width:399px;">
+						<div class="referral-detail">
 								<p style="padding-top: 0px ; margin-bottom: 0px;"> <strong>Booking reference number 0002 7480 8900</strong><br>
 									Referred to <strong>Rheumatology</strong> by Dr Zubeir Smith at New Street Medical Practice on 13 August 2018</p>
 						</div>	
-						<div class="choose-button" style="text-align: center;">
-								<a href="/email-login-3/clinic" class="button" style="min-width: 230px">Choose an appointment</a>
+						<div class="referral-action">
+								<a href="/email-login-3/clinic" class="button" style="text-align: center;">Choose an appointment</a>
 						</div>
 					</div>
 
@@ -58,8 +87,7 @@
 					<div style="display: table;width:100%">
 						<div style="display: table-cell;vertical-align: top;width:70%;">
 							<p style="padding-top: 0px !important; margin-bottom: 0px !important;"><strong>Wednesday 5 December 2018, 2:30pm</strong>
-							<br>Diabetic Medicine - St James's Hospital - Leeds TH - RR8<br>
-							<!-- Booking reference number 7843 8844 3340 --></p>
+							<br>Diabetic Medicine - St James's Hospital - Leeds TH - RR8<br></p>
 						</div>	
 						<div style="display: table-cell;text-align: right;width:30%;">
 								<a href="/email-login-3/booked-appointment">View details</a>
