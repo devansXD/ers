@@ -3,60 +3,74 @@
 {% import 'includes/ui_element_macros.html' as ui_element_macros %}
 {% block content %}
 
-	{{ ui_element_macros.breadcrumbs({
-		items: {
-		  1: {
-			text: "Prototypes",
-			href: "/prototypes"
-		  },
-		  2: {
-			text: "Paperless"
-		  }
-		}
-	  })}}
-	<main id="content" role="main">
-		<h1 class="heading-large" style="padding-bottom: 2rem;">Paperless patient communication</h1>
-		<div class="grid-row">
-			<div class="column-two-thirds">
+{{ ui_element_macros.breadcrumbs({
+items: {
+1: {
+text: "Prototypes",
+href: "/prototypes"
+},
+2: {
+text: "Paperless"
+}
+}
+})}}
+<main id="content" role="main">
+	<h1 class="heading-large" style="padding-bottom: 2rem;">Paperless patient communication</h1>
+	<div class="grid-row">
+		<div class="column-half">
+			<h2 class="heading-medium">Patient</h2>
+			<h3>Patient has multiple referrals</h3>
+			Leeds Wednesday 17 October 2018
+			<ul>
+				<li><a href="/email-login-3/start">NHS start page.</a></span></li>
+				<li><a href="/email-login-3/confirm-id">Link from email 1</a></li>
+				<li><a href="/email-login-3/login-access-code">Link from email 2</a></li>
+				<li><a href="/email-login-3/all-referrals">3 referrals</a></li>
+				<li><a href="/email-login-3/all-referrals-2">Multiple referral variations</a></li>
+			</ul>
 
-				<h3>Patient has multiple referrals</h3>
-				Leeds Wednesday 17 October 2018
-				<ul>
-					<li><a href="/email-login-3/start">NHS start page.</a></span></li>		
-					<li><a href="/email-login-3/confirm-id">Link from email 1</a></li>
-					<li><a href="/email-login-3/login-access-code">Link from email 2</a></li>
-					<li><a href="/email-login-3/all-referrals">3 referrals</a></li>
-					<li><a href="/email-login-3/all-referrals-2">Multiple referral variations</a></li>
-				</ul>
-				
-				<h3>Patient has multiple referrals</h3>
-				Tested in Hull Monday 15 October 2018
-				<ul>
-					<li><a href="/email-login-2/start">NHS start page.</a></span></li>		
-					<li><a href="/email-login-2/confirm-id">Link from email 1</a></li>
-					<li><a href="/email-login-2/login-access-code">Link from email 2</a></li>
-					<li><a href="/email-login-2/all-referrals">3 referrals</a></li>
-					<li><a href="/email-login-2/all-referrals-2">Multiple referral variations</a></li>
-				</ul>
-								
-				<h3>Patient has one referral</h3>
-				Tested in Hull Monday 15 October 2018
-				<ul>
-					<li><a href="/email-login/start">NHS start page.</a></span></li>		
-					<li><a href="/email-login/confirm-id">Link from email 1</a></li>
-					<li><a href="/email-login/login-access-code">Link from email 2</a></li>
-				</ul>
-				
+			<h3>Patient has multiple referrals</h3>
+			Tested in Hull Monday 15 October 2018
+			<ul>
+				<li><a href="/email-login-2/start">NHS start page.</a></span></li>
+				<li><a href="/email-login-2/confirm-id">Link from email 1</a></li>
+				<li><a href="/email-login-2/login-access-code">Link from email 2</a></li>
+				<li><a href="/email-login-2/all-referrals">3 referrals</a></li>
+				<li><a href="/email-login-2/all-referrals-2">Multiple referral variations</a></li>
+			</ul>
 
-				<h3>Initial designs</h3>
-				<ul>
-					<li><a href="https://marvelapp.com/4i688ig" target="_blank">Paperless login from email - marvel</a></li>
-				</ul>
-	
-			</div>
-			<div class="column--one-third">
+			<h3>Patient has one referral</h3>
+			Tested in Hull Monday 15 October 2018
+			<ul>
+				<li><a href="/email-login/start">NHS start page.</a></span></li>
+				<li><a href="/email-login/confirm-id">Link from email 1</a></li>
+				<li><a href="/email-login/login-access-code">Link from email 2</a></li>
+			</ul>
 
-			</div>
+
+			<h3>Initial designs</h3>
+			<ul>
+				<li><a href="https://marvelapp.com/4i688ig" target="_blank">Paperless login from email - marvel</a></li>
+			</ul>
+
 		</div>
-	</main>
+		<div class="column-half">
+			<h2 class="heading-medium">Professional</h2>
+			<ul>
+				<li><a href="https://marvelapp.com/3g0hi58" target="_blank">Prototype v5</a> <span class="font-xsmall">Revised
+						version at end of journey, using PDS data only.</span><br /></li>
+				<li><a href="https://marvelapp.com/3ecdf7j" target="_blank">Prototype
+						v4</a> <span class="font-xsmall">Tested Sheffield, Liverpool, Leeds and Newcastle October 2018</span><br /></li>
+				<li><a href="https://marvelapp.com/efa9die" target="_blank">Prototype v3</a> <span class="font-xsmall">Tested
+						Nottingham 19/09/18</span><br /></li>
+				<li><a href="https://marvelapp.com/9i266ce" target="_blank">Prototype v2b</a> <span class="font-xsmall">Not
+						tested, design rejected.</span><br /></li>
+				<li><a href="https://EJRN61.axshare.com/01_service_selection.html" target="_blank">Axure
+						Prototype 2</a> <span class="font-xsmall">(patient does not have an existing email in PDS)</span><br /></li>
+				<li><a href="https://7e3mks.axshare.com/01_service_selection.html" target="_blank">Axure
+						Prototype 1</a> <span class="font-xsmall">(patient has existing emails in PDS)</span></li>
+			</ul>
+		</div>
+	</div>
+</main>
 {% endblock %}
