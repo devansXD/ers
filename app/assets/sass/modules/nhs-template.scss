@@ -105,12 +105,24 @@ body {
   }
 }
 
+
+
 html,
 #footer {
   background-color: #DEE0E2;
+
+}
+
+html,
+#myrfooter {
+  background-color: #d7dbdb;
+  border-top: #b5b9b9;
+  border-top-style: solid;
+  border-top-width: 1px;
 }
 
 #footer {
+
   color: #231F20;
   padding: 2rem 0;
   //border-top: 6px solid $nhs-grey-1;

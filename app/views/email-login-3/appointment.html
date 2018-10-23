@@ -1,6 +1,18 @@
 {% extends 'templates/myr_transaction_layout.html' %}
 {% block pageTitle %}Blank page{% endblock %}
 {% block content %}
+<style>
+	body {background-color: #f0f4f5}
+	.date-row {
+		padding:1.5rem 1rem 1.5rem 1rem;
+		border-bottom:solid 1px #95989A;
+		background-color: #fff;
+	}
+	.date-row:hover {
+		background-color: #ffcd60;
+	}
+
+</style>
 	<div role="banner" id="global-header" style="background-color:#004D86;">
 		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
 			<a href="/email-login-3/clinic" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" />  Back to clinics</a>
@@ -8,7 +20,7 @@
 		</div>
 	</div>
 	<main id="content" role="main" style="padding-top:3rem;">
-			<h1 class="heading-large" style="color: #0072C6;">
+			<h1 class="heading-large">
 					Select an appointment
 					</h1>
 					<div class="grid-row">
@@ -21,7 +33,7 @@
 									<h3 class="heading-medium">October 2018</h3>
 								</div>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Friday 15th</strong></td>
@@ -32,7 +44,7 @@
 									</div>
 								</a>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Monday 18th</strong></td>
@@ -43,7 +55,7 @@
 									</div>
 								</a>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Wednesday 20th</strong></td>
@@ -54,7 +66,7 @@
 									</div>
 								</a>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Thursday 21st</strong></td>
@@ -68,7 +80,7 @@
 									<h3 class="heading-medium">November 2018</h3>
 								</div>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Friday 6th</strong></td>
@@ -79,7 +91,7 @@
 									</div>
 								</a>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Monday 9th</strong></td>
@@ -90,7 +102,7 @@
 									</div>
 								</a>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Wednesday 11th</strong></td>
@@ -101,7 +113,7 @@
 									</div>
 								</a>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Thursday 12th</strong></td>
@@ -112,7 +124,7 @@
 									</div>
 								</a>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 150px !important;"><strong>Wednesday 18th</strong></td>
@@ -123,7 +135,7 @@
 									</div>
 								</a>
 								<a href="/email-login-3/check" style="text-decoration:none;color:#231F20;">
-									<div style="padding:1.5rem 0rem 1.5rem 0rem;border-bottom:solid 1px #95989A;">
+									<div class="date-row">
 										<table class="equalDevide" style="border:0px;">
 											<tr>
 												<td style="width: 250px !important;"><strong>Thursday 19th</strong></td>
