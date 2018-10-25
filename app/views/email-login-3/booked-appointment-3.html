@@ -1,0 +1,148 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+<style>
+
+
+	body {
+		background-color: #f0f4f5
+	}
+
+.referral {
+	border-left: #009933;
+	border-left-style: solid;
+	border-left-width: 4px;
+	padding:20px;
+	margin-bottom: 2rem;
+	background-color: #ffffff;
+
+}
+
+.nhsuk-c-panel {
+    background: #fff;
+    margin: 0 0 56px;
+    padding:24px;
+    padding-top: 0;
+    position: relative
+}
+
+@media (max-width: 40.0525em) {
+    .nhsuk-c-panel {
+        margin:40px 0
+    }
+}
+
+.nhsuk-c-panel h3 {
+    background: #005eb8;
+    color: #fff;
+    display: inline-block;
+    margin: 0 -24px 8px;
+    padding: 8px 24px;
+    position: relative;
+    top: -16px
+}
+
+@media (max-width: 40.0525em) {
+    .nhsuk-c-panel h3 {
+		top:-18px;
+
+    }
+}
+
+.nhsuk-c-panel h3+p {
+    margin-top: 0
+}
+
+.nhsuk-c-panel__warning {
+	background: #ffffff;
+	border-left: #da291c;
+	border-left-style: solid;
+	border-left-width: 4px;
+    color: #212b32
+}
+
+.nhsuk-c-panel__warning h3 {
+    background: #da291c;
+	color: #fff;
+	left:-4px;
+}
+
+.nhsuk-c-panel>:first-child {
+    margin-top: 0
+}
+
+.nhsuk-c-panel>:last-child {
+    margin-bottom: 0
+}
+
+</style>
+<div role="banner" id="global-header" style="background-color:#004D86;">
+	<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+		&nbsp;
+		<div style="float:right;" style="color:#ffffff;"><a href="/email-login-3/all-referrals" style="color:#ffffff;">View
+				all referrals (3)</a> | <a href="/email-login-3/login" style="color:#ffffff;">Log out</a></div>
+	</div>
+</div>
+<main id="content" role="main" style="padding-top:3rem;">
+	<!--<a href="/examples/" class="example-back-link">Back to the prototype kit examples</a>-->
+	<div style="padding-bottom: 0rem;">Sam Taylor</div>
+	<h1 class="heading-large" style="padding-bottom: 2rem;padding-top: 0rem;">
+		Appointment for Diabetic medicine</h1>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+				<div class="nhsuk-c-panel">
+						<h3 id="Do">Your appointment details</h3>
+						<table style="margin-bottom: 1.5rem !important;">
+								<tr>
+									<td style="padding: 0px !important;">
+										<p style="margin-bottom: 0px !important;padding-top:0px;">
+											<strong class="heading-small">Wednesday 5 December 2018, 2:30pm</strong></p>
+									</td>
+									<td style="padding: 0px !important;text-align:right;">
+										<p style="margin: 0px !important;padding-top:0px;"><a href="#">Change</a></p>
+									</td>
+								</tr>
+							</table>
+						
+							<table style="margin-bottom: 2.5rem !important;">
+								<tr>
+									<td style="padding: 0px !important;">
+										<p style="margin-bottom: 0px !important;padding-top:0px;">
+											<strong>Diabetic Medicine - St James's Hospital - Leeds TH - RR8</strong></p>
+									</td>
+									<td style="padding: 0px !important;text-align:right;">
+										<p style="margin: 0px !important;padding-top:0px;"><a href="#">Change</a></p>
+									</td>
+								</tr>
+							</table>
+							<p style="padding-top: 0px !important; margin-bottom: 1.5rem !important;">
+								
+								<strong>Please arrive 15 minutes before your appointment is due to start. </strong></p>
+							<p style="padding-top: 0px !important; margin-bottom: 1.5rem !important;"><span class="heading-small">Location:</span>
+									LEEDS
+									WEST YORKSHIRE
+									England
+									LS9 7TF</p>
+							<p style="padding-top: 0px !important; margin-bottom: 1.5rem !important;"><span class="heading-small">Booking reference number:</span>
+								0002 5598 1001</p>
+						
+							<p style="padding-top: 0px !important; margin-bottom: 1.5rem !important;"><span class="heading-small"> Referred by:</span>
+								Dr Zubeir Smith at New Street Medical Practice</p>
+								<p><a href="/email-login-3/cancel-appointment" class="button button-secondary-grey" style="margin-top: 1em !important;">Cancel
+									appointment</a></p>
+					</div>
+			
+			
+
+		</div>
+
+		<div class="column-third">
+			<div style="border-top:10px solid #003087;padding-left:1rem;margin-bottom:2rem;margin-top:0rem;">
+				<p class="heading-medium" style="padding-top: 2rem !important;">You have 3 referrals</p>
+				<p><a href="/email-login-3/book-now-appointment">You need to book 1 other appointment</a></p>
+				<p><a href="/email-login-3/all-referrals">View all your referrals</a></p>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

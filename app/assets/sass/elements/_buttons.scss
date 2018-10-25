@@ -137,3 +137,29 @@
     background-color: $nhs-blue;
   }
 }
+// Secondary CTA buttons (grey)
+.button-secondary-grey {
+  background-color: #d8dde0;
+  border-color: #768692;
+  border-width: 3px;
+  color: $nhs-black;
+
+  height: 3rem;
+  line-height: 3rem;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  //padding-right: 2.5rem;//
+  //background-image: url("/public/images/icon-button-start.svg");//
+  //background-repeat: no-repeat;//
+  //background-position: 97.5% 57.5%;//
+
+  &:link,
+  &:hover,
+  &:focus,
+  &:visited{
+    color: $nhs-black;
+    background-color:  #d8dde0;
+  }
+}
