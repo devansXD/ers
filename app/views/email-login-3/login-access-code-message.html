@@ -17,41 +17,22 @@
 		</div> 
 		-->
 	</div>
-	<main id="content" role="main">
-	<h1 class="heading-large" style="padding-bottom: 1rem;">Log in</h1>
+	<main id="content" role="main"><div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:0rem;margin-top:1rem;">
+		<h2 class="heading-medium" style="padding-top:0rem; margin-bottom: 0rem;"><img src="/public/images/icon-important.png" style="vertical-align: middle;"/> Check your email.</h2>
+		<p>We have sent a new email with your login access code to t*********l.com</p>
+		</div>
+	<h1 class="heading-large" style="padding-bottom: 1rem;">Enter your login access code</h1>
 		<div class="grid-row">
 			<div class="column-two-thirds" >
-				<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:0rem;margin-top:1rem;">
-					<h2 class="heading-medium" style="padding-top:0rem; margin-bottom: 0rem;"><img src="/public/images/icon-important.png" style="vertical-align: middle;"/> Check your email.</h2>
-					<p>We sent your login access code to t*********l.com</p>
-					</div>	
+
 					
-				<label class="heading-medium" for="first-label" style="padding-top:1rem;padding-bottom:0rem;"><strong>Enter your login access code</strong></label>
+				
 				<p style="padding-top:0px;">For example, '756 822'. <br></p>
 				<input type="text" id="Password" class="form-control" style="width:60%;">
 
-				<div style="padding-top:3rem;padding-bottom:0rem;" class="heading-medium" >Your date of birth</div>
-				<p style="padding-top:3px;margin-bottom: 0rem;">For example, '31 3 1980'.</p>
-				<div class="form-item-wrapper" style="padding-top:0rem;padding-bottom:0rem;margin-top: 0rem;">
-					<fieldset>
-						<div class="inline-form-groups">
-							<div class="form-group">
-								<label class="form-label" for="{{ i.id_prefix }}day">Day</label>
-								<input class="form-control form-control-2-chars" id="{{ i.id_prefix }}day" type="number" min="0" max="31">
-							</div>
-							<div class="form-group">
-								<label class="form-label" for="{{ i.id_prefix }}month">Month</label>
-								<input class="form-control form-control-2-chars" id="{{ i.id_prefix }}month" type="number" min="0" max="12">
-								</div>
-							<div class="form-group">
-								<label class="form-label" for="{{ i.id_prefix }}year">Year</label>
-								<input class="form-control form-control-4-chars" id="{{ i.id_prefix }}year" type="number" min="0">
-							</div>
-						</div>
-					</fieldset>
-				</div>
+		
 
-				<a href="/email-login-3/booked-appointment" class="button" style="margin-top: 2em !important;">Log in</a>
+				<a href="/email-login-3/date-of-birth" class="button" style="margin-top: 2em !important;">Continue</a>
 
 
 				<p style="padding-top: 2rem;"><a href="/email-login-3/confirm-id-lost">I can't find my login access code.</a></p>
