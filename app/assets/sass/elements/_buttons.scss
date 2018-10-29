@@ -24,7 +24,9 @@
   &:focus,
   &:visited{
     color: $white;
-
+  }
+  &:focus{
+    background-color: #00823b;
   }
     /* to be fixed */
     text-decoration: none !important;
@@ -69,7 +71,7 @@
 }
 
 .button:focus {
-  outline: 3px solid $nhs-yellow;
+  outline: 0px solid $nhs-yellow;
 }
 
 // Disabled buttons
