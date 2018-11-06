@@ -1,0 +1,60 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+			<div style="float:right;"><a href="/prototypes" style="color:#ffffff;">Log out</a></div>
+		</div>
+	</div>
+	<main id="content" role="main" style="padding-top:3rem;">
+		<div class="grid-row">
+			<div class="column-two-thirds" >
+				<h1 class="heading-xlarge" style="color: #0072C6;">
+				Referral for Mike Smith
+				</h1>
+				<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:0rem;margin-top:1rem;">
+					<h2 class="heading-medium" style="padding-top:0rem; margin-bottom: 1rem;"><img src="/public/images/icon-important.png" style="vertical-align: middle;"/> The clinic will contact you to book an appointment</h2>
+					</div>
+					<p>When the clinic contacts you, they will ask for your booking reference number and access code shown below.</p>
+					<p>If the clinic does not contact you by Monday 8th December 2018, you should contact them.</p>
+				
+				<div style="background:#dee0e2;padding:1rem;margin-top:3rem;">
+					<h3 class="heading-medium">Your referral details</h3>
+					<div style="background:#ffffff;padding:1.4rem;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;">
+							Booking reference number<br />
+						<strong>0002 7480 8900</strong></p>
+					</div>
+					
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<table style="margin-bottom: 0px !important;">
+							<tr>
+								<td style="padding: 0px !important;">
+									<p style="margin-bottom: 0px !important;padding-top:0px;">Clinic <br />
+										<strong>Diabetic Medicine - St James's Hospital - Leeds TH - RR8</strong></p>
+								</td>
+								<td style="padding: 0px !important;text-align:right;">
+									<p style="margin: 0px !important;padding-top:0px;"><a href="#">Change</a></p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Location <br />
+						<strong>Castle Hill Hospital, Cottingham, HU16 5JQ</strong></p>
+					</div>
+					<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+						<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by <br />
+						<strong>Dr Zubeir Smith at Colton Mill Medical</strong></p>
+					</div>
+
+<p style="padding-top: 1rem !important;"><a href="/email-login-3/cancel-referral" style="margin-top: 2em !important;">Cancel
+						referral</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}

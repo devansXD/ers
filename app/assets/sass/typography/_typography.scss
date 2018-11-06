@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-family: unquote(map-get($headingtype, font-family));
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 // Make heading styles block elements, so they work as intended when
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 .heading-medium,
 .heading-small {
   display: block;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 // Heading level 1.
