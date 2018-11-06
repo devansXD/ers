@@ -1,0 +1,64 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+<style>
+
+
+	body {
+		background-color: #f0f4f5
+	}
+
+</style>
+<div role="banner" id="global-header" style="background-color:#004D86;">
+	<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+		&nbsp;
+		<div style="float:right;" style="color:#ffffff;"><a href="/email-login-4/all-referrals" style="color:#ffffff;">View
+				all referrals (3)</a> | <a href="/email-login-4/login" style="color:#ffffff;">Log out</a></div>
+	</div>
+</div>
+
+<main id="content" role="main" style="padding-top:3rem;">
+	<h1 class="heading-large" style="color: #0072C6;">
+		Cardiology referral for Sam Taylor
+	</h1>
+	<div class="grid-row">
+
+		<div class="column-two-thirds">
+
+			<div style="border-left:10px solid #dee0e2;padding-left:2rem;margin-bottom:5rem;margin-top:1rem;">
+				<h3 class="heading-medium"><img src="/public/images/icon-important.png" /> The clinic will contact you to book an
+					appointment.</h3>
+				<p>When the clinic contacts you, they will need your Booking Reference Number and Access Code.</p>
+				<p>If the clinic does not contact you by Monday 5 November 2018, you can phone them on: 0113 123 1234 (Monday to
+					Friday, 9am to 5pm)</p>
+			</div>
+
+			<div class="nhsuk-c-panel">
+
+				<h3 class="heading-medium">Your appointment request details</h3>
+
+					<p>Booking reference number<br /><strong>0002 2400 7090</strong></p>
+
+					<p>Clinic <br /><strong>General Cardiology MMH-Cardiology-Doncaster & Bassetlaw NHS FT-RP5MM</strong></p>
+
+
+					<p>Location<br /><strong>Beckett St, Leeds, LS9 7TF</strong></p>
+
+					<p>Referred by<br /><strong>Dr Zubeir Smith at Colton Mill Medical</strong></p>
+
+
+				<p><a href="/email-login-4/cancel-appointment">Cancel referral</a></p>
+
+			</div>
+
+
+		</div>
+		<div class="column-third">
+			<div style="border-top:10px solid #003087;padding-left:1rem;margin-bottom:2rem;margin-top:0rem;">
+				<p class="heading-medium" style="padding-top: 2rem !important;">You have 3 referrals</p>
+				<p><a href="/email-login-4/book-now-appointment">You need to book 1 other appointment</a></p>
+				<p><a href="/email-login-4/all-referrals">View all your referrals</a></p>
+			</div>
+		</div>
+	</div>
+</main> {% endblock %}

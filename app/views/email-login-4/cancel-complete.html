@@ -1,0 +1,83 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+<style>
+	body {
+		background-color: #f0f4f5
+	}
+</style>
+<div role="banner" id="global-header" style="background-color:#004D86;">
+	<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+		&nbsp;
+		<div style="float:right;"><a href="/email-login-4/login" style="color:#ffffff;">Log out</a></div>
+	</div>
+</div>
+<main id="content" role="main" style="padding-top:4rem;">
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:2rem;">
+				<h1 class="heading-large" style="margin-bottom: 0px !important;color:#ffffff;">
+					&#10004; The appointment has been cancelled
+				</h1>
+				<h3 class="heading-medium">The provider has been contacted.</h3>
+			</div>
+			<h3 class="heading-medium">What happens next?</h3>
+			<p style="padding-bottom: 3rem;">You now need to book a new appointment from your choice of clinics.</p>
+			
+			<div class="nhsuk-c-panel">
+				<h3>Your referral details</h3>
+
+				<p>Booking reference number<br /><strong>0002 2400 7090</strong></p>
+
+				<p>Referred by<br /><strong>Dr Zubeir Smith at New Street Medical Practice</strong></p>
+				
+				<p style="margin-bottom: 0px !important;"><a href="/email-login-4/clinic" class="button-rounded" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Choose an appointment</a>
+				</p>
+
+				<p style="padding-top: 1rem !important;">If you no longer want an appointment you can <a href="/email-login-4/cancel-referral"
+					 style="margin-top: 2em !important;">Cancel this referral</a>
+				</p>
+
+				<div class="form-group" style="padding-top: 2em !important;">
+				</div>
+			</div>
+
+			<!-- OLD STYLE -->
+			<!-- 
+			<div style="background:#dee0e2;padding:1rem;">
+				<div style="background:#ffffff;padding:1.4rem;">
+					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Booking reference number<br />
+						<strong>0002 7480 8900</strong></p>
+				</div>
+				<div style="background:#ffffff;padding:1.4rem;margin-top:2px;">
+					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by <br />
+						<strong>Dr Zubeir Smith at Colton Medical Centre</strong></p>
+				</div>
+			</div>
+			<div class="form-group" style="padding-top: 2em !important;">
+				<div>
+					<h3 class="heading-medium">What happens next?</h3>
+					<p>You now need to book a new appointment from your choice of clinics.</p>
+					<div class="form-group" style="padding-top:2rem;">
+						<a href="/email-login-4/clinic" class="button-rounded">Choose appointment</a>
+					</div>
+					<div class="form-group" style="padding-top:2rem;">
+						<p>If you no longer want an appointment you can <a href="cancel-referral">cancel this referral</a>.</p>
+					</div>
+				</div>
+			</div> -->
+
+
+		</div>
+
+		<div class="column-third">
+			<div style="border-top:10px solid #003087;padding-left:1rem;margin-bottom:2rem;margin-top:0rem;">
+				<p class="heading-medium" style="padding-top: 2rem !important;">You have 3 referrals</p>
+
+				<p><a href="/email-login-4/all-referrals">View all your referrals</a></p>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

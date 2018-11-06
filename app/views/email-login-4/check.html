@@ -1,0 +1,61 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+<style>
+	body {
+		background-color: #f0f4f5
+		
+	}
+
+
+
+</style>
+<div role="banner" id="global-header" style="background-color:#004D86;">
+	<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+		<a href="/email-login-4/appointment" style="color:#ffffff;"><img src="/public/images/back-arrow-white.svg" style="width:8px;" />
+			Back to appointments</a>
+		<div style="float:right;"><a href="/email-login-4/login" style="color:#ffffff;">Log out</a></div>
+	</div>
+</div>
+<main id="content" role="main" style="padding-top:3rem;">
+	<h1 class="heading-large">
+		Check details and book appointment
+	</h1>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<div style="background:#ffffff;padding:2em 2rem 2rem 2rem;margin-top:0px;">
+				
+				<p style="padding-top: 0px;margin-bottom: 0;">Booking reference number</p>
+				<div style="padding-top:0px;padding-bottom:2rem;"><strong>0002 7480 8900</strong></div>
+
+				<p style="padding-top: 0px;margin-bottom: 0;">Date and time</p>
+				<div style="padding-top:0px;padding-bottom:2rem;"><span class="heading-medium" style="padding-top: 0;margin-bottom:0;">Monday 18th November 2018, 1:30pm</span>
+				<a href="/email-login-4/appointment">Change</a></div>
+
+
+				<p style="padding-top: 0px;margin-bottom: 0;">Clinic</p>
+				<div style="padding-top:0px;padding-bottom:2rem;"><span class="heading-medium" style="padding-top: 0;margin-bottom:0;">Rheumatology - Chapel Allerton Hospital - Leeds TH - RR8</span>
+				<a href="/email-login-4/clinic">Change</a></div>
+
+
+				<p style="padding-top: 0px;margin-bottom: 0;">Location</p>
+				<div style="padding-top:0px;padding-bottom:2rem;"><strong>CHAPELTOWN ROAD	LEEDS WEST YORKSHIRE England LS7 4SA</strong></div>
+
+				<p style="padding-top: 0px;margin-bottom: 0;">Referred by</p>
+				<div style="padding-top:0px;padding-bottom:2rem;"><strong>Dr Zubeir Smith at New Street Medical Practice</strong></div>
+				<p style="margin-bottom: 0px !important;"><a href="/email-login-4/complete" class="button-rounded" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Book
+					appointment</a>
+
+			</div>
+	
+			</p>
+			<div class="form-group" style="padding-top: 2em !important;">
+			</div>
+
+		</div>
+		<div class="column-third">
+		</div>
+	</div>
+</main>
+{% endblock %}
