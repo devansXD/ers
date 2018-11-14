@@ -2,66 +2,6 @@
 {% block pageTitle %}Blank page{% endblock %}
 {% block content %}
 <style>
-	.item {
-		background: #ffffff;
-		padding: 1.4rem;
-		margin-top: 2px;
-	}
-
-	#printmessage {
-		display: none;
-	}
-
-	@media print {
-
-		/* print styles go here */
-		body {
-			font: 13pt sans-serif;
-			line-height: 1;
-			padding: 0;
-		}
-
-		body {
-			visibility: hidden;
-		}
-
-		body #global-header {
-			display: none;
-		}
-
-		body #confirm {
-			display: none;
-		}
-
-		body #footer {
-			display: none;
-		}
-
-		body #skiplink-container {
-			display: none;
-		}
-
-		.appointment {
-			visibility: visible;
-			margin: 0cm;
-		}
-
-		.appointment a {
-			visibility: hidden;
-		}
-
-		.item {
-			padding: 0cm;
-			margin: 0px;
-		}
-
-		#printmessage {
-			display: block;
-		}
-	}
-
-
-
 	body {
 		background-color: #f0f4f5
 	}
@@ -77,45 +17,38 @@
 	<div class="grid-row">
 		<div class="column-two-thirds">
 			<div style="background-color:#28A197;color:#ffffff;padding:2rem;text-align:center;margin-bottom:4rem;" id="confirm">
-				<h1 class="heading-large" style="margin-bottom: 0px !important;color:#ffffff;">
+				<h1 class="heading-large" style="margin-bottom: 0px;color:#ffffff;">
 					&#10004; Booking complete
 				</h1>
 				<h3 class="heading-medium">Please keep this information for your records</h3>
 			</div>
 			<div class="nhsuk-c-panel">
 				<h3 class="heading-medium">Your appointment details</h3>
-				<div class="item">
-					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Booking reference number<br />
-						<strong>0002 7480 8900</strong></p>
-				</div>
-				<div class="item">
-					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Date and time<br />
-						<strong>Monday 18th November 2018, 1:30pm</strong></p>
-				</div>
-				<div class="item">
-					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Clinic<br />
-						<strong>Rheumatology - Chapel Allerton Hospital - Leeds TH - RR8</strong></p>
-				</div>
-				<div class="item">
-					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Location<br />
-						<strong>CHAPELTOWN ROAD
-							LEEDS
-							WEST YORKSHIRE
-							England
-							LS7 4SA</strong></p>
-				</div>
-				<div class="item">
-					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Referred by<br />
-						<strong>Dr Zubeir Smith at New Street Medical Practice</strong></p>
-				</div>
-				<div class="item">
-					<p style="padding-top: 0px !important; margin-bottom: 0px !important;"> Information <br />
-						<strong>Please arrive 30 minutes before your appointment is due to start. </strong></p>
-				</div>
-				<div id="printmessage">
-					<p>To change or cancel this apopintment go to nhs.uk/referrals. You will need to login using the reference number
-						and access code or password provided in your referral letter or email.</p>
-				</div>
+
+				<p style="padding-top: 0px; margin-bottom: 0px;"> Date and time</p>
+				<div class="heading-medium" style="padding-top: 0px;margin-bottom: 0;">Monday 18th November 2018, 1:30pm</div>
+
+				<p style="padding-top: 0pxt; margin-bottom: 0px ;"> Clinic</p>
+				<div class="heading-medium" style="padding-top: 0px;margin-bottom: 0;">Rheumatology - Chapel Allerton Hospital -
+					Leeds TH - RR8</div>
+
+
+				<p style="padding-top: 0px;margin-bottom: 0;">Location</p>
+				<div style="padding-top:0px;padding-bottom:2rem;" class="heading-small">CHAPELTOWN ROAD LEEDS WEST YORKSHIRE
+					England LS7 4SA</div>
+
+				<p style="padding-top: 0px;margin-bottom: 0;">Referred by</p>
+				<div style="padding-top:0px;padding-bottom:2rem;" class="heading-small">Dr Zubeir Smith at New Street Medical
+					Practice</div>
+
+				<p style="padding-top: 0px;margin-bottom: 0;">Booking reference number</p>
+				<div style="padding-top:0px;padding-bottom:2rem;" class="heading-small">0002 7480 8900</div>
+
+				<p style="margin-bottom: 0px !important;"><a href="/email-login-4/complete" class="button-rounded" style="margin-top: 1em !important;margin-right:2rem;margin-bottom:2rem;">Book
+						appointment</a>
+
+
+
 			</div>
 
 
@@ -128,14 +61,15 @@
 				<p class="heading-small"><a href="">Add this appointment to your calendar (ICS, 10KB)</a></p>
 			</div>
 			<p>You can <a href="#">change or cancel your appointment here</a>.</p>
-			<p style="padding-bottom: 2rem;">You can return here at any point up to your appointment date by logging in to <strong>nhs.uk/referrals</strong>.</p>
+			<p style="padding-bottom: 2rem;">You can return here at any point up to your appointment date by logging in to
+				<strong>nhs.uk/referrals</strong>.</p>
 
 
 
 		</div>
 		<div class="column-third">
 			<div style="border-top:4px solid #003087;padding-left:1rem;margin-bottom:2rem;margin-top:0rem;">
-				<p class="heading-medium" style="padding-top: 2rem !important;">You have 3 referrals</p>
+				<p class="heading-medium" style="padding-top: 2rem;">You have 3 referrals</p>
 				<p><a href="/email-login-4/all-referrals-end">View all your referrals</a></p>
 			</div>
 		</div>

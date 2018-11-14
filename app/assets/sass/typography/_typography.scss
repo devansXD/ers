@@ -290,10 +290,18 @@ a.danger:active {
   color: $link-colour;
 }
 
-// Bold.
+// // Bold.
+// b, strong {
+//   font-weight: map-get($bodytype, bold);
+// }
+
+// Pete's hacked fix for the frutiger weight using strong tag
+
 b, strong {
-  font-weight: map-get($bodytype, bold);
+  font-weight: 600;
 }
+
+
 
 // Italic.
 em, i {
