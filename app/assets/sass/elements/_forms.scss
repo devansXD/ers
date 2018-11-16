@@ -83,7 +83,7 @@ fieldset {
   line-height: 4rem;
   padding: 0 1rem;
   background-color: $white;
-  border: 1px solid $nhs-black;
+  border: 2px solid #425563;
   //-webkit-box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
   //-moz-box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
   //box-shadow: inset 0px 0px 0px 2px $nhs-grey-2;
@@ -207,13 +207,13 @@ input[type=number] {
   list-style: none;
   background-color: $white;
   width: 218px;
-  border: 1px solid $border-colour;
+  border: 2px solid #425563;
   max-height: 350px;
   overflow-x: hidden;
   text-transform: capitalize;
 }
 .ui-autocomplete .ui-menu-item {
-  border-top: 1px solid $border-colour;
+  border-top: 2px solid #425563;
   display: block;
   padding: 0.5rem 1rem;
   color: $nhs-black;
