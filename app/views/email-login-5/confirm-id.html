@@ -1,0 +1,62 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+<style>
+	body {background-color: #f0f4f5}
+	.form-control {border:2px solid #425563
+
+	}
+</style>
+
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+
+	</div>
+	<main id="content" role="main">
+
+		<h1 class="heading-large" style="padding-bottom: 2rem;">
+		We need to confirm your identity
+		</h1>
+		<div class="grid-row">
+			<div class="column-two-thirds">
+
+				<label class="heading-medium" for="first-label" style="padding-top:0;padding-bottom:0rem;">Enter your date of birth</label>
+				<p style="padding-top:3px;margin-bottom: 0rem;">For example, '31 3 1980'.</p>
+
+				<fieldset>
+					<div class="inline-form-groups">
+						<div class="form-group">
+							<label class="form-label" for="{{ i.id_prefix }}day">Day</label>
+							<input class="form-control form-control-2-chars" id="{{ i.id_prefix }}day" type="number" min="0" max="31">
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="{{ i.id_prefix }}month">Month</label>
+							<input class="form-control form-control-2-chars" id="{{ i.id_prefix }}month" type="number" min="0" max="12">
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="{{ i.id_prefix }}year">Year</label>
+							<input class="form-control form-control-4-chars" id="{{ i.id_prefix }}year" type="number" min="0">
+						</div>
+					</div>
+				</fieldset>
+
+				<a href="/email-login-5/confirm-success" class="button-rounded" style="margin-top: 2em !important;">Continue</a>
+
+
+				<details>
+				<summary><span class="summary">Need help logging in?  </span></summary>
+					<div class="panel panel-border-narrow">
+						<p>When you opted for email referrals, you should have been asked to confirm the postdcode you will use to identify youreself here. This will usually be the postcode of the address registered with your GP.</p>
+						<p>If you are having difficulty, contact your referrer to confirm the address and postcode they have for you.</p>
+						<p>Alternatively call the e-Referral Service Appointments Line and provide your booking reference number.</p>
+						<p><strong>Phone:</strong> 0345 60 88 88 8<br />
+						<strong>Textphone:</strong> 0345 8 50 22 50</p>
+						<p>Appointments Line opening hours are: weekdays 8am to 8pm; weekends and bank holidays 8am to 4pm (closed on Christmas Day).</p>
+					</div>
+				</details>
+
+			</div>
+			<div class="column-third">
+			</div>
+		</div>
+	</main>
+{% endblock %}

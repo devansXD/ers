@@ -1,0 +1,53 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+<style>
+	body {background-color: #f0f4f5}
+	.form-control {border:2px solid #425563
+
+	}
+</style>
+
+	<div role="banner" id="global-header" style="background-color:#004D86;">
+
+	</div>
+	<main id="content" role="main">
+
+		
+		<div class="grid-row">
+			<div class="column-two-thirds">
+					<h1 class="heading-large" style="padding-bottom: 2rem;">
+							<img src="/public/images/tick-green.png" style="vertical-align: middle; width: 4rem;"/>
+							Success, you have confirmed your identity
+							</h1>
+		
+			<p style="padding-bottom: 0rem;margin-bottom: 0rem;"> You are about to login to view</p>
+			<div class="heading-small" style="padding-top: 0;">Booking reference number 0002 3345 3348</div>
+
+
+			<div style="border-left:4px solid #005eb8;padding-left:2rem;margin-bottom:0rem;margin-top:1rem;">
+					<h2 class="heading-medium" style="padding-top:0rem; margin-bottom: 0rem;"> Check your email.</h2>
+					<p>We have sent a new email that contains your <strong>login access code</strong></p>
+					</div>
+
+				<a href="/email-login-5/login-access-code-message" class="button-rounded" style="margin-top: 2em !important;">Continue</a>
+
+
+				<details>
+				<summary><span class="summary">Need help logging in?  </span></summary>
+					<div class="panel panel-border-narrow">
+						<p>When you opted for email referrals, you should have been asked to confirm the postdcode you will use to identify youreself here. This will usually be the postcode of the address registered with your GP.</p>
+						<p>If you are having difficulty, contact your referrer to confirm the address and postcode they have for you.</p>
+						<p>Alternatively call the e-Referral Service Appointments Line and provide your booking reference number.</p>
+						<p><strong>Phone:</strong> 0345 60 88 88 8<br />
+						<strong>Textphone:</strong> 0345 8 50 22 50</p>
+						<p>Appointments Line opening hours are: weekdays 8am to 8pm; weekends and bank holidays 8am to 4pm (closed on Christmas Day).</p>
+					</div>
+				</details>
+
+			</div>
+			<div class="column-third">
+			</div>
+		</div>
+	</main>
+{% endblock %}
