@@ -1,0 +1,53 @@
+{% extends 'templates/myr_transaction_layout.html' %}
+{% block pageTitle %}Blank page{% endblock %}
+{% block content %}
+<style>
+
+
+	body {
+		background-color: #f0f4f5
+	}
+
+</style>
+<div role="banner" id="global-header" style="background-color:#004D86;">
+	<!-- DARK BLUE HEADER STRIP -->
+	<!-- 
+		<div class="header-container" style="padding:1rem 0rem 1rem 0rem;">
+			&nbsp;
+		</div> 
+		-->
+</div>
+<main id="content" role="main">
+
+	<h1 class="heading-large" style="padding-bottom: 1rem;">Log in to your referral</h1>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<label class="heading-small" for="first-label" style="padding-top:0;padding-bottom:0rem;"><strong>Your booking reference number</strong></label>
+			<input type="text" id="first-label" class="form-control" style="width:60%;" value="0002 3453 3344" read>
+
+			<div style="padding-top:3rem;">
+				<h3 class="heading-medium">Enter your login access code</h3>
+			</div>
+
+			<p style="padding-top:0px;">For example, '756 822'. <br></p>
+			<input type="text" id="Password" class="form-control" style="width:60%;">
+			<details>
+				<summary><span class="summary">Where to find your login access code</span></summary>
+				<div class="panel panel-border-narrow"  style="border-left:4px solid #005eb8;padding-left:2rem;margin-bottom:0.5rem; padding-top:0rem;">
+					<p style="padding-top: 0rem;">Login access codes are sent by a new email after you confirm your identity. <br />Check for emails from
+						NHSreferrals@nhs.net.<br />It is a six digit number.</p>
+				</div>
+			</details>
+
+
+			<a href="/email-login-4/booked-appointment" class="button-rounded" style="margin-top: 2em !important;">Log in</a>
+
+
+			<p style="padding-top: 2rem;"><a href="/email-login-4/confirm-id-lost">I can't find my login access code.</a></p>
+
+		</div>
+		<div class="column-third">
+		</div>
+	</div>
+</main>
+{% endblock %}
