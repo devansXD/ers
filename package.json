@@ -23,7 +23,7 @@
     "grunt-sass": "1.1.0",
     "grunt-text-replace": "0.3.12",
     "helmet": "^2.1.2",
-    "minimist": "0.0.8",
+    "minimist": "1.2.3",
     "node-sass": "4.7.2",
     "readdir": "0.0.6",
     "swig": "^1.4.2",
